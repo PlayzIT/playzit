@@ -33,47 +33,61 @@
 </head>
 
 <body layout="column" ng-cloak>
-<md-content layout="row" class="" >
+<md-content layout="row" class="">
 
-<div flex="20" flex>
-    <md-sidenav
-        class="md-sidenav sideNav"
-        md-component-id="left"
-        md-is-locked-open="$mdMedia('gt-md')"
-        md-whiteframe="4"
-        flex="100"
-        >
-    <md-toolbar class="md-theme-indigo">
-        <h1 class="md-toolbar-tools">Sidenav Left</h1>
-    </md-toolbar>
-    <md-content layout-padding >
-        <md-button  class="md-primary" hide-gt-md>
-            Close Sidenav Left
-        </md-button>
-        <p hide show-gt-md>
-            This sidenav is locked open on your device. To go back to the default behavior,
-            narrow your display.
-        </p>
-    </md-content>
+    <div flex="15" flex>
+        <md-sidenav
+                class="md-sidenav sideNav"
+                md-component-id="left"
+                md-is-locked-open="true"
+                md-whiteframe="4"
+                flex="100">
+            <md-toolbar layout="row" layout-align="start center" class="sideNavToolBar">
+                <img src="../ressources/logo.png">
+
+            </md-toolbar>
+            <md-content layout-padding style="height: calc(100vh - 64px)" layout="column" class="sideNavContent" >
+                <md-button>Test</md-button>
+                <md-button>Test</md-button>
+                <h3>Abteilung</h3>
+                <md-button>Test</md-button>
+                <md-button>Test</md-button>
+                <md-button>Test</md-button>
+                <md-button>Test</md-button>
+                <md-button>Test</md-button>
+                <h3>Abteilung</h3>
+                <md-button>Test</md-button>
+                <md-button>Test</md-button>
 
 
-</md-sidenav>
-</div>
+                <md-button id="sideNavButton">Impressum</md-button>
+            </md-content>
+        </md-sidenav>
+    </div>
 
-    <md-toolbar id="topToolBar" flex="80">
-        <div layout="row" layout-align="start center">
-            <md-toolbar-filler layout layout-align="center center">
-                <md-icon md-svg-icon="call:chat"></md-icon>
-            </md-toolbar-filler>
-            <md-menu-bar  id="topNavBar">
-                <button>
+
+    <md-toolbar id="topToolBar" flex="85" flex layout="row" layout-align="start center">
+
+        <div layout="column" layout-align="start start" flex>
+            <h2 class="md-toolbar-tools">Untitled document</h2>
+            <md-menu-bar id="topNavBar" layout-align="start center" flex layout="row">
+
+                <md-button>
                     File
-                </button>
+                </md-button>
+
+
+
 
             </md-menu-bar>
-        </div>
-    </md-toolbar>
 
+
+        </div>
+        <div layout-align="center center" class="topNavBarProfileButton">
+            <md-button  >username</md-button>
+        </div>
+
+    </md-toolbar>
 
 
 </md-content>

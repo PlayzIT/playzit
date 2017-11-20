@@ -1,13 +1,71 @@
 #topNavBar{
-    color: lightskyblue;
+padding-left: 0px;
 }
+#topNavBar  .md-button{
+    margin: 0px;
+    padding: 0px 0px 0px 8px;
+}
+
 .topNavBarDiv {
     padding-top: 24px;
 }
 .sideNav {
+    width: 100%;
+    max-width: 100%;
+    margin:0px;
+}
 
+.sideNavToolBar {
+    height : 80px;
 }
 
 #topToolBar {
-    height : 64px;
+    height : 80px;
 }
+
+
+.sideNav .md-button{
+    text-align:left;
+    margin: 0px;
+    padding: 0px 0px 0px 8px;
+    color: white;
+}
+
+.sideNav md-content {
+    background-color: black;
+}
+
+.sideNav h3 {
+    margin-bottom: 7px;
+    color:lightgrey;
+}
+
+#topToolBar span {
+    margin-left: auto;
+}
+
+
+body > md-content > div > md-sidenav > md-toolbar > img {
+    margin-left: 10px;
+    max-height: 45px;
+}
+
+body > md-content > div > md-sidenav > md-toolbar {
+    padding: 0px 10px 0px 10px;
+}
+
+
+#sideNavButton {
+    margin-top:auto;
+}
+
+#topToolBar h2 {
+    height:30px;
+    margin-top:15px;
+    //padding-left: 30px;
+}
+
+.topNavBarProfileButton {
+    margin-left: auto;
+}
+
