@@ -1,9 +1,13 @@
 #topNavBar{
 padding-left: 0px;
+
 }
+
+
 #topNavBar  .md-button{
     margin: 0px;
     padding: 0px 0px 0px 8px;
+    color: antiquewhite;
 }
 
 .topNavBarDiv {
@@ -80,7 +84,9 @@ body > md-content > div > md-sidenav > md-toolbar {
 
 }
 
+#loginField{
 
+}
 
 #topToolBar h2, #startTopToolBar h2 {
     height:30px;
