@@ -20,7 +20,12 @@ padding-left: 0px;
 }
 
 #topToolBar {
+    height:80px;
+}
+
+#startTopToolBar {
     height : 80px;
+    background-image:linear-gradient(90deg, #358ee2 38%, #c82028 62%)
 }
 
 
@@ -54,14 +59,32 @@ body > md-content > div > md-sidenav > md-toolbar {
     padding: 0px 10px 0px 10px;
 }
 
+#startSeriesField {
+
+     background-color: #c82028;
+    color:white;
+ }
+
+#startGameField {
+
+    background-color: #358ee2;
+    color:white;
+}
 
 #sideNavButton {
     margin-top:auto;
 }
 
-#topToolBar h2 {
+
+.startCardImage{
+
+}
+
+
+
+#topToolBar h2, #startTopToolBar h2 {
     height:30px;
-    margin-top:15px;
+    margin-top:10px;
     //padding-left: 30px;
 }
 
@@ -69,3 +92,10 @@ body > md-content > div > md-sidenav > md-toolbar {
     margin-left: auto;
 }
 
+body > div > div {
+    background-color: #358ee2;
+}
+
+#contentDiv {
+    padding: 10px 10px 10px 10px;
+}

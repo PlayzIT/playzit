@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de" ng-app="playzit">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>playzit</title>
+
+
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="icon" href="favicon.ico"/>
+
+    <link rel="stylesheet" href="vendor/material-icons-2.2.0/material-icons.css"/>
+    <link rel="stylesheet" href="vendor/roboto/roboto.css"/>
+
+    <link rel="stylesheet" href="vendor/angular-material-1.1.5/angular-material.min.css">
+
+    <link rel="stylesheet" href="app.css">
+
+    <script type="text/javascript" src="vendor/jquery-3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="vendor/angularjs-1.6.6/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/angularjs-1.6.6/angular-resource.min.js"></script>
+    <script type="text/javascript" src="vendor/angularjs-1.6.6/angular-messages.min.js"></script>
+    <script type="text/javascript" src="vendor/angularjs-1.6.6/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="vendor/angularjs-1.6.6/angular-animate.min.js"></script>
+    <script type="text/javascript" src="vendor/angularjs-1.6.6/angular-aria.min.js"></script>
+
+    <script type="text/javascript" src="vendor/angular-material-1.1.5/angular-material.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-ui-router-1.0.8/angular-ui-router.min.js"></script>
+
+    <script src="app.js"></script>
+</head>
+
+<body layout="column" ng-cloak>
+<md-content layout="row" class="">
+
+
+    <md-toolbar id="startTopToolBar" flex="100" flex layout="row" layout-align="start center" >
+
+        <div layout="column" layout-align="start start" flex>
+            <h2 class="md-toolbar-tools">PlayzIT</h2>
+            <md-menu-bar id="topNavBar" layout-align="start center" flex layout="row">
+
+                <md-button>
+                    Spiele
+                </md-button>
+                <md-button>
+                    Serien
+                </md-button>
+
+
+
+
+            </md-menu-bar>
+
+
+        </div>
+        <div layout-align="center center" class="topNavBarProfileButton">
+            <md-button  >username</md-button>
+        </div>
+
+    </md-toolbar>
+
+
+</md-content>
+
+
+<md-content layout="row" class="" flex>
+
+    <div flex="33" layout="row" layout-align="center center" flex>
+
+    <md-card flex="80" id="startGameField">
+        <img src="../ressources/reflection-pad-gaming-gamepad.jpg" class="md-card-image startCardImage" alt="Placeholder">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">Spiele-Abteilung</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <p>
+                The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+            </p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="start">
+            <md-button>Betreten</md-button>
+        </md-card-actions>
+    </md-card>
+</div>
+
+    <div flex="33" layout="row" layout-align="center center">
+        <md-card flex="70">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Login</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <md-input-container>
+                    <input>
+                </md-input-container>
+            </md-card-content>
+            <md-card-actions layout="row" layout-align="start">
+                <md-button>Account erstellen</md-button>
+                <md-button>Einloggen</md-button>
+            </md-card-actions>
+        </md-card>
+    </div>
+
+    <div flex="33" layout="row" layout-align="center center" flex>
+
+        <md-card flex="80" id="startSeriesField">
+            <img src="../ressources/alex-holyoake-442195.jpg" class="md-card-image startCardImage" alt="Placeholder">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Serien-Abteilung</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p>
+                    The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                    two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                </p>
+            </md-card-content>
+            <md-card-actions layout="row" layout-align="start">
+                <md-button>Betreten</md-button>
+            </md-card-actions>
+        </md-card>
+
+    </div>
+</md-content>
+
+</body>
+
+</html>
