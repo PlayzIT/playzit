@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b71b0210-c5f9-4ab5-8302-55052be8a117" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/start.html" afterPath="$PROJECT_DIR$/app/start.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/anmelden.html" afterPath="$PROJECT_DIR$/app/components/anmelden.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,12 +29,24 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="start.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="start.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/start.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="538">
+                <state relative-caret-position="2100">
                   <caret line="100" column="37" lean-forward="false" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="anmelden.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/components/anmelden.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="42">
+                  <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+                  <folding>
+                    <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -110,6 +122,7 @@
         <option value="$PROJECT_DIR$/app/stylesheet.css" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/start.html" />
+        <option value="$PROJECT_DIR$/app/components/anmelden.html" />
       </list>
     </option>
   </component>
@@ -310,7 +323,7 @@
       <workItem from="1511342482839" duration="1292000" />
       <workItem from="1511353970651" duration="971000" />
       <workItem from="1511443345086" duration="1283000" />
-      <workItem from="1511447493130" duration="550000" />
+      <workItem from="1511447493130" duration="1305000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1510843634847</created>
@@ -340,11 +353,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511443933402</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Login-Komponente verändert">
+      <created>1511448483218</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1511448483219</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28179000" />
+    <option name="totallyTimeSpent" value="28934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -421,7 +441,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="Änderungen an dem Master" />
     <MESSAGE value="Startseite erstellt und fertig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Startseite erstellt und fertig" />
+    <MESSAGE value="Login-Komponente verändert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login-Komponente verändert" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -855,9 +876,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/start.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
+        <state relative-caret-position="2100">
           <caret line="100" column="37" lean-forward="false" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/anmelden.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
