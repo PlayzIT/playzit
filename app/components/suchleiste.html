@@ -1,0 +1,10 @@
+<div>
+	<form class="well form-search">
+		<label>Search:</label>
+		<input type="text" ng-model="suche" class="input-medium search-query" placeholder="Suche nach {{$ctrl.suche}} ...">
+		<md-button type="submit" class="btn" ng-click="$ctrl.sucheInAction()">Suche</md-button>
+		<p class="help-block">Try for example: "php" or "angularjs" or "asdfg"</p>
+	</form>
+
+	<pre ng-bind="$ctrl.result"></pre>
+</div>

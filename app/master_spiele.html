@@ -30,23 +30,25 @@
     <script type="text/javascript" src="vendor/angular-ui-router-1.0.8/angular-ui-router.min.js"></script>
 
     <script src="app.js"></script>
+    <script src="components/gameCard.js"></script>
 </head>
 
-<body layout="column" >
-<md-content layout="row" class="">
+<body layout="column" style="height:100%">
+<md-content layout="row" style="">
 
-    <div flex="15" flex>
+    <div flex="15" flex layout="column">
         <md-sidenav
                 class="md-sidenav sideNav"
                 md-component-id="left"
                 md-is-locked-open="true"
                 md-whiteframe="4"
                 flex="100">
-            <md-toolbar layout="row" layout-align="start center" class="sideNavToolBar" style="background-color: #173E62">
+            <md-toolbar layout="row" layout-align="start center" class="sideNavToolBar"
+                        style="background-color: #173E62">
                 <img src="../ressources/Logo_blau_fertig.png">
 
             </md-toolbar>
-            <md-content layout-padding style="height: calc(100vh - 64px)" layout="column" class="sideNavContent" >
+            <md-content layout-padding style="height: calc(100vh - 64px)" layout="column" class="sideNavContent">
                 <md-button>Test</md-button>
                 <md-button>Test</md-button>
                 <h3>Abteilung</h3>
@@ -65,42 +67,98 @@
         </md-sidenav>
     </div>
 
-<div layout="column" flex="85">
-    <md-toolbar id="topToolBar"   layout="row" layout-align="start center" style="background-color: #173E62" >
+    <div layout="column" flex="85">
+        <md-toolbar id="topToolBar" layout="row"  layout-align="start center" style="background-color: #173E62">
 
-        <div layout="column" layout-align="start start" flex>
-            <h2 class="md-toolbar-tools">Untitled document</h2>
-            <md-menu-bar id="topNavBar" layout-align="start center" flex layout="row">
+            <div layout="column" layout-align="start start" flex>
+                <h2 class="md-toolbar-tools">PlayzIT</h2>
+                <md-menu-bar id="topNavBar" layout-align="start center" flex layout="row">
 
-                <md-button>
-                    File
-                </md-button>
+                    <md-button>
+                        Spiele
+                    </md-button>
+                    <md-button>
+                        Serien
+                    </md-button>
+
+
+                </md-menu-bar>
+
+
+            </div>
+            <div layout-align="center center" class="topNavBarProfileButton">
+                <md-button>username</md-button>
+            </div>
+
+        </md-toolbar>
+
+
+        <div layout="row" layout-align="center start" flex id="contentDiv" >
+
+
+
+                <!--md-theme="docs-dark"-->
+
+                <md-card
+                class="contentCard">
+                    <md-toolbar style="background-color: #173E62">
+                        <div class="md-toolbar-tools">
+                            <h3>
+                                <span>Spiele-Abteilung</span>
+                            </h3>
+                        </div>
+                    </md-toolbar>
+
+
+                    <!--
+                    <md-card-title-text layout="row" layout-align="center ">
+                        <span class="md-headline" layout-align="center center">Spiele-Abteilung</span>
+                    </md-card-title-text>
+                    -->
+                    <!--<div layout="row" class="masterCardButtonBox" layout-align="center start" flex>
+                    <md-button flex="50" class="md-raised md-primary ">Bewertung abgeben</md-button>
+                    <md-button flex="50" class="md-raised md-primary ">Bewertung abgeben</md-button>
+                </div>
+                    <div layout="row"  class="masterCardButtonBox" layout-align="center start" flex>
+                        <md-button flex="50" class="md-raised md-primary ">Bewertung abgeben</md-button>
+                        <md-button flex="50" class="md-raised md-primary">Bewertung abgeben</md-button>
+                    </div>
+-->
+
+
+
+                        <div flex layout-align="center start" class="masterCardGameCard">
 
 
 
 
-            </md-menu-bar>
+                                <game-card name="Half-Life" id="70" description="bla bla bla bla bla bla bla bla blla bla bla bla  bla blabla bla bla bla bla bla bla bla bla"></game-card>
+                                <game-card name="Half-Life" id="70" description="bla bla blala bla bla bla bla bla la bla bla blaa bla blabla bla bla bla bla bla bla bla bla"></game-card>
+                                <game-card name="Half-Life" id="70" description="bla bla bla bla  bla bbla blblabla bla bla b bla bla blabla bla bla bla bla bla bla bla bla"></game-card>
+
+                                <game-card></game-card>
+                                <game-card></game-card>
+                                <game-card></game-card>
+
+                                <game-card></game-card>
+                                <game-card></game-card>
+                                <game-card></game-card>
+
+                        </div>
+
+
+
+
+                </md-card>
+
+
 
 
         </div>
-        <div layout-align="center center" class="topNavBarProfileButton">
-            <md-button  >username</md-button>
-        </div>
 
-    </md-toolbar>
-
-
-
-
-    <div layout="row" layout-align="center start"  flex id="contentDiv">
-        <div flex="80" style="height:100%">CONTENT</div>
     </div>
 
-</div>
 </md-content>
-
-
-
 
 
 </body>

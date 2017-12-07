@@ -1,0 +1,25 @@
+
+<style>
+    md-card{
+        width:200px;
+    }
+</style>
+
+
+<md-card>
+    <img ng-src="C:\Users\hofma\Documents\Schule\HTL\4\ITP\PlayzIT\playzit\playzit\ressources\conner-murphy-363916.jpg" class="md-card-image"
+         alt="{{$ctrl.name}}">
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline" ng-bind="$ctrl.name"></span>
+        </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+        <p>{{$ctrl.description}}</p>
+    </md-card-content>
+
+    <md-card-actions layout="column" layout-align="start">
+        <md-button href="index.html">Kommentieren</md-button>
+        <md-button>Bewerten</md-button>
+    </md-card-actions>
+</md-card>

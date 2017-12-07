@@ -90,7 +90,7 @@ body > md-content > div > md-sidenav > md-toolbar {
 
 #topToolBar h2, #startTopToolBar h2 {
     height:30px;
-    margin-top:10px;
+    margin-top:7px;
     //padding-left: 30px;
 }
 
@@ -104,4 +104,36 @@ body > div > div {
 
 #contentDiv {
     padding: 10px 10px 10px 10px;
+    height:auto;
+        overflow-x: scroll;
+
+}
+
+
+.masterCardButtonBox .md-button {
+    height:60px;
+    background-color: #173E62;
+    color:white;
+}
+
+.masterCardButtonBox {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.masterCardGameCard {
+    margin-left: 20px;
+    margin-right: 20px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+.md-button.md-default-theme.md-primary.md-fab, .md-button.md-primary.md-fab, .md-button.md-default-theme.md-primary.md-raised, .md-button.md-primary.md-raised{
+    background-color: #173E62;
+}
+
+.contentCard {
+    height:auto;padding:0px;margin:5px;
+    width:80%;
 }

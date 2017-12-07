@@ -30,6 +30,7 @@
     <script type="text/javascript" src="vendor/angular-ui-router-1.0.8/angular-ui-router.min.js"></script>
 
     <script src="app.js"></script>
+    <script src="./components/serienCard.js"></script>
 </head>
 
 <body layout="column" >
@@ -92,8 +93,60 @@
 
 
 
-    <div layout="row" layout-align="center start"  flex id="contentDiv">
-        <div flex="80" style="height:100%">CONTENT</div>
+    <div layout="row" layout-align="center start" flex id="contentDiv" >
+
+
+
+        <!--md-theme="docs-dark"-->
+
+        <md-card
+                class="contentCard">
+            <md-toolbar style="background-color: #173E62">
+                <div class="md-toolbar-tools">
+                    <h3>
+                        <span>Spiele-Abteilung</span>
+                    </h3>
+                </div>
+            </md-toolbar>
+
+
+            <!--
+            <md-card-title-text layout="row" layout-align="center ">
+                <span class="md-headline" layout-align="center center">Spiele-Abteilung</span>
+            </md-card-title-text>
+            -->
+            <!--<div layout="row" class="masterCardButtonBox" layout-align="center start" flex>
+            <md-button flex="50" class="md-raised md-primary ">Bewertung abgeben</md-button>
+            <md-button flex="50" class="md-raised md-primary ">Bewertung abgeben</md-button>
+        </div>
+            <div layout="row"  class="masterCardButtonBox" layout-align="center start" flex>
+                <md-button flex="50" class="md-raised md-primary ">Bewertung abgeben</md-button>
+                <md-button flex="50" class="md-raised md-primary">Bewertung abgeben</md-button>
+            </div>
+-->
+
+
+
+            <div flex layout-align="center start" class="masterCardGameCard">
+
+                <serien-card></serien-card>
+                <serien-card></serien-card>
+                <serien-card></serien-card>
+                <serien-card></serien-card>
+
+
+
+
+            </div>
+
+
+
+
+        </md-card>
+
+
+
+
     </div>
 
 </div>
