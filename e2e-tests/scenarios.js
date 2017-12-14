@@ -3,7 +3,7 @@
 describe("Vorlage", function() {
 
     beforeAll(function() {
-        browser.get("angularjs-vorlage/app/index.html");
+        browser.get("angularjs-vorlage/app/index.php");
     });
 
 

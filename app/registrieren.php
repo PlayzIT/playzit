@@ -21,4 +21,3 @@
 			echo "{'success': false}";
 		}
 	}
-?>

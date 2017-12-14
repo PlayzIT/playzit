@@ -2,6 +2,7 @@
 <style>
     md-card{
         width:200px;
+        height:300px;
     }
 </style>
 
@@ -14,12 +15,10 @@
             <span class="md-headline" ng-bind="$ctrl.name"></span>
         </md-card-title-text>
     </md-card-title>
-    <md-card-content>
-    <p>{{$ctrl.description}}</p>
-</md-card-content>
+
 
     <md-card-actions layout="column" layout-align="start">
-        <md-button href="index.html">Kommentieren</md-button>
-        <md-button>Bewerten</md-button>
+        <md-button href="index.html?get={{$ctrl.id}}">Kommentieren</md-button>
+        <md-button href="index.html">Bewerten</md-button>
     </md-card-actions>
 </md-card>
