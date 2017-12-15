@@ -1,3 +1,12 @@
+<?php
+/**
+ * Created by IntelliJ IDEA.
+ * User: hofma
+ * Date: 14.12.2017
+ * Time: 17:18
+ */
+?>
+
 <!DOCTYPE html>
 <html lang="de" ng-app="playzit">
 <head>
@@ -32,6 +41,8 @@
     <script src="app.js"></script>
     <script src="components/gameCard.js"></script>
     <script src="components/gameCardList.js"></script>
+    <script src="components/bewertenSpiele.js"></script>
+    <script src="components/bewertenFeld.js"></script>
 </head>
 
 <body layout="column" style="height:100%">
@@ -76,10 +87,10 @@
                 <md-menu-bar id="topNavBar" layout-align="start center" flex layout="row">
 
                     <md-button>
-                        Spiele
+Spiele
                     </md-button>
                     <md-button>
-                        Serien
+Serien
                     </md-button>
 
 
@@ -115,7 +126,7 @@
                     <md-card-title-text layout="row" layout-align="center ">
                         <span class="md-headline" layout-align="center center">Spiele-Abteilung</span>
                     </md-card-title-text>
-                    -->
+-->
                     <!--<div layout="row" class="masterCardButtonBox" layout-align="center start" flex>
                     <md-button flex="50" class="md-raised md-primary ">Bewertung abgeben</md-button>
                     <md-button flex="50" class="md-raised md-primary ">Bewertung abgeben</md-button>
@@ -144,12 +155,18 @@
 
 
 -->
-                    <div flex layout-align="center start" class="masterCardGameCard">
-
-                        <game-card-list></game-card-list>
 
 
-                    </div>
+
+
+
+                        <div class="masterCardGameCard" >
+                            <bewerten-spiele></bewerten-spiele>
+
+
+
+                        </div>
+
 
 
 
