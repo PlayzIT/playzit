@@ -16,5 +16,8 @@
 session_start();
 $data = json_decode(file_get_contents("php://input"));
 
-$_SESSION['benutzername'] = "peter";
-echo json_encode($_SESSION['benutzername']);
+if(isset($_SESSION['benutzername'])){
+    echo $_SESSION['benutzername'];
+}else{
+    echo false;
+}

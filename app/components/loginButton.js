@@ -17,9 +17,7 @@ app.controller("loginButtonController", function ($http) {
         $http.post("getUserName.php", function(){
 
         }).then(function (data) {
-            console.log(data);
-            $ctrl.username = data.data.substring(1,data.data.length-1);
-            console.log($ctrl.username);
+            $ctrl.username = data.data;
         });
     };
 });
