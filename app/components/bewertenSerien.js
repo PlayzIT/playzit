@@ -5,7 +5,7 @@ app.component("bewertenSerien", {
 	controller: "BewertenSerien"
 });
 
-app.controller("BewertenSerien", ['$scope', '$http', function ($scope, $http) {
+app.controller("BewertenSerien", ['$scope', '$http', function ($http) {
 	this.$onInit = function () {
 		this.bewertungSenden = function () {
 			console.log(this.Kategorien);

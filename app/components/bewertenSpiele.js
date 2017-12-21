@@ -2,25 +2,41 @@
 
 app.component("bewertenSpiele", {
 	templateUrl: "components/bewertenSpiele.html",
-	controller: "BewertenSpiele"
+	controller: "BewertenSpiele",
+    bindings: {
+	    gameId: "<"
+    }
 });
 
 
-app.controller("BewertenSpiele", ['$scope', '$http', function ($scope, $http) {
-    this.$onInit = function () {
-        this.bewertungSenden = function () {
-            console.log(this.Kategorien);
+app.controller("BewertenSpiele", function ($http) {
+
+    var that = this;
+    this.Kategorien = {};
+    this.gameId;
+    this.$onInit = function(){
+        this.userId=0;
+
+    }
+
+    this.bewertungSenden = function () {
+        $http.post("database_send_bewertung_spiele.php",{
+            'grafik' : this.Kategorien.grafik,
+            'gameplay' : this.Kategorien.gameplay,
+            'audio' : this.Kategorien.audio,
+            'steuerung' : this.Kategorien.steuerung,
+            'charaktere' : this.Kategorien.charaktere,
+            'story' : this.Kategorien.story,
+            'game' : this.gameId
+
+        }).then(function (data){
+            window.location = "master_spiele.html";
+        });
 
 
-            /*$http.post("sadf", { "data" : $scope.keywords}).
-            then(function(data, status) {
-                $scope.status = status;
-                $scope.data = data;
-                $scope.result = data;
-            }, function(data, status) {
-                $scope.data = data || "Request failed";
-                $scope.status = status;
-            });*/
-        };
-    };
-}]);
+
+
+    }
+});
+
+

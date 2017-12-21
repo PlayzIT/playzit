@@ -31,9 +31,10 @@
 
     <script src="app.js"></script>
     <script src="components/anmelden.js"></script>
+    <script src="components/loginButton.js"></script>
 </head>
 
-<body layout="column" ng-cloak>
+<body layout="column" >
 <md-content layout="row" class="">
 
 
@@ -58,7 +59,7 @@
 
         </div>
         <div layout-align="center center" class="topNavBarProfileButton">
-            <md-button  >username</md-button>
+            <login-button></login-button>
         </div>
 
     </md-toolbar>
@@ -67,7 +68,7 @@
 </md-content>
 
 
-<md-content layout="row" class="" flex>
+<md-content layout="row" class="background" flex >
 
     <div flex="33" layout="row" layout-align="center center" flex>
 

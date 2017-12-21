@@ -2,6 +2,7 @@
 	session_start();
 	if(isset($_SESSION['benutzername'])){
 		unset($_SESSION['benutzername']);
+		unset($_SESSION['userID']);
 	}
 	
 	include_once "database_connection.php";
@@ -17,9 +18,9 @@
 		
 		if (mysqli_num_rows($result) > 0) {
 			$_SESSION['benutzername'] = $nickname;
+			$_SESSION['userID'] = $user_id;
 			echo "{success: true}";
 		}else{
 			echo "{success: false}";
 		}
 	}
-?>

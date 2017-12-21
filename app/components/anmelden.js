@@ -12,6 +12,11 @@ app.controller("anmeldenController", ['$http', function ($http) {
             'passwort': this.passwort
         }).then(function (data) {
 
+            if(data.data.success ===false){
+
+            }else{
+                location.reload();
+            }
         });
     }
 }]);

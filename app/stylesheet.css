@@ -1,3 +1,13 @@
+.background {
+    background-image: url('images/background2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+
 #topNavBar{
 padding-left: 0px;
 
@@ -129,6 +139,13 @@ body > div > div {
 }
 
 
+.masterCard {
+    margin-left: 20px;
+    margin-right: 20px;
+    display:flex;
+}
+
+
 .md-button.md-default-theme.md-primary.md-fab, .md-button.md-primary.md-fab, .md-button.md-default-theme.md-primary.md-raised, .md-button.md-primary.md-raised{
     background-color: #173E62;
 }
@@ -137,3 +154,17 @@ body > div > div {
     height:auto;padding:0px;margin:5px;
     width:80%;
 }
+
+.contentCard > img {
+    margin-bottom: 30px;
+}
+
+
+.bewertungsCard {
+    height:auto;padding:0px;margin:5px;
+    width:60%;
+}
+.bewertungsCard > img {
+     margin-bottom: 30px;
+ }
+

@@ -5,6 +5,21 @@
  * Date: 14.12.2017
  * Time: 17:18
  */
+
+
+$id = $_GET['id'];
+
+session_start();
+require_once "database_connection.php";
+
+$query = 'SELECT G_Name FROM Game WHERE G_ID='.$id.';';
+if ($game = $mysqli->prepare($query)) {
+    $game->execute();
+    $game->bind_result($gameName);
+    $game->store_result();
+    $game->fetch();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -43,6 +58,8 @@
     <script src="components/gameCardList.js"></script>
     <script src="components/bewertenSpiele.js"></script>
     <script src="components/bewertenFeld.js"></script>
+
+    <script src="components/loginButton.js"></script>
 </head>
 
 <body layout="column" style="height:100%">
@@ -99,24 +116,25 @@ Serien
 
             </div>
             <div layout-align="center center" class="topNavBarProfileButton">
-                <md-button>username</md-button>
+                <login-button></login-button>
             </div>
 
         </md-toolbar>
 
 
-        <div layout="row" layout-align="center start" flex id="contentDiv" >
+        <div layout="row" layout-align="center start" flex id="contentDiv" class="background">
 
 
 
                 <!--md-theme="docs-dark"-->
 
-                <md-card
-                class="contentCard">
+                <md-card class="bewertungsCard">
+
+
                     <md-toolbar style="background-color: #173E62">
                         <div class="md-toolbar-tools">
                             <h3>
-                                <span>Spiele-Abteilung</span>
+                                <span>Bewertung von <?php echo $gameName;?></span>
                             </h3>
                         </div>
                     </md-toolbar>
@@ -126,8 +144,7 @@ Serien
                     <md-card-title-text layout="row" layout-align="center ">
                         <span class="md-headline" layout-align="center center">Spiele-Abteilung</span>
                     </md-card-title-text>
--->
-                    <!--<div layout="row" class="masterCardButtonBox" layout-align="center start" flex>
+<div layout="row" class="masterCardButtonBox" layout-align="center start" flex>
                     <md-button flex="50" class="md-raised md-primary ">Bewertung abgeben</md-button>
                     <md-button flex="50" class="md-raised md-primary ">Bewertung abgeben</md-button>
                 </div>
@@ -135,11 +152,7 @@ Serien
                         <md-button flex="50" class="md-raised md-primary ">Bewertung abgeben</md-button>
                         <md-button flex="50" class="md-raised md-primary">Bewertung abgeben</md-button>
                     </div>
--->
 
-
-
-<!--
 
                         <div flex layout-align="center start" class="masterCardGameCard">
 
@@ -158,10 +171,14 @@ Serien
 
 
 
+                    <img ng-src="http://cdn.akamai.steamstatic.com/steam/apps/<?php echo $id;?>/header.jpg" class="md-card-image"
+                         alt="<?php echo $id;?>">
 
 
-                        <div class="masterCardGameCard" >
-                            <bewerten-spiele></bewerten-spiele>
+
+                        <div class="masterCard" >
+
+                            <bewerten-spiele game-id="<?php echo $id;?>"></bewerten-spiele>
 
 
 

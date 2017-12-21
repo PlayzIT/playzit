@@ -20,7 +20,6 @@ app.controller("gameCardListController", function ($http) {
         ).then(function (data) {
 
             $ctrl.games = data.data;
-            console.log("hallo" + $ctrl.games[0]["pk_id"]);
 
         });
 

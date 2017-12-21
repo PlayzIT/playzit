@@ -30,6 +30,7 @@
     <script type="text/javascript" src="vendor/angular-ui-router-1.0.8/angular-ui-router.min.js"></script>
 
     <script src="app.js"></script>
+    <script src="components/loginButton.js"></script>
 </head>
 
 <body layout="column" >
@@ -84,7 +85,7 @@
 
         </div>
         <div layout-align="center center" class="topNavBarProfileButton">
-            <md-button  >username</md-button>
+            <login-button></login-button>
         </div>
 
     </md-toolbar>
