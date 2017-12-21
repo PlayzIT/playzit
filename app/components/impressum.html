@@ -1,0 +1,104 @@
+<div ng-cloak>
+    <md-content>
+        <md-card>
+        <md-tabs md-dynamic-height md-border-bottom md-selected="myTabIndex">
+            <md-tab label="Impressum">
+                <md-content class="md-padding">
+                    <h1 class="md-display-2"><b>Impressum</b></h1>
+                    <p>
+                        <strong>Firmenname: </strong>
+                        PlayzIT GmbH
+                        <br>
+                        <strong>Adresse: </strong>
+                        <br>
+                        Rennweg 89b
+                        <br>
+                        1030 Wien
+                        <br>
+                        Raum 256</p>
+                        <br>
+                    <strong>Telefonnummer: </strong>
+                    +43 664 75103490
+                    <br>
+                    <strong>E-Mail: </strong>
+                    playzit.office@gmail.com
+                    <br>
+                    <br>
+                    <strong>Geschäftsführer: </strong>
+                    Andreas Kaiser
+                    <br>
+                    <a style="color: red; cursor: pointer;
+    text-decoration: none;" ng-click="myTabIndex = myTabIndex + 1">Zum Kontaktformular</a>
+                    <h2>Copyright</h2>
+                    <p>Die Urheber- und Nutzungsrechte der zur Verfügung gestellten Information sowie alle sonstigen damit zusammenhängende Schutzrechte, liegen bei der PlayzIT GmbH. Die Vervielfältigung von Texten und Daten einschließlich der (digitalen) Speicherung und Nutzung auf optischen und elektronischen Datenträgern darf nur mit vorheriger elektronischer Zustimmung durch die PlayzIT GmbH erfolgen. Die Verwendung der Texte und Daten einschließlich Einspeisung in Online-Dienste, Datenbanken oder Websites durch unberechtigte Dritte sowie die Veränderung oder Verfälschung von Informationen ist untersagt. Der Download sowie der Ausdruck zum persönlichen, nicht kommerziellen Gebrauch ist jedoch gestattet.</p>
+                </md-content>
+            </md-tab>
+            <md-tab label="Kontakt">
+                <md-content class="md-padding">
+                    <div layout="column">
+                        <h1 class="md-display-2"><b>Kontakt</b></h1>
+                        <md-input-container class="md-block" >
+                            <label>Kategorie</label>
+                            <md-select required name="prob" ng-model="$ctrl.art">
+                                <md-option>-Bitte auswählen-</md-option>
+                                <md-option value="Problem">Problem</md-option>
+                                <md-option value="Frage">Frage</md-option>
+                                <md-option value="Idee">Idee</md-option>
+                            </md-select>
+                        </md-input-container>
+                        <md-input-container class="md-block" >
+                            <label>Betreff</label>
+                            <input required ng-model="$ctrl.betreff">
+                        </md-input-container>
+                        <md-input-container class="md-block" >
+                            <label>Nachricht</label>
+                            <textarea required ng-model="$ctrl.nachricht" md-maxlength="500" rows="5" md-select-on-focus></textarea>
+                        </md-input-container>
+                        <md-input-container  class="md-block" >
+                            <label>Anrede</label>
+                            <md-select required name="geschlecht" ng-model="$ctrl.geschlecht">
+                                <md-option>-Bitte auswählen-</md-option>
+                                <md-option value="Herr">Herr</md-option>
+                                <md-option value="Frau">Frau</md-option>
+                            </md-select>
+                        </md-input-container>
+                        <div layout="row" >
+                            <md-input-container class="md-block" flex="50">
+                                <label>Vorname</label>
+                                <input required ng-model="$ctrl.vorname">
+                            </md-input-container>
+                            <md-input-container class="md-block" flex="50">
+                                <label>Nachname</label>
+                                <input required ng-model="$ctrl.nachname">
+                            </md-input-container>
+                        </div>
+                        <md-input-container class="md-block" >
+                            <label>Telefon</label>
+                            <input ng-model="$ctrl.telefon">
+                        </md-input-container>
+                        <md-input-container class="md-block" >
+                            <label>E-Mail</label>
+                            <input type="email" required ng-model="$ctrl.email">
+                        </md-input-container>
+                        <md-input-container class="md-block" >
+                            <md-checkbox aria-label="check" ng-model="$ctrl.bedingungen" class="md-primary" required>Nutzungsbedingungen
+                            </md-checkbox>
+                        </md-input-container>
+                        <div>
+                            <md-button class="md-raised md-primary" type="submit">Senden</md-button>
+                        </div>
+                    </div>
+                </md-content>
+            </md-tab>
+            <md-tab label="Entwickler">
+                <md-content class="md-padding">
+                    <div layout="column">
+                        <h1 class="md-display-2"><b>Entwickler</b></h1>
+                    </div>
+                </md-content>
+            </md-tab>
+        </md-tabs>
+        </md-card>
+    </md-content>
+</div>
+
