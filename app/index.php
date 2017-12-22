@@ -73,10 +73,12 @@
             <h2 class="md-toolbar-tools">Untitled document</h2>
             <md-menu-bar id="topNavBar" layout-align="start center" flex layout="row">
 
-                <md-button>
-                    File
+                <md-button href="master_spiele.html">
+                    Spiele
                 </md-button>
-
+                <md-button href="master_serien.html">
+                    Serien
+                </md-button>
 
 
 

@@ -20,4 +20,14 @@ app.controller("loginButtonController", function ($http) {
             $ctrl.username = data.data;
         });
     };
+
+    this.abmelden = function(){
+        $.post("ausloggen.php", {
+
+        }).then(function (data) {
+            console.log("logged out");
+            location.href ="start.html";
+        });
+
+    }
 });

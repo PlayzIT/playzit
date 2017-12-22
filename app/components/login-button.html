@@ -1,3 +1,6 @@
 
-
-<md-button href="profilBearbeiten.php">{{$ctrl.username||"not logged in"}}</md-button>
+<div layout="row" layout-align="center center">
+<md-button ng-show="$ctrl.username" href="profilBearbeiten.php">{{$ctrl.username}}</md-button>
+<md-button ng-hide="$ctrl.username" href="start.html">not logged in</md-button>
+<md-button ng-show="$ctrl.username" ng-click="$ctrl.abmelden()">Logout</md-button>
+</div>

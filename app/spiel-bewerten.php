@@ -103,11 +103,11 @@ if ($game = $mysqli->prepare($query)) {
                 <h2 class="md-toolbar-tools">PlayzIT</h2>
                 <md-menu-bar id="topNavBar" layout-align="start center" flex layout="row">
 
-                    <md-button>
-Spiele
+                    <md-button href="master_spiele.html">
+                        Spiele
                     </md-button>
-                    <md-button>
-Serien
+                    <md-button href="master_serien.html">
+                        Serien
                     </md-button>
 
 
