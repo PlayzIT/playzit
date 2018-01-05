@@ -1,50 +1,56 @@
 
-<form style="padding: 20px;" method="post" layout="column">
-  <h1 style="margin-bottom: 10%; margin-left: auto; margin-right: auto;">Create Account</h1>
-  <md-input-container>
-    <label>Benutzername</label>
-    <md-icon md-svg-src="images/icons/ic_person_blue_24px.svg" class="email"></md-icon>
-    <input type="text" ng-model="$ctrl.benutzername" required pattern="[A-Za-z]{1}[A-Za-z0-9]{5,}" title="Der Benutzername muss mit einem Buchstaben beginnen. Die restlichen Zeichen müssen Buchstaben oder Zahlen sein. Der Benutzername muss mindestens 6 Zeichen lang sein." name="benutzername">
-  </md-input-container>
+<form style="padding: 20px;" name="$ctrl.formular" method="post" layout="column">
+	<md-input-container>
+		<label>Benutzername</label>
+		<md-icon md-svg-src="images/icons/ic_person_blue_24px.svg" class="email"></md-icon>
+		<input type="text" ng-model="$ctrl.benutzername" required pattern="[A-Za-z]{1}[A-Za-z0-9]{5,}" title="Der Benutzername muss mit einem Buchstaben beginnen. Die restlichen Zeichen müssen Buchstaben oder Zahlen sein. Der Benutzername muss mindestens 6 Zeichen lang sein." name="benutzername">
+		<div ng-messages="$ctrl.formular.benutzername.$error">
+			<div ng-message="required">Bitte geben Sie einen Benutzernamen ein!</div>
+			<div ng-message="pattern">Der Benutzername muss mit einem Buchstaben beginnen. <br> Die restlichen Zeichen müssen Buchstaben oder Zahlen sein.<br> Der Benutzername muss mindestens 6 Zeichen lang sein.</div>
+		</div>
+	</md-input-container>
 
-  <md-input-container>
-    <label>Email</label>
-    <md-icon md-svg-src="images/icons/ic_email_green_24px.svg" class="email"></md-icon>
-    <input type="email" ng-model="$ctrl.email" required name="email">
 
-  </md-input-container>
+	<md-input-container>
+		<label>Email</label>
+		<md-icon md-svg-src="images/icons/ic_email_green_24px.svg" class="email"></md-icon>
+		<input type="email" ng-model="$ctrl.email" required name="email">
+		<div ng-messages="$ctrl.formular.email.$error">
+			<div ng-message="required">Bitte geben Sie eine Email ein.</div>
+			<div ng-message="email">Bitte geben Sie eine gültige Email ein.<br>Ein Beispiel: example@mail.com</div>
+		</div>
+	</md-input-container>
 
-  <md-input-container>
-    <label>Passwort</label>
-    <md-icon md-svg-src="images/icons/ic_lock_black_24px.svg"></md-icon>
-    <input type="password" ng-model="$ctrl.passwort1" pattern="[^ \s\r]{6,}" title="Das Passwort muss mindestens 6 Zeichen lang sein und darf nicht Leerzeichen besitzen." required name="passwort">
-  </md-input-container>
+	<md-input-container>
+		<label>Passwort</label>
+		<md-icon md-svg-src="images/icons/ic_lock_black_24px.svg"></md-icon>
+		<input type="password" ng-model="$ctrl.passwort1" pattern="[^ \s\r]{6,}" title="Das Passwort muss mindestens 6 Zeichen lang sein und darf keine Leerzeichen besitzen." required name="passwort">
+		<div ng-messages="$ctrl.formular.passwort.$error">
+			<div ng-message="required">Bitte geben Sie ein Passwort ein.</div>
+			<div ng-message="pattern">Ihr Passwort muss mindestens 6 Zeichen lang sein.<br>Ihr Passwort darf keine Leerzeichen enthalten.</div>
+		</div>
+	</md-input-container>
 
-  <md-input-container>
-    <label>Passwort bestätigen</label>
-    <md-icon md-svg-src="images/icons/ic_lock_black_24px.svg"></md-icon>
-    <input type="password" ng-model="$ctrl.passwort2" pattern="[^ \s\r]{6,}" title="Das Passwort muss mindestens 6 Zeichen lang sein und darf nicht Leerzeichen besitzen." required name="passwortBestaetigen">
-  </md-input-container>
-  <section class="errorSection" ng-hide="$ctrl.isPasswortSame" style="background-color: rgba(195, 47, 45, .15); color: #c32f2d; padding: 15px;">
-    <span class="errorMsg" ng-hide="$ctrl.isPasswortSame">Das Passwort muss das gleiche sein!</span>
-  </section>
+	<md-input-container>
+		<label>Passwort bestätigen</label>
+		<md-icon md-svg-src="images/icons/ic_lock_black_24px.svg"></md-icon>
+		<input type="password" ng-model="$ctrl.passwort2" pattern="[^ \s\r]{6,}" title="Das Passwort muss mindestens 6 Zeichen lang sein und darf nicht Leerzeichen besitzen." required name="passwort2">
+		<div ng-messages="$ctrl.formular.passwort2.$error">
+			<div ng-message="required">Bitte geben Sie Ihr Passwort erneut ein.</div>
+		</div>
+	</md-input-container>
 
-  <div align="center">
-    <h5 align="center">By registering you agree to the Terms & Conditions</h5>
+	<section class="errorSection" ng-hide="$ctrl.isPasswortSame" style="background-color: rgba(195, 47, 45, .15); color: #c32f2d; padding: 15px;">
+		<span class="errorMsg" ng-hide="$ctrl.isPasswortSame">Das Passwort muss das gleiche sein!</span>
+	</section>
 
-    <md-button style="width:80%;" type="submit" ng-click="$ctrl.starteRegistrierung()" class="md-raised md-primary">Registrierung abschließen</md-button>
-  </div>
+	<section class="errorSection" ng-show="$ctrl.usernameAlreadyExists" style="background-color: rgba(195, 47, 45, .15); color: #c32f2d; padding: 15px;">
+		<span class="errorMsg" >Der Benutzername oder die Email sind schon vergeben!</span>
+	</section>
+
+	<div align="center">
+		<h5 align="center">By registering you agree to the Terms & Conditions</h5>
+
+		<md-button style="width:80%;color:white;" type="submit" ng-disabled="$ctrl.formular.$invalid" ng-click="$ctrl.starteRegistrierung()" class="md-raised md-primary">Registrierung abschließen</md-button>
+	</div>
 </form>
-<!--
-<script>
-    document.getElementById("passwort2").addEventListener("blur", function () {
-        if(document.getElementById("passwort").value !== document.getElementById("passwort2").value){
-            document.getElementById("passwort2").value = "";
-            document.getElementsByClassName("errorSection")[0].removeAttribute("hidden");
-            document.getElementsByClassName("errorMsg")[0].removeAttribute("hidden");
-        }else{
-            document.getElementsByClassName("errorSection")[0].setAttribute("hidden", "");
-            document.getElementsByClassName("errorMsg")[0].setAttribute("hidden", "");
-        }
-    })
-</script>-->

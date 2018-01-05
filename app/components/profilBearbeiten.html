@@ -1,0 +1,46 @@
+<div>
+	<div ng-show="$ctrl.isLoggedIn" layout="column" layout-align="start center" ng-init="$ctrl.displayData()">
+		<div style="margin: 40px 0 0 0; text-align: center;">
+			<md-input-container style="margin: 0; text-align: left;">
+				<label>Benutzername</label>
+				<input type="text" size="40" value="{{$ctrl.names.nickname}}" disabled>
+			</md-input-container>
+			<md-button style="margin-top: 0;" ng-click='$ctrl.fillInput("nickname")' class="btn btn-success btn-xs md-raised">Ändern</md-button>
+		</div>
+
+		<div style="margin: 40px 0 0 0; text-align: center;">
+			<md-input-container style="margin: 0;  text-align: left;">
+				<label>Email</label>
+				<input type="text" size="40" value="{{$ctrl.names.email}}" disabled>
+			</md-input-container>
+			<md-button style="margin-top: 0;" ng-click='$ctrl.fillInput("email")' class="btn btn-success btn-xs md-raised">Ändern</md-button>
+		</div>
+
+		<div style="margin: 40px 0 0 0; text-align: center;">
+			<md-input-container style="margin: 0;  text-align: left;">
+				<label>Passwort</label>
+				<input type="text" size="40" value="*Ausgeblendet*" disabled>
+			</md-input-container>
+			<md-button style="margin-top: 0;" ng-click='$ctrl.fillInput("passwort")' class="btn btn-success btn-xs md-raised">Ändern</md-button>
+		</div>
+
+		<div autocorrect="off" autocapitalize="off" spellcheck="false" style="margin: 40px 0 0 0; text-align: center;">
+			<md-input-container style="margin: 0; text-align: left;">
+				<label>{{$ctrl.toUpdate == null ? "Drücken Sie auf einen \"Ändern\" Knopf": "Sie verändern gerade: "}}<span style="font-size: 1.4rem; color: dodgerblue;">{{ $ctrl.toUpdate == null ? "" : $ctrl.toUpdate }}</span></label>
+				<input size="40" id="updateInput" type="text" ng-model="$ctrl.eingabe" disabled placeholder="{{$ctrl.placeholder}}" >
+			</md-input-container>
+			<md-button style="margin-top: 0;" id="updateButton" class="md-primary md-raised" disabled ng-click="$ctrl.updateNickname()">Änderung speichern</md-button>
+		</div>
+
+	</div>
+
+	<section class="errorSection" ng-show="$ctrl.isLoggedInError" style="background-color: rgba(195, 47, 45, .15); color: #c32f2d; padding: 15px;">
+		<span class="errorMsg">Sie müssen eingeloggt sein, um Ihr Profil bearbeiten zu können!</span>
+	</section>
+
+	<section class="errorSection" ng-show="$ctrl.dataAlreadyInUse" style="background-color: rgba(195, 47, 45, .15); color: #c32f2d; padding: 15px;">
+		<span class="errorMsg">Der Benutzername oder die Email sind schon vergeben!<br>
+							   Bitte geben Sie einen anderen Benutzernamen oder eine andere Email ein.</span>
+	</section>
+
+</div>

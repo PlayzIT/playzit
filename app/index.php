@@ -70,7 +70,7 @@
     <md-toolbar id="topToolBar"   layout="row" layout-align="start center" >
 
         <div layout="column" layout-align="start start" flex>
-            <h2 class="md-toolbar-tools">Untitled document</h2>
+            <h2 class="md-toolbar-tools">PlayzIT</h2>
             <md-menu-bar id="topNavBar" layout-align="start center" flex layout="row">
 
                 <md-button href="master_spiele.html">

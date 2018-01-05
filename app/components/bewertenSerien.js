@@ -2,24 +2,62 @@
 
 app.component("bewertenSerien", {
 	templateUrl: "components/bewertenSerien.html",
-	controller: "BewertenSerien"
+	controller: "BewertenSerien",
+	bindings:{
+		serienId:"<"
+	}
 });
 
-app.controller("BewertenSerien", ['$scope', '$http', function ($http) {
-	this.$onInit = function () {
-		this.bewertungSenden = function () {
-			console.log(this.Kategorien);
+
+app.controller("BewertenSerien", function ($http) {
+    var $ctrl = this;
+    var that = this;
+    this.error=false;
+    this.Kategorien = {};
+    this.serienId;
 
 
-			/*$http.post("sadf", { "data" : $scope.keywords}).
-			 then(function(data, status) {
-			 $scope.status = status;
-			 $scope.data = data;
-			 $scope.result = data;
-			 }, function(data, status) {
-			 $scope.data = data || "Request failed";
-			 $scope.status = status;
-			 });*/
-		};
-	};
-}]);
+    this.loggedIn = function(){
+        var logged=false;
+        $.post("isLoggedIn.php", {
+        }).then(function (data) {
+            if(data== "1"){
+
+                logged= true;
+
+            }else{
+
+                logged= false;
+            }
+        });
+        return logged;
+    };
+
+
+    this.bewertungSenden = function () {
+
+        if($ctrl.loggedIn()){
+            $http.post("database_send_bewertung_serien.php",{
+                'schnitt':this.Kategorien.schnitt,
+				'kamera':this.Kategorien.kamera,
+				'darsteller':this.Kategorien.darsteller,
+				'story':this.Kategorien.story,
+				'effekte':this.Kategorien.effekte,
+				'audio':this.Kategorien.audio,
+				'genre':this.Kategorien.genre,
+
+                'serie' : this.serienId
+
+            }).then(function (data){
+                window.location = "master_serien.html";
+            });
+        }else{
+            this.error = true;
+        }
+
+
+
+
+    }
+
+});

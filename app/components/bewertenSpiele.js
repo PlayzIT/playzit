@@ -10,28 +10,45 @@ app.component("bewertenSpiele", {
 
 
 app.controller("BewertenSpiele", function ($http) {
-
+    var $ctrl = this;
     var that = this;
+    this.error=false;
     this.Kategorien = {};
     this.gameId;
-    this.$onInit = function(){
-        this.userId=0;
 
-    }
+
+    this.loggedIn = function(){
+        $.post("isLoggedIn.php", {
+        }).then(function (data) {
+            if(data== "1"){
+                return true
+            }else{
+                return false;
+            }
+        });
+    };
+
+
+
 
     this.bewertungSenden = function () {
-        $http.post("database_send_bewertung_spiele.php",{
-            'grafik' : this.Kategorien.grafik,
-            'gameplay' : this.Kategorien.gameplay,
-            'audio' : this.Kategorien.audio,
-            'steuerung' : this.Kategorien.steuerung,
-            'charaktere' : this.Kategorien.charaktere,
-            'story' : this.Kategorien.story,
-            'game' : this.gameId
 
-        }).then(function (data){
-            window.location = "master_spiele.html";
-        });
+        if($ctrl.loggedIn()){
+            $http.post("database_send_bewertung_spiele.php",{
+                'grafik' : this.Kategorien.grafik,
+                'gameplay' : this.Kategorien.gameplay,
+                'audio' : this.Kategorien.audio,
+                'steuerung' : this.Kategorien.steuerung,
+                'charaktere' : this.Kategorien.charaktere,
+                'story' : this.Kategorien.story,
+                'game' : this.gameId
+
+            }).then(function (data){
+                window.location = "master_spiele.html";
+            });
+        }else{
+            this.error = true;
+        }
 
 
 

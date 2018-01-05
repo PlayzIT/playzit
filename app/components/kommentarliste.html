@@ -1,0 +1,22 @@
+<style>
+    #dv1{ border:1px solid #DBDCE9;  margin-left:auto; margin-right:auto;width:550px; border-radius:7px;padding: 25px;}
+    div {width: 200px;}
+    h2 {font: 400 40px/1.5 Helvetica, Verdana, sans-serif;margin: 0; padding: 0;}
+    ul {list-style-type: none;  margin: 0;padding: 0;}
+    li {font: 200 20px/1.5 Helvetica, Verdana, sans-serif;border-bottom: 1px solid #ccc;}
+    li:last-child {border: none;}
+    li a { text-decoration: none; color: #000; display: block;}
+</style>
+
+<div id='dv1'>
+    Post your Comment
+    <md-input-container class="md-block">
+
+            <textarea ng-model="txtcomment" placeholder="Your Comment" style="width:550px"></textarea>
+    </md-input-container>
+            <md-button class="md-raised md-primary" ng-click="btn_add();">Post Comment</md-button>
+            <h4>{{comment.length}} Comments</h4>
+            <ul>
+                <li ng-repeat="comnt in comment"> {{ comnt }} <a  style="float: right;" href="" ng-click="remItem($index)">x</a></li>
+            </ul>
+</div>

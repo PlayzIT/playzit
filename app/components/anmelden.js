@@ -14,6 +14,12 @@ app.controller("anmeldenController", ['$http', function ($http) {
         $.post("isLoggedIn.php", {
         }).then(function (data) {
             if(data== "1"){
+                var url = window.location.pathname;
+                var filename = url.substring(url.lastIndexOf('/')+1);
+                if(filename!=="start.html"){
+                    window.location = "start.html";
+                }
+
                 $ctrl.loggedIn = true;
             }else{
                 $ctrl.loggedIn = false;
@@ -33,7 +39,7 @@ app.controller("anmeldenController", ['$http', function ($http) {
                 console.log("logged in");
                 $ctrl.loggedIn = true;
                 $ctrl.error = true;
-                location.reload();
+                window.location = "start.html";
             }else{
                 //location.reload();
                 $ctrl.loggedIn = false;
