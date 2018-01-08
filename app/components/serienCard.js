@@ -7,6 +7,7 @@ app.component("serienCard", {
         name:"<",
         description:"<",
         image:"<",
+        id:"<"
 
     }
 });

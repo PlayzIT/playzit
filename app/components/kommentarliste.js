@@ -2,7 +2,9 @@
 
 app.component("kommentarliste", {
     templateUrl: "components/kommentarliste.html",
-    bindings: {},
+    bindings: {
+
+    },
     controller: "kommentarlisteController"
 });
 

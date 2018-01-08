@@ -1,0 +1,45 @@
+
+
+<style>
+    .md-subheader.md-default-theme, .md-subheader {
+        background-color: transparent;
+
+    }
+    md-list .md-subheader {
+        font-size:18px;
+    }
+    md-list-item.md-3-line, md-list-item.md-3-line>.md-no-style {
+        min-height: 50px;
+    }
+    md-list-item.md-3-line:before, md-list-item.md-3-line>.md-no-style:before {
+        min-height: 50px;
+    }
+</style>
+
+<div style="display:flex; justify-content: center; flex-direction: column;">
+    <md-input-container class="">
+        <textarea ng-model="$ctrl.kommentar" placeholder="Dein Kommentar" style=""></textarea>
+        <md-button class="md-raised md-primary" style="margin-left:0px;margin-right:0px;background-color:#480C0E;" ng-click="$ctrl.kommentarHinzufugen()">Kommentar posten</md-button>
+    </md-input-container>
+
+
+
+    <md-content>
+        <md-list flex>
+            <md-subheader class="md-primary" style="color:#480C0E">Kommentare</md-subheader>
+            <md-divider></md-divider>
+            <md-list-item ng-repeat="i in $ctrl.kommentare" class="md-3-line md-long-text">
+
+                <div style="margin: 10px 0px 10px 0px;" class="md-list-item-text">
+                    <h3>{{i.nickname}}</h3>
+                    <p>
+                        {{i.content}}
+                    </p>
+                </div>
+            </md-list-item>
+        </md-list>
+    </md-content>
+
+
+
+</div>

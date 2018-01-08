@@ -14,7 +14,7 @@ app.controller("serienCardListController", function ($http) {
     this.$onInit = function () {
 
         $http.post("database_select.php", {
-                'query': "SELECT * FROM series limit 15;",
+                'query': "SELECT * FROM series limit 1000;",
             },
             console.log("data request")
         ).then(function (data) {
