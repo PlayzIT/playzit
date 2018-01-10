@@ -31,7 +31,6 @@ app.controller("listeSpieleController", function ($http) {
             },
             console.log("data request")
         ).then(function (data) {
-            console.log(data);
             $ctrl.lists = data.data;
 
         });
@@ -49,6 +48,7 @@ app.controller("listeSpieleController", function ($http) {
             },
             console.log("data request")
         ).then(function (data) {
+            console.log(data);
             if(data.data=="{success: false}"){
                 $ctrl.games.splice(0,$ctrl.games.length);
                 $ctrl.hideRight = true;
@@ -60,6 +60,27 @@ app.controller("listeSpieleController", function ($http) {
 
         });
     }
+
+    this.removeGame = function(gameId){
+        $http.post("database_remove_list_spiele.php", {
+            'state':"game",
+            'gameId':gameId,
+            'listId':$ctrl.listClicked
+        }).then(function (data) {
+            console.log(data);
+        });
+    };
+
+
+    this.removeList = function(){
+        $http.post("database_remove_list_spiele.php", {
+            'state':"list",
+            'gameId':null,
+            'listId':$ctrl.listClicked
+        }).then(function (data) {
+            console.log(data);
+        });
+    };
 
 });
 

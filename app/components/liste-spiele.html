@@ -14,12 +14,13 @@
                         </p>
 
                     </div>
+
                     <md-radio-group ng-model="$ctrl.listClicked" ng-change="$ctrl.getGames()"
                                     style="margin-left: auto;">
                         <md-radio-button value="{{i.GL_ID}}" class="md-primary"
                                          style="margin:8px 0px 8px 0px;"></md-radio-button>
                     </md-radio-group>
-
+                    <i class="material-icons" ng-click="$ctrl.removeGame(j.G_ID)">delete</i>
 
                 </div>
             </md-list-item>
@@ -35,7 +36,7 @@
                         <p>{{j.G_Name}}</p>
 
                         <i class="material-icons" ng-click="">insert_chart</i>
-                        <i class="material-icons" ng-click="">delete</i>
+                        <i class="material-icons" ng-click="$ctrl.removeGame(j.G_ID)">delete</i>
 
 
 
