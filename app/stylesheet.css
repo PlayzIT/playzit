@@ -138,6 +138,9 @@ body > div > div {
     flex-wrap:wrap;
 }
 
+.masterCardList {
+}
+
 
 .masterCard {
     margin-left: 20px;
@@ -168,3 +171,6 @@ body > div > div {
      margin-bottom: 30px;
  }
 
+md-list-item.md-3-line, md-list-item.md-3-line>.md-no-style {
+    min-height:44px;
+}

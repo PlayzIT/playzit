@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b71b0210-c5f9-4ab5-8302-55052be8a117" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/kommentareSerien.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/kommentarliste-serien.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/kommentarliste-spiele.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/kommentarlisteSpiele.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database_send_kommentar_serien.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database_send_kommentar_spiele.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/serie-kommentar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/spiel-kommentar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/liste-spiele.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/listeSpiele.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database_get_lists_spiele.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database_remove_list_spiele.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/spiel-listen.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/game-card.html" afterPath="$PROJECT_DIR$/app/components/game-card.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/kommentarliste.html" afterPath="$PROJECT_DIR$/app/components/kommentarliste.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/kommentarliste.js" afterPath="$PROJECT_DIR$/app/components/kommentarliste.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/serien-card-list.html" afterPath="$PROJECT_DIR$/app/components/serien-card-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/serien-card.html" afterPath="$PROJECT_DIR$/app/components/serien-card.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/serienCard.js" afterPath="$PROJECT_DIR$/app/components/serienCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/serienCardList.js" afterPath="$PROJECT_DIR$/app/components/serienCardList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database_select.php" afterPath="$PROJECT_DIR$/app/database_select.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/stylesheet.css" afterPath="$PROJECT_DIR$/app/stylesheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/angular-material-1.1.5/angular-material.min.css" afterPath="$PROJECT_DIR$/app/vendor/angular-material-1.1.5/angular-material.min.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +20,128 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <splitter split-orientation="horizontal" split-proportion="0.68251747">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="spiel-listen.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/spiel-listen.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3255">
+                  <caret line="155" column="75" lean-forward="false" selection-start-line="155" selection-start-column="61" selection-end-line="155" selection-end-column="75" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="liste-spiele.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/components/liste-spiele.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="609">
+                  <caret line="36" column="60" lean-forward="false" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#md-radio-group#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#md-radio-button#0;n#md-radio-group#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#md-content#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#md-content#1;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#1;n#md-content#1;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#md-content#1;n#div#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="database_remove_list_spiele.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/database_remove_list_spiele.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="42">
+                  <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+                  <folding>
+                    <marker date="1515572270727" expanded="true" signature="347:480" ph="INSERT INTO gamebew... " />
+                    <marker date="1515572270727" expanded="true" signature="657:780" ph="SELECT GB_ID... gamebew" />
+                    <marker date="1515572270727" expanded="true" signature="998:1103" ph="INSERT INTO gBew_ent_cat... " />
+                    <marker date="1515572270727" expanded="true" signature="1136:1243" ph="INSERT INTO gBew_ent_cat... " />
+                    <marker date="1515572270727" expanded="true" signature="1273:1377" ph="INSERT INTO gBew_ent_cat... " />
+                    <marker date="1515572270727" expanded="true" signature="1411:1519" ph="INSERT INTO gBew_ent_cat... " />
+                    <marker date="1515572270727" expanded="true" signature="1554:1663" ph="INSERT INTO gBew_ent_cat... " />
+                    <marker date="1515572270727" expanded="true" signature="1693:1797" ph="INSERT INTO gBew_ent_cat... " />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="database_send_bewertung_spiele.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/database_send_bewertung_spiele.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="630">
+                  <caret line="36" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="116" selection-end-column="3" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="listeSpiele.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/components/listeSpiele.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1197">
+                  <caret line="57" column="39" lean-forward="false" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="database_select.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/database_select.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="147">
+                  <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="spiel-kommentar.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/spiel-kommentar.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3339">
+                  <caret line="164" column="52" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="187" selection-end-column="7" />
+                  <folding>
+                    <marker date="1515162809829" expanded="true" signature="185:220" ph="SELECT G_Nam... Game" />
+                    <marker date="1515162809829" expanded="true" signature="392:516" ph="SELECT gcomm... gamecomment" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+          <file leaf-file-name="listeSpiele.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/components/listeSpiele.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2016">
+                  <caret line="96" column="2" lean-forward="false" selection-start-line="96" selection-start-column="2" selection-end-line="96" selection-end-column="2" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="stylesheet.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/stylesheet.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="402">
+                  <caret line="174" column="20" lean-forward="false" selection-start-line="174" selection-start-column="20" selection-end-line="174" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -42,6 +156,8 @@
     <findStrings>
       <find>maste</find>
       <find>toptoo</find>
+      <find>master</find>
+      <find>88px</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -55,16 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/database_insert.php" />
-        <option value="$PROJECT_DIR$/app/stylesheet.css" />
-        <option value="$PROJECT_DIR$/app/components/game-card-list.html" />
-        <option value="$PROJECT_DIR$/app/getUserId.php" />
-        <option value="$PROJECT_DIR$/app/database_send_bewertung_spiele.php" />
-        <option value="$PROJECT_DIR$/app/components/gameCardList.js" />
-        <option value="$PROJECT_DIR$/app/components/loginButton.html" />
-        <option value="$PROJECT_DIR$/app/anmelden.php" />
-        <option value="$PROJECT_DIR$/app/ausloggen.php" />
-        <option value="$PROJECT_DIR$/app/isLoggedIn.php" />
         <option value="$PROJECT_DIR$/app/components/anmelden.html" />
         <option value="$PROJECT_DIR$/app/getUserName.php" />
         <option value="$PROJECT_DIR$/app/spiel-bewerten.php" />
@@ -92,7 +198,6 @@
         <option value="$PROJECT_DIR$/app/components/kommentarliste.js" />
         <option value="$PROJECT_DIR$/app/components/kommentarlisteSpiele.html" />
         <option value="$PROJECT_DIR$/app/database_get_kommentar_spiele.php" />
-        <option value="$PROJECT_DIR$/app/database_select.php" />
         <option value="$PROJECT_DIR$/app/components/game-card.html" />
         <option value="$PROJECT_DIR$/app/spiel-kommentar.php" />
         <option value="$PROJECT_DIR$/app/components/kommentarliste-spiele.html" />
@@ -106,6 +211,17 @@
         <option value="$PROJECT_DIR$/app/components/serienCard.js" />
         <option value="$PROJECT_DIR$/app/components/serien-card.html" />
         <option value="$PROJECT_DIR$/app/components/serienCardList.js" />
+        <option value="$PROJECT_DIR$/app/database_get_lists_spiele.php" />
+        <option value="$PROJECT_DIR$/app/components/liste.html" />
+        <option value="$PROJECT_DIR$/app/components/liste.js" />
+        <option value="$PROJECT_DIR$/app/spiel-listen.php" />
+        <option value="$PROJECT_DIR$/app/database_get_games.php" />
+        <option value="$PROJECT_DIR$/app/database_select.php" />
+        <option value="$PROJECT_DIR$/app/components/listeSpiele.js" />
+        <option value="$PROJECT_DIR$/app/stylesheet.css" />
+        <option value="$PROJECT_DIR$/app/vendor/angular-material-1.1.5/angular-material.min.css" />
+        <option value="$PROJECT_DIR$/app/components/liste-spiele.html" />
+        <option value="$PROJECT_DIR$/app/database_remove_list_spiele.php" />
       </list>
     </option>
   </component>
@@ -151,6 +267,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,28 +286,12 @@
             <path>
               <item name="playzit" type="b2602c69:ProjectViewProjectNode" />
               <item name="playzit" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playzit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playzit" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playzit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playzit" type="462c0819:PsiDirectoryNode" />
               <item name="ressources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,7 +449,12 @@
       <workItem from="1514883290692" duration="8471000" />
       <workItem from="1514972719212" duration="3537000" />
       <workItem from="1515141367494" duration="14850000" />
-      <workItem from="1515400888544" duration="3251000" />
+      <workItem from="1515400888544" duration="9815000" />
+      <workItem from="1515426132621" duration="1221000" />
+      <workItem from="1515481345358" duration="27000" />
+      <workItem from="1515493219193" duration="659000" />
+      <workItem from="1515511574369" duration="5346000" />
+      <workItem from="1515572107290" duration="162000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1510843634847</created>
@@ -438,14 +547,22 @@
       <option name="project" value="LOCAL" />
       <updated>1515143652373</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Kommentarseiten und dazugehörige PHP-Dateien fertiggestellt">
+      <created>1515406747136</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1515406747136</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133378000" />
+    <option name="totallyTimeSpent" value="147357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -459,7 +576,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21911922" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23523094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -527,7 +644,8 @@
     <MESSAGE value="Impressum hinzugefügt" />
     <MESSAGE value="login programmiert" />
     <MESSAGE value="registrierungs-, profil-bearbeiten-, login- und serie-bewerten seite erstellt;&#10;Serien-Datenbank so gut wie die Spiele-Datenbank eingebunden" />
-    <option name="LAST_COMMIT_MESSAGE" value="registrierungs-, profil-bearbeiten-, login- und serie-bewerten seite erstellt;&#10;Serien-Datenbank so gut wie die Spiele-Datenbank eingebunden" />
+    <MESSAGE value="Kommentarseiten und dazugehörige PHP-Dateien fertiggestellt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kommentarseiten und dazugehörige PHP-Dateien fertiggestellt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -540,79 +658,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/registrieren-page.php" />
-    <entry file="file://$PROJECT_DIR$/app/master_spiele.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="164" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="171" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/registrieren.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <marker date="1514543158698" expanded="true" signature="437:500" ph="SELECT * FRO... user" />
-            <marker date="1514543158698" expanded="true" signature="602:729" ph="INSERT INTO user... " />
-            <marker date="1514543158698" expanded="true" signature="815:868" ph="select user_... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/bewertenSerien.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/stylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="73" column="1" lean-forward="true" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/master_serien.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="78" column="26" lean-forward="false" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/registrieren.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="72" column="12" lean-forward="false" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/registrieren-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="35" column="45" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="175" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/profil_bearbeiten.js" />
-    <entry file="file://$PROJECT_DIR$/app/components/profil_bearbeiten.html" />
-    <entry file="file://$PROJECT_DIR$/app/anzeigen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/profilb.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -648,19 +693,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/loginButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/bewertenSerien.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="33" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -672,30 +708,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/gameCardList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/kommentarliste.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="16" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#h4#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/bewertenSpiele.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="39" column="37" lean-forward="false" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -725,7 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,20 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-407">
           <caret line="136" column="53" lean-forward="false" selection-start-line="136" selection-start-column="53" selection-end-line="136" selection-end-column="53" />
-          <folding>
-            <marker date="1513873109341" expanded="true" signature="183:218" ph="SELECT G_Nam... Game" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spiel-kommentar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3339">
-          <caret line="164" column="52" lean-forward="false" selection-start-line="164" selection-start-column="52" selection-end-line="164" selection-end-column="52" />
-          <folding>
-            <marker date="1515162809829" expanded="true" signature="185:220" ph="SELECT G_Nam... Game" />
-            <marker date="1515162809829" expanded="true" signature="392:516" ph="SELECT gcomm... gamecomment" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,9 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="23" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-          <folding>
-            <marker date="1514889904133" expanded="true" signature="183:229" ph="SELECT S_Nam... series" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,7 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
           <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -772,19 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
           <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/kommentarliste-spiele.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="20" column="121" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-button#0;n#md-input-container#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -792,9 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1302">
           <caret line="163" column="52" lean-forward="false" selection-start-line="163" selection-start-column="52" selection-end-line="163" selection-end-column="52" />
-          <folding>
-            <marker date="1515402101755" expanded="true" signature="183:229" ph="SELECT S_Nam... series" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -802,19 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="28" column="59" lean-forward="false" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-button#0;n#md-input-container#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/serien-card-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -822,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -830,6 +797,138 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="22" column="57" lean-forward="false" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/profilBearbeiten.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-441">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bearbeiten.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ausloggen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database_connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database_insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database_send_bewertung_serien.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database_send_kommentar_serien.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database_send_kommentar_spiele.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/master_spiele.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="156" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="171" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/gameCardList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/kommentarliste-spiele.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="39" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/getUserId.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/loginButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/bewertenSpiele.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="39" column="37" lean-forward="false" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database_get_lists_spiele.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database_get_games.php" />
+    <entry file="file://$PROJECT_DIR$/app/spiel-kommentar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3339">
+          <caret line="164" column="52" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="187" selection-end-column="7" />
+          <folding>
+            <marker date="1515162809829" expanded="true" signature="185:220" ph="SELECT G_Nam... Game" />
+            <marker date="1515162809829" expanded="true" signature="392:516" ph="SELECT gcomm... gamecomment" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database_select.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/listeSpiele.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="57" column="39" lean-forward="false" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -838,106 +937,92 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="16" column="57" lean-forward="false" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/profilBearbeiten.js">
+    <entry file="file://$PROJECT_DIR$/app/components/serien-card-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-441">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/spiel-listen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3255">
+          <caret line="155" column="75" lean-forward="false" selection-start-line="155" selection-start-column="61" selection-end-line="155" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bearbeiten.php">
+    <entry file="file://$PROJECT_DIR$/app/vendor/angular-material-1.1.5/angular-material.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="5" column="141820" lean-forward="false" selection-start-line="5" selection-start-column="141816" selection-end-line="5" selection-end-column="141820" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="174" column="20" lean-forward="false" selection-start-line="174" selection-start-column="20" selection-end-line="174" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/images/icons/ic_delete_user_black_24px.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/vendor/material-icons-2.2.0/material-icons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/liste-spiele.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="36" column="60" lean-forward="false" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
           <folding>
-            <marker date="1514541746946" expanded="true" signature="867:919" ph="SELECT * fro... User" />
-            <marker date="1514541746946" expanded="true" signature="1077:1137" ph="UPDATE User " />
-            <marker date="1514541746946" expanded="true" signature="1423:1478" ph="UPDATE User " />
+            <element signature="n#style#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-radio-group#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-radio-button#0;n#md-radio-group#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-content#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-content#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#1;n#md-content#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#md-content#1;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/ausloggen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database_connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database_insert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database_select.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database_send_bewertung_spiele.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
-          <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="38" selection-end-column="22" />
+          <caret line="36" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="116" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database_send_bewertung_serien.php">
+    <entry file="file://$PROJECT_DIR$/app/database_remove_list_spiele.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="42">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <marker date="1514889216139" expanded="true" signature="346:484" ph="INSERT INTO seriesbew... " />
-            <marker date="1514889216139" expanded="true" signature="661:784" ph="SELECT GB_ID... gamebew" />
-            <marker date="1514889216139" expanded="true" signature="1003:1109" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1514889216139" expanded="true" signature="1140:1245" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1514889216139" expanded="true" signature="1280:1389" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1514889216139" expanded="true" signature="1419:1523" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1514889216139" expanded="true" signature="1555:1662" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1514889216139" expanded="true" signature="1692:1796" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1514889216139" expanded="true" signature="1826:1931" ph="INSERT INTO gBew_ent_cat... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database_send_kommentar_serien.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <marker date="1515401896795" expanded="true" signature="317:491" ph="INSERT INTO seriescomment... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database_send_kommentar_spiele.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-          <folding>
-            <marker date="1515163258663" expanded="true" signature="316:463" ph="INSERT INTO gamecomment... " />
-            <marker date="1515163258663" expanded="true" signature="316:483" ph="INSERT INTO gamecomment... " />
-            <marker date="1515163258663" expanded="true" signature="316:485" ph="INSERT INTO gamecomment... " />
+            <marker date="1515572270727" expanded="true" signature="347:480" ph="INSERT INTO gamebew... " />
+            <marker date="1515572270727" expanded="true" signature="657:780" ph="SELECT GB_ID... gamebew" />
+            <marker date="1515572270727" expanded="true" signature="998:1103" ph="INSERT INTO gBew_ent_cat... " />
+            <marker date="1515572270727" expanded="true" signature="1136:1243" ph="INSERT INTO gBew_ent_cat... " />
+            <marker date="1515572270727" expanded="true" signature="1273:1377" ph="INSERT INTO gBew_ent_cat... " />
+            <marker date="1515572270727" expanded="true" signature="1411:1519" ph="INSERT INTO gBew_ent_cat... " />
+            <marker date="1515572270727" expanded="true" signature="1554:1663" ph="INSERT INTO gBew_ent_cat... " />
+            <marker date="1515572270727" expanded="true" signature="1693:1797" ph="INSERT INTO gBew_ent_cat... " />
           </folding>
         </state>
       </provider>
