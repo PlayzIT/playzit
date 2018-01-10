@@ -15,7 +15,6 @@ if (count($data) > 0) {
     $now = getdate();
 
 
-    $_SESSION['userID'] = 10;
 
     $dateTimeString = date("Y-m-d H:i:s");
 
