@@ -17,16 +17,17 @@ if (count($data) > 0) {
 
 
     $dateTimeString = date("Y-m-d H:i:s");
+$content = htmlspecialchars($data->content);
 
-
-    $query = "INSERT INTO gamecomment(`fk_user`, `fk_game`, `datum`, `content`) VALUES (" . $_SESSION['userID'] . "," . $data->game . ",'" . $dateTimeString . "','".$data->content."')";
+    $query = "INSERT INTO gamecomment(`fk_user`, `fk_game`, `datum`, `content`) VALUES (" . $_SESSION['userID'] . "," . $data->game . ",'" . $dateTimeString . "','".$content."')";
+    echo $query;
     if ($stmt_insert = $mysqli->prepare($query)) {
         $stmt_insert->execute();
         $stmt_insert->fetch();
         $stmt_insert->close();
-        echo json_encode("{success:true}");
+        echo json_encode('{success: true}');
     }else{
-        echo json_encode("{success:false}");
+        echo json_encode("{success: false}");
     }
 
 

@@ -44,7 +44,7 @@
 </head>
 
 <body layout="column" style="height:100%">
-<md-content layout="row" style="">
+<md-content layout="row" >
 
     <div flex="15" flex layout="column">
         <md-sidenav
@@ -103,7 +103,7 @@
         </md-toolbar>
 
 
-        <div layout="row" layout-align="center start" flex id="contentDiv" >
+        <div layout="row" layout-align="center start" flex id="contentDiv" class="background_games">
 
 
 

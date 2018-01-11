@@ -15,28 +15,25 @@ app.controller("BewertenSerien", function ($http) {
     this.error=false;
     this.Kategorien = {};
     this.serienId;
+    $ctrl.logged = false;
+    this.$onInit = function () {
+        this.loggedIn();
+    };
 
+    this.loggedIn = function () {
 
-    this.loggedIn = function(){
-        var logged=false;
-        $.post("isLoggedIn.php", {
+        $http.post("isLoggedIn.php", function () {
+
         }).then(function (data) {
-            if(data== "1"){
-
-                logged= true;
-
-            }else{
-
-                logged= false;
-            }
+            $ctrl.logged = data.data == "1";
         });
-        return logged;
+
     };
 
 
     this.bewertungSenden = function () {
 
-        if($ctrl.loggedIn()){
+        if($ctrl.logged){
             $http.post("database_send_bewertung_serien.php",{
                 'schnitt':this.Kategorien.schnitt,
 				'kamera':this.Kategorien.kamera,

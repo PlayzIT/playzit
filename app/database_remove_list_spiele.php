@@ -20,7 +20,6 @@ session_start();
 require_once "database_connection.php";
 
 $data = json_decode(file_get_contents("php://input"));
-
 if (count($data) > 0) {
 
     $now = getdate();
@@ -28,7 +27,10 @@ if (count($data) > 0) {
 
 
     $statement['list']="DELETE FROM gamelist where GL_ID=".$data->listId.";";
-    $statement['game']="DELETE FROM gPartOfGL where (GList_ID=".$data->listId.") AND (Game_ID=".$data->gameId.");";
+    if ($data->state=="game"){
+        $statement['game']="DELETE FROM gPartOfGL where (GList_ID=".$data->listId.") AND (Game_ID=".$data->gameId.");";
+    }
+
 
     $query=$statement[$data->state];
 

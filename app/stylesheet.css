@@ -5,6 +5,19 @@
     background-position: center;
 }
 
+.background_serien {
+    background-image: url('../ressources/PIT_Background_Movies.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.background_games {
+    background-image: url('../ressources/PIT_Background_Games.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
 
 
 

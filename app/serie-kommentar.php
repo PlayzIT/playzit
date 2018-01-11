@@ -124,7 +124,7 @@ if ($game = $mysqli->prepare($query)) {
 
 
 
-        <div layout="row" layout-align="center start" flex id="contentDiv" >
+        <div layout="row" layout-align="center start" flex id="contentDiv"  class="background_serien">
 
 
 

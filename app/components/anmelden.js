@@ -17,7 +17,7 @@ app.controller("anmeldenController", ['$http', function ($http) {
                 var url = window.location.pathname;
                 var filename = url.substring(url.lastIndexOf('/')+1);
                 if(filename!=="start.html"){
-                    window.location = "start.html";
+                    //window.location = "start.html";
                 }
 
                 $ctrl.loggedIn = true;

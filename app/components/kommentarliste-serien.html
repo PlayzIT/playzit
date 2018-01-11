@@ -19,6 +19,7 @@
 <div style="display:flex; justify-content: center; flex-direction: column;">
     <md-input-container class="">
         <textarea ng-model="$ctrl.kommentar" placeholder="Dein Kommentar" style=""></textarea>
+        <span ng-show="$ctrl.error" style="color:red;">Du bist nicht eingeloggt!</span>
         <md-button class="md-raised md-primary" style="margin-left:0px;margin-right:0px;background-color:#480C0E;" ng-click="$ctrl.kommentarHinzufugen()">Kommentar posten</md-button>
     </md-input-container>
 

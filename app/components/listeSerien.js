@@ -1,7 +1,7 @@
 "use strict";
 
-app.component("listeSpiele", {
-    templateUrl: "components/liste-spiele.html",
+app.component("listeSerien", {
+    templateUrl: "components/liste-serien.html",
     bindings: {},
     controller: "listeSpieleController"
 });
@@ -12,7 +12,7 @@ app.controller("listeSpieleController", function ($http) {
     this.listClicked;
     this.lists=[];
     $ctrl.userId;
-    this.games=[];
+    this.serien=[];
     this.loading=true;
     this.$onInit = function () {
         $http.post("getUserId.php", {
@@ -21,13 +21,13 @@ app.controller("listeSpieleController", function ($http) {
             $ctrl.userId=data;
         });
 
-      this.getLists();
+        this.getLists();
     };
 
 
 
     this.getLists = function(){
-        $http.post("database_get_lists_spiele.php", {
+        $http.post("database_get_lists_serien.php", {
 
             },
             console.log("data request")
@@ -42,33 +42,33 @@ app.controller("listeSpieleController", function ($http) {
     };
 
 
-    this.getGames = function(){
+    this.getSerien = function(){
         $http.post("database_select.php", {
-                'query':"select * from game join gPartOfGL on(Game_ID=G_ID) " +
-                "where GList_ID = "+$ctrl.listClicked+";"
+                'query':"select * from series join sPartOfSL on(Series_ID=S_ID) " +
+                "where SList_ID = "+$ctrl.listClicked+";"
             },
             console.log("data request")
         ).then(function (data) {
             if(data.data=="{success: false}"){
-                $ctrl.games.splice(0,$ctrl.games.length);
+                $ctrl.serien.splice(0,$ctrl.serien.length);
                 $ctrl.hideRight = true;
             }else{
-                $ctrl.games.splice(0,$ctrl.games.length);
-                $ctrl.games = data.data;
+                $ctrl.serien.splice(0,$ctrl.serien.length);
+                $ctrl.serien = data.data;
                 $ctrl.hideRight = false;
             }
             $ctrl.loading=false;
         });
     };
 
-    this.removeGame = function(gameId){
-        $http.post("database_remove_list_spiele.php", {
+    this.removeSerien = function(serienId){
+        $http.post("database_remove_list_serien.php", {
             'state':"game",
-            'gameId':gameId,
+            'gameId':serienId,
             'listId':$ctrl.listClicked
         }).then(function (data) {
             $ctrl.loading=true;
-            $ctrl.getGames();
+            $ctrl.getSerien();
         });
     };
 
@@ -76,7 +76,7 @@ app.controller("listeSpieleController", function ($http) {
     this.removeList = function(listId){
 
 
-        $http.post("database_remove_list_spiele.php", {
+        $http.post("database_remove_list_serien.php", {
             'state':"list",
             'listId':listId
         }).then(function (data) {
@@ -86,7 +86,7 @@ app.controller("listeSpieleController", function ($http) {
     };
 
     this.goTo = function(id){
-        location.href="spiel-ansehen.php?id="+id;
+        location.href="serie-ansehen.php?id="+id;
     }
 
 });

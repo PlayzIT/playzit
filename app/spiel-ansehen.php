@@ -73,6 +73,7 @@ if ($stmt_insert = $mysqli->prepare($query2)) {
     <script src="components/bewertenFeld.js"></script>
     <script src="components/kommentarlisteSpiele.js"></script>
     <script src="components/loginButton.js"></script>
+    <script src="components/bewertungen_anzeigen.js"></script>
 </head>
 
 <body layout="column" style="height:100%">
@@ -162,7 +163,9 @@ if ($stmt_insert = $mysqli->prepare($query2)) {
 
                 <div class="masterCard" >
 
-                    <kommentarliste-spiele flex="100" game-id="<?php echo $id;?>"></kommentarliste-spiele>
+
+
+                    <bewertung typ="game" id="<?php echo $id;?>"></bewertung>
 
 
 

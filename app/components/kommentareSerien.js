@@ -12,7 +12,24 @@ app.controller("kommentarlisteSerienController", function ($http) {
     this.kommentare = [];
     this.kommentar;
     var $ctrl = this;
+    this.error=false;
+    $ctrl.logged = false;
+
+    this.loggedIn = function () {
+
+        $http.post("isLoggedIn.php", function () {
+
+        }).then(function (data) {
+            $ctrl.logged = data.data == "1";
+        });
+
+    };
+
+
+
     this.$onInit = function () {
+
+        this.loggedIn();
         $http.post("database_select.php", {
                 'query': "SELECT scommentID, nickname, content, fk_serie FROM seriescomment join user on (user_id=fk_user) where fk_serie="+$ctrl.seriesId+" order by datum desc;",
             },
@@ -23,15 +40,25 @@ app.controller("kommentarlisteSerienController", function ($http) {
         });
     };
 
-
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.replace(new RegExp(search, 'g'), replacement);
+    };
     this.kommentarHinzufugen = function () {
-        $http.post("database_send_kommentar_serien.php", {
-            'content': this.kommentar,
-            'series': this.seriesId
+        this.kommentar = this.kommentar.replaceAll("'", "\\'");
+        this.kommentar= this.kommentar.replaceAll('"', '\\"');
+        if($ctrl.logged){
+            $http.post("database_send_kommentar_serien.php", {
+                'content': this.kommentar,
+                'series': this.seriesId
 
-        }).then(function (data) {
-            location.reload();
-        });
+            }).then(function (data) {
+                location.reload();
+            });
+        }else{
+            this.error=true;
+        }
+
     };
 
 

@@ -1,0 +1,19 @@
+<br><br>
+<section layout="column" flex>
+    <div layout="row" ng-repeat="d in $ctrl.result">
+        <div flex="10">
+        {{d[0]['nickname']}}
+        </div>
+        <div layout="column">
+        <div flex="20" ng-repeat="x in d" layout="row">
+            <div flex="80">
+            {{x['cat_name']}}
+            </div>
+            <div flex="20">
+            {{x['bewertungsgrad']}}/10
+            </div>
+        </div>
+            <br/>
+        </div>
+    </div>
+</section>

@@ -28,7 +28,7 @@
 				
 				$_SESSION[ 'userID' ] = $userID;
 				$_SESSION[ 'benutzername' ] = $nickname;
-				
+
 				echo true;
 			}else{
 				echo false;
@@ -38,4 +38,6 @@
 			echo false;
 		}
 	}
-?>
+
+
+

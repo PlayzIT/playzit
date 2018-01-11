@@ -2,36 +2,21 @@
 /**
  * Created by IntelliJ IDEA.
  * User: hofma
- * Date: 14.12.2017
- * Time: 17:18
- */
-
-
+ * Date: 10.01.2018
+ * Time: 15:02
+*/
 $id = $_GET['id'];
 
 session_start();
 require_once "database_connection.php";
 
-
-$query1 = 'SELECT G_Name FROM Game WHERE G_ID='.$id.';';
-if ($game = $mysqli->prepare($query1)) {
+$query = 'SELECT S_Name,S_Images FROM series WHERE S_ID='.$id.';';
+if ($game = $mysqli->prepare($query)) {
     $game->execute();
-    $game->bind_result($gameName);
+    $game->bind_result($serienName, $serienBild);
     $game->store_result();
     $game->fetch();
 }
-
-
-
-$query2 = "SELECT gcommentID, nickname, content FROM gamecomment join user on (user_id=fk_user) where fk_game=" . $id . "order by datum";
-if ($stmt_insert = $mysqli->prepare($query2)) {
-    $stmt_insert->execute();
-    $stmt_insert->bind_result($result);
-    $stmt_insert->fetch();
-    $stmt_insert->close();
-    $output= json_encode($result);
-}
-
 
 ?>
 
@@ -67,30 +52,29 @@ if ($stmt_insert = $mysqli->prepare($query2)) {
     <script type="text/javascript" src="vendor/angular-ui-router-1.0.8/angular-ui-router.min.js"></script>
 
     <script src="app.js"></script>
-    <script src="components/gameCard.js"></script>
-    <script src="components/gameCardList.js"></script>
-    <script src="components/bewertenSpiele.js"></script>
-    <script src="components/bewertenFeld.js"></script>
-    <script src="components/kommentarlisteSpiele.js"></script>
+    <script src="./components/serienCard.js"></script>
+    <script src="components/serienCardList.js"></script>
     <script src="components/loginButton.js"></script>
+    <script src="components/bewertenSerien.js"></script>
+    <script src="components/bewertenFeld.js"></script>
+    <script src="components/bewertungen_anzeigen.js"></script>
 </head>
 
-<body layout="column" style="height:100%">
-<md-content layout="row" style="" >
+<body layout="column" >
+<md-content layout="row" class="">
 
-    <div flex="15" flex layout="column">
+    <div flex="15" flex>
         <md-sidenav
             class="md-sidenav sideNav"
             md-component-id="left"
             md-is-locked-open="true"
             md-whiteframe="4"
             flex="100">
-            <md-toolbar layout="row" layout-align="start center" class="sideNavToolBar"
-                        style="background-color: #173E62">
-                <img src="../ressources/Logo_blau_fertig.png">
+            <md-toolbar layout="row" layout-align="start center" class="sideNavToolBar" style="background-color:#480C0E ">
+                <img src="../ressources/Logo_rot_fertig.png">
 
             </md-toolbar>
-            <md-content layout-padding style="height: calc(100vh - 64px)" layout="column" class="sideNavContent">
+            <md-content layout-padding style="height: calc(100vh - 64px)" layout="column" class="sideNavContent" >
                 <md-button>Test</md-button>
                 <md-button>Test</md-button>
                 <h3>Abteilung</h3>
@@ -110,7 +94,7 @@ if ($stmt_insert = $mysqli->prepare($query2)) {
     </div>
 
     <div layout="column" flex="85">
-        <md-toolbar id="topToolBar" layout="row"  layout-align="start center" style="background-color: #173E62">
+        <md-toolbar id="topToolBar"   layout="row" layout-align="start center" style="background-color:#480C0E ">
 
             <div layout="column" layout-align="start start" flex>
                 <h2 class="md-toolbar-tools">PlayzIT</h2>
@@ -129,44 +113,59 @@ if ($stmt_insert = $mysqli->prepare($query2)) {
 
             </div>
             <div layout-align="center center" class="topNavBarProfileButton">
+
                 <login-button></login-button>
             </div>
 
         </md-toolbar>
 
 
-        <div layout="row" layout-align="center start" flex id="contentDiv" class="background_games">
+
+
+        <div layout="row" layout-align="center start" flex id="contentDiv"  class="background_serien">
 
 
 
             <!--md-theme="docs-dark"-->
 
-            <md-card class="bewertungsCard">
-
-
-                <md-toolbar style="background-color: #173E62">
+            <md-card
+                class="bewertungsCard">
+                <md-toolbar style="background-color: #480C0E">
                     <div class="md-toolbar-tools">
                         <h3>
-                            <span>Bewertung von <?php echo $gameName;?></span>
+                            <span>Bewertung von <?php echo $serienName?></span>
                         </h3>
                     </div>
                 </md-toolbar>
 
 
+                <!--
+                <md-card-title-text layout="row" layout-align="center ">
+                    <span class="md-headline" layout-align="center center">Spiele-Abteilung</span>
+                </md-card-title-text>
+                -->
+                <!--<div layout="row" class="masterCardButtonBox" layout-align="center start" flex>
+                <md-button flex="50" class="md-raised md-primary ">Bewertung abgeben</md-button>
+                <md-button flex="50" class="md-raised md-primary ">Bewertung abgeben</md-button>
+            </div>
+                <div layout="row"  class="masterCardButtonBox" layout-align="center start" flex>
+                    <md-button flex="50" class="md-raised md-primary ">Bewertung abgeben</md-button>
+                    <md-button flex="50" class="md-raised md-primary">Bewertung abgeben</md-button>
+                </div>
+    -->
 
 
-                <img ng-src="http://cdn.akamai.steamstatic.com/steam/apps/<?php echo $id;?>/header.jpg" class="md-card-image"
-                     alt="<?php echo $id;?>">
-
-
+                <img src="<?php echo $serienBild?>" class="md-card-image">
 
                 <div class="masterCard" >
 
-                    <kommentarliste-spiele flex="100" game-id="<?php echo $id;?>"></kommentarliste-spiele>
 
+                    <bewertung typ="serie" id="<?php echo $id;?>"></bewertung>
 
 
                 </div>
+
+
 
 
 
@@ -179,8 +178,10 @@ if ($stmt_insert = $mysqli->prepare($query2)) {
         </div>
 
     </div>
-
 </md-content>
+
+
+
 
 
 </body>

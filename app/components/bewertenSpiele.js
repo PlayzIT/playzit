@@ -1,10 +1,10 @@
 "use strict";
 
 app.component("bewertenSpiele", {
-	templateUrl: "components/bewertenSpiele.html",
-	controller: "BewertenSpiele",
+    templateUrl: "components/bewertenSpiele.html",
+    controller: "BewertenSpiele",
     bindings: {
-	    gameId: "<"
+        gameId: "<"
     }
 });
 
@@ -12,45 +12,40 @@ app.component("bewertenSpiele", {
 app.controller("BewertenSpiele", function ($http) {
     var $ctrl = this;
     var that = this;
-    this.error=false;
+    this.error = false;
     this.Kategorien = {};
-    this.gameId;
+    $ctrl.logged = false;
 
 
-    this.loggedIn = function(){
-        $.post("isLoggedIn.php", {
+    this.$onInit = function () {
+          this.loggedIn();
+    };
+
+    this.loggedIn = function () {
+            $http.post("isLoggedIn.php", function () {
         }).then(function (data) {
-            if(data== "1"){
-                return true
-            }else{
-                return false;
-            }
+            $ctrl.logged = data.data == "1";
         });
     };
 
 
-
-
     this.bewertungSenden = function () {
+        if ($ctrl.logged) {
+            $http.post("database_send_bewertung_spiele.php", {
+                'grafik': this.Kategorien.grafik,
+                'gameplay': this.Kategorien.gameplay,
+                'audio': this.Kategorien.audio,
+                'steuerung': this.Kategorien.steuerung,
+                'charaktere': this.Kategorien.charaktere,
+                'story': this.Kategorien.story,
+                'game': this.gameId
 
-        if($ctrl.loggedIn()){
-            $http.post("database_send_bewertung_spiele.php",{
-                'grafik' : this.Kategorien.grafik,
-                'gameplay' : this.Kategorien.gameplay,
-                'audio' : this.Kategorien.audio,
-                'steuerung' : this.Kategorien.steuerung,
-                'charaktere' : this.Kategorien.charaktere,
-                'story' : this.Kategorien.story,
-                'game' : this.gameId
-
-            }).then(function (data){
+            }).then(function (data) {
                 window.location = "master_spiele.html";
             });
-        }else{
+        } else {
             this.error = true;
         }
-
-
 
 
     }

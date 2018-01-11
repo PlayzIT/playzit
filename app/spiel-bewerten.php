@@ -63,7 +63,7 @@ if ($game = $mysqli->prepare($query)) {
 </head>
 
 <body layout="column" style="height:100%">
-<md-content layout="row" style="">
+<md-content layout="row" style="" >
 
     <div flex="15" flex layout="column">
         <md-sidenav
@@ -122,7 +122,7 @@ if ($game = $mysqli->prepare($query)) {
         </md-toolbar>
 
 
-        <div layout="row" layout-align="center start" flex id="contentDiv" class="background">
+        <div layout="row" layout-align="center start" flex id="contentDiv" class="background_games">
 
 
 
