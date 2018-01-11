@@ -1,24 +1,4 @@
-<?php
-/**
- * Created by IntelliJ IDEA.
- * User: hofma
- * Date: 10.01.2018
- * Time: 15:02
-*/
-$id = $_GET['id'];
 
-session_start();
-require_once "database_connection.php";
-
-$query = 'SELECT S_Name,S_Images FROM series WHERE S_ID='.$id.';';
-if ($game = $mysqli->prepare($query)) {
-    $game->execute();
-    $game->bind_result($serienName, $serienBild);
-    $game->store_result();
-    $game->fetch();
-}
-
-?>
 
 <!DOCTYPE html>
 <html lang="de" ng-app="playzit">
@@ -52,12 +32,10 @@ if ($game = $mysqli->prepare($query)) {
     <script type="text/javascript" src="vendor/angular-ui-router-1.0.8/angular-ui-router.min.js"></script>
 
     <script src="app.js"></script>
-    <script src="./components/serienCard.js"></script>
-    <script src="components/serienCardList.js"></script>
     <script src="components/loginButton.js"></script>
-    <script src="components/bewertenSerien.js"></script>
-    <script src="components/bewertenFeld.js"></script>
-    <script src="components/bewertungen_anzeigen.js"></script>
+    <script src="components/registrieren.js"></script>
+    <script src="components/profilBearbeiten.js"></script>
+    <script src="components/impressum.js"></script>
 </head>
 
 <body layout="column" >
@@ -65,13 +43,13 @@ if ($game = $mysqli->prepare($query)) {
 
     <div flex="15" flex>
         <md-sidenav
-            class="md-sidenav sideNav"
-            md-component-id="left"
-            md-is-locked-open="true"
-            md-whiteframe="4"
-            flex="100">
-            <md-toolbar layout="row" layout-align="start center" class="sideNavToolBar" style="background-color:#480C0E ">
-                <img src="../ressources/Logo_rot_fertig.png">
+                class="md-sidenav sideNav"
+                md-component-id="left"
+                md-is-locked-open="true"
+                md-whiteframe="4"
+                flex="100">
+            <md-toolbar layout="row" layout-align="start center" class="sideNavToolBar">
+                <img src="../ressources/logo.png">
 
             </md-toolbar>
             <md-content layout-padding style="height: calc(100vh - 64px)" layout="column" class="sideNavContent" >
@@ -97,7 +75,7 @@ if ($game = $mysqli->prepare($query)) {
     </div>
 
     <div layout="column" flex="85">
-        <md-toolbar id="topToolBar"   layout="row" layout-align="start center" style="background-color:#480C0E ">
+        <md-toolbar id="topToolBar"   layout="row" layout-align="start center" >
 
             <div layout="column" layout-align="start start" flex>
                 <h2 class="md-toolbar-tools">PlayzIT</h2>
@@ -111,12 +89,12 @@ if ($game = $mysqli->prepare($query)) {
                     </md-button>
 
 
+
                 </md-menu-bar>
 
 
             </div>
             <div layout-align="center center" class="topNavBarProfileButton">
-
                 <login-button></login-button>
             </div>
 
@@ -125,18 +103,18 @@ if ($game = $mysqli->prepare($query)) {
 
 
 
-        <div layout="row" layout-align="center start" flex id="contentDiv"  class="background_serien">
+        <div layout="row" layout-align="center start" flex id="contentDiv" >
 
 
 
             <!--md-theme="docs-dark"-->
 
             <md-card
-                class="bewertungsCard">
-                <md-toolbar style="background-color: #480C0E">
+                    class="contentCard">
+                <md-toolbar style="">
                     <div class="md-toolbar-tools">
                         <h3>
-                            <span>Bewertung von <?php echo $serienName?></span>
+                            <span>Impressum</span>
                         </h3>
                     </div>
                 </md-toolbar>
@@ -155,21 +133,30 @@ if ($game = $mysqli->prepare($query)) {
                     <md-button flex="50" class="md-raised md-primary ">Bewertung abgeben</md-button>
                     <md-button flex="50" class="md-raised md-primary">Bewertung abgeben</md-button>
                 </div>
-    -->
+-->
 
 
-                <img src="<?php echo $serienBild?>" class="md-card-image">
 
-                <div class="masterCard" >
+                <!--
+
+                                        <div flex layout-align="center start" class="masterCardGameCard">
 
 
-                    <bewertung typ="serie" id="<?php echo $id;?>"></bewertung>
 
+
+                                                <game-card name="Half-Life" id="70" description="bla bla bla bla bla bla bla bla blla bla bla bla  bla blabla bla bla bla bla bla bla bla bla"></game-card>
+                                                <game-card name="Half-Life" id="70" description="bla bla blala bla bla bla bla bla la bla bla blaa bla blabla bla bla bla bla bla bla bla bla"></game-card>
+                                                <game-card name="Half-Life" id="70" description="bla bla bla bla  bla bbla blblabla bla bla b bla bla blabla bla bla bla bla bla bla bla bla"></game-card>
+
+
+                                        </div>
+
+
+                -->
+                <div flex layout-align="center start" class="masterCardGameCard">
+                    <impressum flex="100"></impressum>
 
                 </div>
-
-
-
 
 
 
@@ -179,6 +166,7 @@ if ($game = $mysqli->prepare($query)) {
 
 
         </div>
+
 
     </div>
 </md-content>

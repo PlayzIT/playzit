@@ -72,7 +72,7 @@
                 <md-button>Test</md-button>
 
 
-                <md-button id="sideNavButton">Impressum</md-button>
+                <md-button id="sideNavButton" href="impressum.html">Impressum</md-button>
             </md-content>
         </md-sidenav>
     </div>
