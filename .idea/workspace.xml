@@ -2,40 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b71b0210-c5f9-4ab5-8302-55052be8a117" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bewertungen.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/bewertungen_anzeigen.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/bewertungen_anzeigen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/liste-serien.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/listeSerien.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database_get_lists_serien.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/serie-ansehen.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/serie-listen.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/spiel-ansehen.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/kommentarliste.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/kommentarliste.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ressources/PIT_Background_Games v2.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/liste_erstellen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/liste_erstellen.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/anmelden.js" afterPath="$PROJECT_DIR$/app/components/anmelden.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/bewertenSerien.js" afterPath="$PROJECT_DIR$/app/components/bewertenSerien.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/bewertenSpiele.js" afterPath="$PROJECT_DIR$/app/components/bewertenSpiele.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/kommentareSerien.js" afterPath="$PROJECT_DIR$/app/components/kommentareSerien.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/kommentarliste-serien.html" afterPath="$PROJECT_DIR$/app/components/kommentarliste-serien.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/kommentarliste-spiele.html" afterPath="$PROJECT_DIR$/app/components/kommentarliste-spiele.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/kommentarlisteSpiele.js" afterPath="$PROJECT_DIR$/app/components/kommentarlisteSpiele.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/liste-spiele.html" afterPath="$PROJECT_DIR$/app/components/liste-spiele.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/listeSpiele.js" afterPath="$PROJECT_DIR$/app/components/listeSpiele.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/login-button.html" afterPath="$PROJECT_DIR$/app/components/login-button.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database_remove_list_spiele.php" afterPath="$PROJECT_DIR$/app/database_remove_list_spiele.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database_send_kommentar_spiele.php" afterPath="$PROJECT_DIR$/app/database_send_kommentar_spiele.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/master_serien.html" afterPath="$PROJECT_DIR$/app/master_serien.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/master_spiele.html" afterPath="$PROJECT_DIR$/app/master_spiele.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/registrieren.php" afterPath="$PROJECT_DIR$/app/registrieren.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/serie-bewerten.php" afterPath="$PROJECT_DIR$/app/serie-bewerten.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/serie-kommentar.php" afterPath="$PROJECT_DIR$/app/serie-kommentar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spiel-bewerten.php" afterPath="$PROJECT_DIR$/app/spiel-bewerten.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spiel-kommentar.php" afterPath="$PROJECT_DIR$/app/spiel-kommentar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spiel-listen.php" afterPath="$PROJECT_DIR$/app/spiel-listen.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/stylesheet.css" afterPath="$PROJECT_DIR$/app/stylesheet.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,8 +43,8 @@
             <state relative-caret-position="2793">
               <caret line="138" column="99" lean-forward="false" selection-start-line="138" selection-start-column="99" selection-end-line="138" selection-end-column="99" />
               <folding>
-                <marker date="1515669157375" expanded="true" signature="185:220" ph="SELECT G_Nam... Game" />
-                <marker date="1515669157375" expanded="true" signature="392:516" ph="SELECT gcomm... gamecomment" />
+                <marker date="1515671422351" expanded="true" signature="185:220" ph="SELECT G_Nam... Game" />
+                <marker date="1515671422351" expanded="true" signature="392:516" ph="SELECT gcomm... gamecomment" />
               </folding>
             </state>
           </provider>
@@ -87,7 +56,7 @@
             <state relative-caret-position="2604">
               <caret line="124" column="101" lean-forward="false" selection-start-line="124" selection-start-column="101" selection-end-line="124" selection-end-column="101" />
               <folding>
-                <marker date="1515669157362" expanded="true" signature="180:226" ph="SELECT S_Nam... series" />
+                <marker date="1515671422342" expanded="true" signature="180:226" ph="SELECT S_Nam... series" />
               </folding>
             </state>
           </provider>
@@ -121,22 +90,32 @@
             <state relative-caret-position="349">
               <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
-                <marker date="1515670275165" expanded="true" signature="437:500" ph="SELECT * FRO... user" />
-                <marker date="1515670275165" expanded="true" signature="602:729" ph="INSERT INTO user... " />
-                <marker date="1515670275165" expanded="true" signature="815:868" ph="select user_... user" />
+                <marker date="1515671422339" expanded="true" signature="437:500" ph="SELECT * FRO... user" />
+                <marker date="1515671422339" expanded="true" signature="602:729" ph="INSERT INTO user... " />
+                <marker date="1515671422339" expanded="true" signature="815:868" ph="select user_... user" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serie-bewerten.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="serie-bewerten.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/serie-bewerten.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
               <caret line="83" column="29" lean-forward="false" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
               <folding>
-                <marker date="1515669157386" expanded="true" signature="183:229" ph="SELECT S_Nam... series" />
+                <marker date="1515671422344" expanded="true" signature="183:229" ph="SELECT S_Nam... series" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="liste_erstellen.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/components/liste_erstellen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,7 +126,7 @@
             <state relative-caret-position="2541">
               <caret line="126" column="101" lean-forward="false" selection-start-line="126" selection-start-column="101" selection-end-line="126" selection-end-column="101" />
               <folding>
-                <marker date="1515669157423" expanded="true" signature="183:229" ph="SELECT S_Nam... series" />
+                <marker date="1515671422347" expanded="true" signature="183:229" ph="SELECT S_Nam... series" />
               </folding>
             </state>
           </provider>
@@ -598,7 +577,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167648000" />
+    <option name="totallyTimeSpent" value="167676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -606,6 +585,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -701,13 +681,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/components/gameCardList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/getUserId.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -799,9 +772,9 @@
         <state relative-caret-position="210">
           <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
           <folding>
-            <marker date="1515575282414" expanded="true" signature="382:415" ph="DELETE FROM " />
-            <marker date="1515575282414" expanded="true" signature="382:434" ph="DELETE FROM " />
-            <marker date="1515575282414" expanded="true" signature="495:583" ph="DELETE FROM " />
+            <marker date="1515671422329" expanded="true" signature="382:415" ph="DELETE FROM " />
+            <marker date="1515671422329" expanded="true" signature="382:434" ph="DELETE FROM " />
+            <marker date="1515671422329" expanded="true" signature="495:583" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -897,7 +870,7 @@
         <state relative-caret-position="244">
           <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
           <folding>
-            <marker date="1515591652708" expanded="true" signature="360:523" ph="INSERT INTO gamecomment... " />
+            <marker date="1515671422331" expanded="true" signature="360:523" ph="INSERT INTO gamecomment... " />
           </folding>
         </state>
       </provider>
@@ -915,7 +888,7 @@
         <state relative-caret-position="126">
           <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding>
-            <marker date="1515592141425" expanded="true" signature="162:201" ph="select * fro... serieslist" />
+            <marker date="1515671422326" expanded="true" signature="162:201" ph="select * fro... serieslist" />
           </folding>
         </state>
       </provider>
@@ -964,8 +937,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1515533798000" expanded="true" signature="444:802" ph="select user.... gamebew" />
-            <marker date="1515533798000" expanded="true" signature="832:1204" ph="select user.... seriesbew" />
+            <marker date="1515671422297" expanded="true" signature="444:802" ph="select user.... gamebew" />
+            <marker date="1515671422297" expanded="true" signature="832:1204" ph="select user.... seriesbew" />
           </folding>
         </state>
       </provider>
@@ -1013,7 +986,7 @@
         <state relative-caret-position="2499">
           <caret line="124" column="99" lean-forward="false" selection-start-line="124" selection-start-column="99" selection-end-line="124" selection-end-column="99" />
           <folding>
-            <marker date="1515669157411" expanded="true" signature="183:218" ph="SELECT G_Nam... Game" />
+            <marker date="1515671422353" expanded="true" signature="183:218" ph="SELECT G_Nam... Game" />
           </folding>
         </state>
       </provider>
@@ -1023,8 +996,8 @@
         <state relative-caret-position="2772">
           <caret line="137" column="99" lean-forward="false" selection-start-line="137" selection-start-column="99" selection-end-line="137" selection-end-column="99" />
           <folding>
-            <marker date="1515669157333" expanded="true" signature="185:220" ph="SELECT G_Nam... Game" />
-            <marker date="1515669157333" expanded="true" signature="392:516" ph="SELECT gcomm... gamecomment" />
+            <marker date="1515671422356" expanded="true" signature="185:220" ph="SELECT G_Nam... Game" />
+            <marker date="1515671422356" expanded="true" signature="392:516" ph="SELECT gcomm... gamecomment" />
           </folding>
         </state>
       </provider>
@@ -1052,7 +1025,7 @@
         <state relative-caret-position="2604">
           <caret line="124" column="101" lean-forward="false" selection-start-line="124" selection-start-column="101" selection-end-line="124" selection-end-column="101" />
           <folding>
-            <marker date="1515669157362" expanded="true" signature="180:226" ph="SELECT S_Nam... series" />
+            <marker date="1515671422342" expanded="true" signature="180:226" ph="SELECT S_Nam... series" />
           </folding>
         </state>
       </provider>
@@ -1062,7 +1035,7 @@
         <state relative-caret-position="2541">
           <caret line="126" column="101" lean-forward="false" selection-start-line="126" selection-start-column="101" selection-end-line="126" selection-end-column="101" />
           <folding>
-            <marker date="1515669157423" expanded="true" signature="183:229" ph="SELECT S_Nam... series" />
+            <marker date="1515671422347" expanded="true" signature="183:229" ph="SELECT S_Nam... series" />
           </folding>
         </state>
       </provider>
@@ -1082,8 +1055,8 @@
         <state relative-caret-position="2793">
           <caret line="138" column="99" lean-forward="false" selection-start-line="138" selection-start-column="99" selection-end-line="138" selection-end-column="99" />
           <folding>
-            <marker date="1515669157375" expanded="true" signature="185:220" ph="SELECT G_Nam... Game" />
-            <marker date="1515669157375" expanded="true" signature="392:516" ph="SELECT gcomm... gamecomment" />
+            <marker date="1515671422351" expanded="true" signature="185:220" ph="SELECT G_Nam... Game" />
+            <marker date="1515671422351" expanded="true" signature="392:516" ph="SELECT gcomm... gamecomment" />
           </folding>
         </state>
       </provider>
@@ -1113,9 +1086,9 @@
         <state relative-caret-position="349">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
-            <marker date="1515670275165" expanded="true" signature="437:500" ph="SELECT * FRO... user" />
-            <marker date="1515670275165" expanded="true" signature="602:729" ph="INSERT INTO user... " />
-            <marker date="1515670275165" expanded="true" signature="815:868" ph="select user_... user" />
+            <marker date="1515671422339" expanded="true" signature="437:500" ph="SELECT * FRO... user" />
+            <marker date="1515671422339" expanded="true" signature="602:729" ph="INSERT INTO user... " />
+            <marker date="1515671422339" expanded="true" signature="815:868" ph="select user_... user" />
           </folding>
         </state>
       </provider>
@@ -1125,8 +1098,16 @@
         <state relative-caret-position="504">
           <caret line="83" column="29" lean-forward="false" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
           <folding>
-            <marker date="1515669157386" expanded="true" signature="183:229" ph="SELECT S_Nam... series" />
+            <marker date="1515671422344" expanded="true" signature="183:229" ph="SELECT S_Nam... series" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/liste_erstellen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

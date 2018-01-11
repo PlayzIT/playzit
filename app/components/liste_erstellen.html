@@ -1,0 +1,74 @@
+
+<md-card>
+    <form name="$ctrl.formular">
+        <md-toolbar>
+            <div layout="row" layout-align="center">
+                <div style="margin-top:17px; margin-right: 5px">Öffentlich</div><md-switch ng-model="$ctrl.privat">Privat</md-switch>
+            </div>
+        </md-toolbar>
+        <div layout="row">
+            <md-card style="width: 400px; height: 430px" flex>
+                <div ng-repeat="item in $ctrl.items">
+                    <h1 style="text-align: center; font-size: calc(10px + 1.5vw);" ng-hide="item.editing" ng-dblclick="$ctrl.editItem(item)">{{item.name}}</h1>
+                    <input style="padding-top: calc(1px + 1.5vw); text-align: center; font-weight: bold; font-size: calc(10px + 1.5vw); width:100%; border:none; background-color:transparent;" ng-show="item.editing" ng-model="item.name" ng-blur="$ctrl.doneEditing(item)" autofocus />
+                </div>
+
+
+                <md-input-container>
+                    <input type="text" pattern="[A-Za-z\-_ ]*" ng-model="$ctrl.listenname" name="listenname" ng-minlength="1" ng-maxlength="20" required>
+                    <div ng-messages="$ctrl.formular.listenname.$error">
+                        <div ng-message="required">
+                            Bitte geben Sie einen Namen für ihre Liste ein.
+                        </div>
+                        <div ng-message="pattern">
+                            Der Listenname darf nur Großbuchstaben, Kleinbuchstaben, Bindestriche, Unterstriche und Leerzeichen enthalten.
+                        </div>
+                        <div ng-message="minlength">
+                            Der Listenname muss mindestens ein Zeichen lang sein.
+                        </div>
+                        <div ng-message="maxlength">
+                            Der Listenname darf höchstens 20 Zeichen lang sein.
+                        </div>
+                    </div>
+                </md-input-container>
+
+                <h2 style="text-align: center; font-size: calc(10px + 1vw);">Beschreibung für die Liste hinzufügen</h2>
+                <textarea ng-model="$ctrl.beschreibung" flex="100" style="height:auto;
+                                    resize: none;
+                                    margin-left: 2%;
+                                    margin-right: 2%;
+                                    margin-bottom: 2%;
+                                    color:#999;
+                                    font-weight:400;
+                                    font-size:20px;
+                                    font-family:'Ubuntu', Helvetica, Arial, sans-serif;
+                                    background:#fff;
+                                    border-radius:3px;
+                                    line-height:2em;
+                                    border:none;
+                                    box-shadow:0px 0px 5px 1px rgba(0,0,0,0.1);
+                                    padding: 10px;">
+
+                </textarea>
+            </md-card>
+            <md-card flex>
+                <h1 style="text-align: center; font-size: calc(10px + 1.5vw);">Aktuelle Spiele</h1>
+                <md-list ng-repeat="x in $ctrl.aktuelleListe">
+                    <md-list-item>
+                        <p ng-bind="x['name']"></p>
+                        <md-button class="md-primary md-raised" ng-click="$ctrl.loescheAusListe(x)"><md-icon md-svg-src="images/icons/ic_delete_white_24px.svg" class="delete"></md-icon></md-button>
+                    </md-list-item>
+                </md-list>
+            </md-card>
+        </div>
+        <div style="margin-left: 10px">
+            <suchleiste-card typ="games" zu-liste-hinzufuegen="$ctrl.fuegeHinzu(id, name)"></suchleiste-card>
+        </div>
+        <br>
+        <div style="border-top: 1px solid black">
+            <md-content layout="row" layout-align="center">
+                <md-button type="submit" class="md-raised md-primary" ng-disabled="$ctrl.formular.$invalid" ng-click="$ctrl.starteInsert()">Speichern</md-button>
+            </md-content>
+        </div>
+    </form>
+</md-card>
