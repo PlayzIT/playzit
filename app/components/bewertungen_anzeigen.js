@@ -16,6 +16,7 @@ app.controller("bewertungController", function ($http) {
 
     $ctrl.$onInit = function(){
         $http.post("bewertungen.php", {"id": $ctrl.id, "typ": $ctrl.typ}).then(function(data){
+            console.log(data);
             $ctrl.splitUserReviews(data.data);
         });
     };

@@ -3,7 +3,7 @@
 // We must read the input.
 // $_POST or $_GET will not work!
 
-	include_once "database_connection.php";
+	require_once "database_connection.php";
 
 	$data = json_decode(file_get_contents("php://input"));
 
@@ -13,7 +13,6 @@
 		$id = mysqli_real_escape_string($mysqli, $data->id);
 		$typ = mysqli_real_escape_string($mysqli, $data->typ);
 		$query = "";
-
 		if ($typ === "game") {
 			$query =
 			"select user.nickname, gamebew.fk_game, gBew_ent_cat.bewertungsgrad, categories.cat_name from gamebew
@@ -22,8 +21,7 @@
                 join user on (gamebew.fk_user = user.user_id)
                 where gamebew.fk_game = '$id'";
 		} else {
-			$query =
-			"select user.nickname, seriesbew.fk_series, sBew_ent_cat.bewertungsgrad, categories.cat_name from seriesbew
+			$query ="select user.nickname, seriesbew.fk_series, sBew_ent_cat.bewertungsgrad, categories.cat_name from seriesbew
             	join sBew_ent_cat on (sBew_ent_cat.fk_sbew = seriesbew.SB_ID)
                 join categories on (categories.cat_ID = sBew_ent_cat.fk_cat)
                 join user on (seriesbew.fk_user = user.user_id)

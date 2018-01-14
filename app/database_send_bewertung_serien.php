@@ -28,9 +28,7 @@ if (count($data) > 0) {
 
 
 
-    $select_query = "SELECT GB_ID FROM gamebew where fk_user=".$_SESSION['userID']." AND fk_game=".$data->game." AND datum='".$dateTimeString."'";
-
-    $bewID = -1;
+    $select_query = "SELECT SB_ID FROM seriesbew where fk_user=".$_SESSION['userID']." AND fk_series=".$data->serie." AND datum='".$dateTimeString."';";
 
     if ($stmt = $mysqli->prepare($select_query)) {
         $stmt->execute();

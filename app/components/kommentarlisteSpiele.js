@@ -34,7 +34,7 @@ app.controller("kommentarlisteSpieleController", function ($http) {
         $ctrl.loggedIn();
 
         $http.post("database_select.php", {
-                'query': "SELECT gcommentID, nickname, content, fk_game FROM gamecomment join user on (user_id=fk_user) where fk_game="+$ctrl.gameId+" order by datum desc;",
+                'query': "SELECT gcommentID, nickname, content, fk_game, datum FROM gamecomment join user on (user_id=fk_user) where fk_game="+$ctrl.gameId+" order by datum desc;",
             },
             console.log("data request")
         ).then(function (data) {

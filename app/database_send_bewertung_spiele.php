@@ -29,7 +29,6 @@ if (count($data) > 0) {
 
     $select_query = "SELECT GB_ID FROM gamebew where fk_user=".$_SESSION['userID']." AND fk_game=".$data->game." AND datum='".$dateTimeString."'";
 
-    $bewID = -1;
 
     if ($stmt = $mysqli->prepare($select_query)) {
         $stmt->execute();
