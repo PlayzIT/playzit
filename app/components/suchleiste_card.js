@@ -1,16 +1,16 @@
 "use strict";
 
-app.component("suchleiste", {
-    templateUrl: "components/suchleiste.html",
-    controller: "sucheController",
+app.component("suchleisteCard", {
+    templateUrl: "components/suchleiste_card.html",
+    controller: "suchecardController",
     bindings: {
-        typ: "@"
-
+        typ: "@",
+        zuListeHinzufuegen: "&"
     }
 });
 
 
-app.controller("sucheController", function ($http) {
+app.controller("suchecardController", function ($http) {
     let $ctrl = this;
 
     $ctrl.$onInit = function(){

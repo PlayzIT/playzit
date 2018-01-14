@@ -32,6 +32,7 @@ app.controller("listeSpieleController", function ($http) {
             },
             console.log("data request")
         ).then(function (data) {
+            console.log(data);
             $ctrl.lists = data.data;
             $ctrl.loading=false;
         });

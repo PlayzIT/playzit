@@ -14,7 +14,7 @@
                         </p>
 
                     </div>
-
+                    <i ng-hide="i.favourite" class="material-icons" ng-click="$ctrl.removeList(i.GL_ID)">delete</i>
                     <md-radio-group ng-model="$ctrl.listClicked" ng-change="$ctrl.getGames()"
                                     style="margin-left: auto;">
                         <md-radio-button value="{{i.GL_ID}}" class="md-primary"

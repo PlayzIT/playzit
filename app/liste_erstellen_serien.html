@@ -31,11 +31,18 @@
     <script type="text/javascript" src="vendor/angular-material-1.1.5/angular-material.min.js"></script>
     <script type="text/javascript" src="vendor/angular-ui-router-1.0.8/angular-ui-router.min.js"></script>
 
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+
     <script src="app.js"></script>
     <script src="components/loginButton.js"></script>
     <script src="components/registrieren.js"></script>
     <script src="components/profilBearbeiten.js"></script>
     <script src="components/impressum.js"></script>
+    <script src="components/liste_erstellen.js"></script>
+    <script src="components/suchleiste_card.js"></script>
 </head>
 
 <body layout="column" >
@@ -48,7 +55,7 @@
                 md-is-locked-open="true"
                 md-whiteframe="4"
                 flex="100">
-            <md-toolbar layout="row" layout-align="start center" class="sideNavToolBar">
+            <md-toolbar layout="row" layout-align="start center" class="sideNavToolBar" style="background-color: #480C0E">
                 <img src="../ressources/logo.png">
 
             </md-toolbar>
@@ -75,7 +82,7 @@
     </div>
 
     <div layout="column" flex="85">
-        <md-toolbar id="topToolBar"   layout="row" layout-align="start center" >
+        <md-toolbar id="topToolBar"   layout="row" layout-align="start center" style="background-color: #480C0E">
 
             <div layout="column" layout-align="start start" flex>
                 <h2 class="md-toolbar-tools">PlayzIT</h2>
@@ -103,7 +110,7 @@
 
 
 
-        <div layout="row" layout-align="center start" flex id="contentDiv" class="background">
+        <div layout="row" layout-align="center start" flex id="contentDiv" class="background_serien">
 
 
 
@@ -111,11 +118,14 @@
 
             <md-card
                     class="contentCard">
-                <md-toolbar style="">
+                <md-toolbar style="background-color: #480C0E">
                     <div class="md-toolbar-tools">
                         <h3>
-                            <span>Impressum</span>
+                            <span>Liste erstellen</span>
                         </h3>
+                    </div>
+                    <div layout="row" layout-align="center">
+                        <div style="margin-top:17px; margin-right: 5px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; " class="oeffentlich" ng-click="$ctrl.changePrivateState()">Öffentlich</div><md-switch ng-model="$ctrl.privat">Privat</md-switch>
                     </div>
                 </md-toolbar>
 
@@ -154,7 +164,8 @@
 
                 -->
                 <div flex layout-align="center start" class="masterCardGameCard">
-                    <impressum flex="100"></impressum>
+                    <liste flex="100" typ="serie"></liste>
+
 
                 </div>
 
@@ -170,11 +181,3 @@
 
     </div>
 </md-content>
-
-
-
-
-
-</body>
-
-</html>

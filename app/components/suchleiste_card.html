@@ -1,0 +1,64 @@
+<div>
+    <div style="display: block;">
+    <form>
+        <div layout="row">
+        <label>Suche:</label>
+
+        <div style="
+            border: 1px solid ;
+            border-right: none;
+            box-shadow: inset 0 1px 2px ;
+            padding: 2px 6px;
+            border-radius: 2px 0 0 2px;
+            width: 50%">
+        <input type="search" ng-model="$ctrl.suche" class="input-medium search-query" style="
+            -webkit-appearance: none;
+            -webkit-font-smoothing: antialiased;
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+            font-family: 'Roboto', 'Noto', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-left: 4px;
+            max-width: 100%;
+            outline: none;
+            text-align: inherit;"
+               placeholder="Suche nach {{$ctrl.typ === 'game' ? 'Spielen' : 'Serien und Filmen'}} ...">
+        </div>
+
+        <md-button type="submit" class=" md-raised {{$ctrl.typ === 'game' ? 'md-primary': 'md-warn'}}" ng-click="$ctrl.sucheInAction()"><md-icon md-svg-src="images/icons/ic_search_white_24px.svg"></md-icon></md-button><br/>
+        </div>
+    </form>
+    </div>
+
+
+    <section class="errorSection" ng-show="$ctrl.isSearchEmpty" style="background-color: rgba(195, 47, 45, .15); color: #c32f2d; padding: 15px;">
+        <span class="errorMsg" ng-show="$ctrl.isSearchEmpty">Das konnten wir leider nicht finden. :(</span>
+    </section>
+
+    <!--   TO CHANGE   -->
+    <div layout-align="center" layout="row" style="display: inline-block; width: calc(33% - 20px); min-width: 150px; padding: 0 10px 0 10px; font-size: calc(12px + 1vw); text-align: center;" ng-repeat="x in $ctrl.games" ng-show="$ctrl.typ === 'game'">
+        <md-card style="padding: 5%">
+            <img ng-src="http://cdn.edgecast.steamstatic.com/steam/apps/{{x['G_ID']}}/header.jpg" onerror="this.src='https://www.indiegala.com/img/trades/img_not_available.png'">
+            <span ng-bind="x['G_Name']"></span>
+            <div layout="row" layout-align="center">
+                <md-button ng-click="" class="md-icon-button md-accent" aria-label="Favorite"><md-icon md-svg-src="images/icons/ic_favorite_black_24px.svg" class="favorite"></md-icon></md-button>
+                <md-button ng-click="$ctrl.fuegeZuListeHinzu(x['G_ID'], x['G_Name'])" class="md-icon-button md-accent" aria-label="Add"><md-icon md-svg-src="images/icons/ic_add_black_24px.svg" class="add"></md-icon></md-button>
+            </div>
+        </md-card>
+    </div>
+    <div layout-align="center" layout="row" style="display: inline-block;width: calc(21% - 20px); min-width: 225px; padding: 0 10px 0 10px; font-size: calc(10px + 1vw); text-align: center;" ng-repeat="x in $ctrl.series" ng-show="$ctrl.typ !== 'game'">
+        <md-card style="padding: 5%">
+            <img style="min-height: 15vw; max-height: 30vw;" ng-src="{{x['S_Images']}}" onerror="this.src='https://s.s-bol.com/imgbase0/imagebase3/large/FC/4/7/7/7/9200000056547774_3.jpg'">
+            <span ng-bind="x['S_Name']"></span>
+            <div layout="row" layout-align="center">
+                <md-button ng-click="" class="md-icon-button md-accent" aria-label="Favorite"><md-icon md-svg-src="images/icons/ic_favorite_black_24px.svg" class="favorite"></md-icon></md-button>
+                <md-button ng-click="$ctrl.fuegeZuListeHinzu(x['S_ID'], x['S_Name'])" class="md-icon-button md-accent" aria-label="Add"><md-icon md-svg-src="images/icons/ic_add_black_24px.svg" class="add"></md-icon></md-button>
+            </div>
+        </md-card>
+    </div>
+
+    <!--   TO CHANGE   -->
+</div>

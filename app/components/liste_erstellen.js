@@ -2,15 +2,27 @@
 
 app.component("liste", {
     templateUrl: "components/liste_erstellen.html",
-    controller: "ListeController"
+    controller: "ListeController",
+    bindings: {
+        typ: "@?"
+    }
 });
 
-app.controller("ListeController", function($http) {
+app.controller("ListeController", function($http, $scope) {
 
     let $ctrl = this;
 
     $ctrl.beschreibung = "";
     $ctrl.privat = true;
+
+    $ctrl.$onInit = function () {
+        $ctrl.typ = $ctrl.typ == undefined ? "game" : $ctrl.typ;
+        console.log($ctrl.typ);
+    };
+
+    document.getElementsByClassName("oeffentlich")[0].addEventListener("mouseover", function() {
+        this.style.cursor = "pointer";
+    });
 
     $ctrl.items = [{
         name: "Listenname",
@@ -26,12 +38,18 @@ app.controller("ListeController", function($http) {
         //dong some background ajax calling for persistence...
     };
 
+    $ctrl.changePrivateState = function () {
+        $ctrl.privat = !$ctrl.privat;
+    };
+
     $ctrl.aktuelleListe = [];
     $ctrl.listenname = "Meine Liste";
 
     $ctrl.fuegeHinzu = function (id, name) {
-        $ctrl.aktuelleListe.push({"id": id, "name": name});
-        console.log($ctrl.aktuelleListe);
+       if(!$ctrl.containsObject({"id": id, "name": name}, $ctrl.aktuelleListe)) {
+            $ctrl.aktuelleListe.push({"id": id, "name": name});
+        }
+        //console.log($ctrl.aktuelleListe);
     };
 
     $ctrl.loescheAusListe = function(object){
@@ -39,27 +57,43 @@ app.controller("ListeController", function($http) {
         $ctrl.aktuelleListe.splice(index, 1);
     };
 
+    $ctrl.containsObject = function(obj, list) {
+        for (let i = 0; i < list.length; i++) {
+            if (list[i].id === obj.id && list[i].name === obj.name ) {
+                return true;
+            }
+        }
+
+        return false;
+    };
+
     $ctrl.starteInsert = function () {
 
         if($ctrl.aktuelleListe !== "") {
             $http.post("insert_liste.php", {
+                "typ": $ctrl.typ,
                 "aktuelleListe": $ctrl.aktuelleListe,
                 "name": $ctrl.listenname,
                 "beschreibung": $ctrl.beschreibung,
                 "privat": $ctrl.privat,
                 "favourite": false
             }).then(function (data) {
+                console.log(data);
                 if(data.data == "1"){
                     console.log("yes perfekt");
+                    window.location = "serie-listen.php";
                 }else{
                     console.log("fehler");
                 }
-
-
             });
         }
 
     };
+
+    $scope.scrollToTop = function() {
+        $('html, body').animate({scrollTop: 0}, 'fast');
+    };
+
     /**
      $http.post("insert_liste.php", {
         'gamelistname': this.listenname,
