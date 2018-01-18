@@ -74,10 +74,11 @@ padding-left: 0px;
 }
 
 
-body > md-content > div > md-sidenav > md-toolbar > img {
+body > md-content > div > md-sidenav > md-toolbar > a > img {
     margin-left: 10px;
     max-height: 45px;
 }
+
 
 body > md-content > div > md-sidenav > md-toolbar {
     padding: 0px 10px 0px 10px;
@@ -125,8 +126,8 @@ body > div > div {
 #contentDiv {
     padding: 10px 10px 10px 10px;
     height:auto;
-        overflow-x: scroll;
-
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 

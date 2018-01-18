@@ -4,8 +4,8 @@ app.component("suchleiste", {
     templateUrl: "components/suchleiste.html",
     controller: "sucheController",
     bindings: {
-        typ: "@"
-
+        typ: "@",
+        gibAus: "&?"
     }
 });
 
@@ -41,8 +41,10 @@ app.controller("sucheController", function ($http) {
                     console.log(data.data);
                     if($ctrl.typ === "game") {
                         $ctrl.games = data.data;
+                        $ctrl.gibAus({"spiele": $ctrl.games});
                     }else {
                         $ctrl.series = data.data;
+                        $ctrl.gibAus({"serien": $ctrl.series});
                     }
                 }
             });

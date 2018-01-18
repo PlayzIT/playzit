@@ -1,63 +1,60 @@
-<div flex layout="row" >
-    <md-content flex="50">
-        <md-list flex>
-            <md-subheader class="md-primary">Listen</md-subheader>
-            <md-divider></md-divider>
-            <md-list-item ng-repeat="i in $ctrl.lists" class="md-3-line md-long-text">
+<!--<div layout="column">-->
+    <div flex layout="row" >
+        <md-content flex="50">
+            <md-list flex>
+                <md-subheader class="md-primary">Listen</md-subheader>
+                <md-divider></md-divider>
+                <md-list-item ng-repeat="i in $ctrl.lists" class="md-3-line md-long-text">
 
-                <div style="margin: 10px 0px 10px 0px;" class="md-list-item-text" layout="row">
+                    <div style="margin: 10px 0px 10px 0px;" class="md-list-item-text" layout="row">
 
-                    <div layout="column">
-                        <h3>{{i.SListName}}</h3>
-                        <p style="margin-right:10px;">
-                            {{i.descr}}
-                        </p>
+                        <div layout="column">
+                            <h3>{{i.SListName}}</h3>
+                            <p style="margin-right:10px;">
+                                {{i.descr}}
+                            </p>
+
+                        </div>
+
+                        <md-radio-group ng-model="$ctrl.listClicked" ng-change="$ctrl.getSerien()"
+                                        style="margin-left: auto;">
+                            <md-radio-button value="{{i.SL_ID}}" class="md-primary"
+                                             style="margin:8px 0px 8px 0px;"></md-radio-button>
+                        </md-radio-group>
+                        <i class="material-icons" style="cursor: pointer" ng-click="$ctrl.removeList(i.SL_ID)" ng-hide="{{i.favourite == 1 ? true : false}}">delete</i>
 
                     </div>
-
-                    <md-radio-group ng-model="$ctrl.listClicked" ng-change="$ctrl.getGames()"
-                                    style="margin-left: auto;">
-                        <md-radio-button value="{{i.SL_ID}}" class="md-primary"
-                                         style="margin:8px 0px 8px 0px;"></md-radio-button>
-                    </md-radio-group>
-                    <i ng-hide="i.favourite" class="material-icons" ng-click="$ctrl.removeList(i.SL_ID)">delete</i>
-
-                </div>
-            </md-list-item>
-        </md-list>
-    </md-content>
-    <div flex ng-hide="$ctrl.hideRight" flex="50">
-        <md-content ng-show="$ctrl.listClicked" flex="100" style="min-height: 100%; ">
-            <md-list flex>
-                <md-subheader class="md-primary">Spiele</md-subheader>
-                <md-divider></md-divider>
-                <md-list-item ng-repeat="j in $ctrl.serien" class="noright">
-
-                    <p>{{j.S_Name}}</p>
-
-                    <i class="material-icons" ng-click="$ctrl.goTo(j.S_ID)">insert_chart</i>
-                    <i class="material-icons" ng-click="$ctrl.removeSerien(j.S_ID)">delete</i>
-
-
-
-
-
-
                 </md-list-item>
             </md-list>
         </md-content>
+        <div flex ng-hide="$ctrl.hideRight" flex="50">
+            <md-content ng-show="$ctrl.listClicked" flex="100" style="min-height: 100%; ">
+                <md-list flex>
+                    <md-subheader class="md-primary">Serien</md-subheader>
+                    <md-divider></md-divider>
+                    <md-list-item ng-repeat="j in $ctrl.serien" class="noright">
 
-        <div ng-hide="$ctrl.listClicked" layout="column" layout-align="center center"
-             style="height:100%;background-color: rgb(250,250,250);">
-            <p>Bitte wähle eine Liste!</p>
+                        <p>{{j.S_Name}}</p>
+
+                        <i class="material-icons" style="cursor: pointer" ng-click="$ctrl.goTo(j.S_ID)">insert_chart</i>
+                        <i class="material-icons" style="cursor: pointer" ng-click="$ctrl.removeSerien(j.S_ID)">delete</i>
+
+
+
+
+
+
+                    </md-list-item>
+                </md-list>
+            </md-content>
+
+            <div ng-hide="$ctrl.listClicked" layout="column" layout-align="center center"
+                 style="height:100%;background-color: rgb(250,250,250);">
+                <p>Bitte wähle eine Liste!</p>
+            </div>
+
         </div>
-
+    <!--<div>
+        <suchleiste-card typ="serie" zu-liste-hinzufuegen="$ctrl.insertSerien(id)"></suchleiste-card>
     </div>
-
-    <md-content ng-show="$ctrl.hideRight" flex="100" style="color:red;" style="min-height:100%;">
-        <div layout="column" layout-align="center center" style="min-height:100%;">
-            <p>Diese Liste ist leider leer :(</p>
-        </div>
-    </md-content>
-
-</div>
+</div>-->

@@ -36,7 +36,7 @@ app.controller("registrierenController", ['$http', function ($http) {
 					 console.log(data.data === "1");*/
 					if (data.data === "1") {
 						$ctrl.usernameAlreadyExists = false;
-						window.location.href = "profilb.html";
+						window.location.href = "start.html";
 						/*
 						 WHAT TO DO
 						 */

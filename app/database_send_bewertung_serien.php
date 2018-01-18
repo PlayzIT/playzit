@@ -30,6 +30,8 @@ if (count($data) > 0) {
 
     $select_query = "SELECT SB_ID FROM seriesbew where fk_user=".$_SESSION['userID']." AND fk_series=".$data->serie." AND datum='".$dateTimeString."';";
 
+    $bewID = -1;
+
     if ($stmt = $mysqli->prepare($select_query)) {
         $stmt->execute();
         $stmt->bind_result($bewID);
@@ -37,13 +39,17 @@ if (count($data) > 0) {
         $stmt->close();
     }
 
-    $insert_query_schnitt = "INSERT INTO gBew_ent_cat(`fk_gbew`, `fk_cat`, `bewertungsgrad`) VALUES (".$bewID.", 7, ".$data->schnitt.")";
-    $insert_query_kamera = "INSERT INTO gBew_ent_cat(`fk_gbew`, `fk_cat`, `bewertungsgrad`) VALUES (".$bewID.", 8, ".$data->kamera.")";
-    $insert_query_darsteller = "INSERT INTO gBew_ent_cat(`fk_gbew`, `fk_cat`, `bewertungsgrad`) VALUES (".$bewID.", 9, ".$data->darsteller.")";
-    $insert_query_story = "INSERT INTO gBew_ent_cat(`fk_gbew`, `fk_cat`, `bewertungsgrad`) VALUES (".$bewID.", 6, ".$data->story.")";
-    $insert_query_effekte = "INSERT INTO gBew_ent_cat(`fk_gbew`, `fk_cat`, `bewertungsgrad`) VALUES (".$bewID.", 10, ".$data->effekte.")";
-    $insert_query_audio = "INSERT INTO gBew_ent_cat(`fk_gbew`, `fk_cat`, `bewertungsgrad`) VALUES (".$bewID.", 3, ".$data->audio.")";
-    $insert_query_genre = "INSERT INTO gBew_ent_cat(`fk_gbew`, `fk_cat`, `bewertungsgrad`) VALUES (".$bewID.", 11, ".$data->genre.")";
+    $insert_query_schnitt = "INSERT INTO sBew_ent_cat(`fk_sbew`, `fk_cat`, `bewertungsgrad`) VALUES (".$bewID.", 7, ".$data->schnitt.")";
+    $insert_query_kamera = "INSERT INTO sBew_ent_cat(`fk_sbew`, `fk_cat`, `bewertungsgrad`) VALUES (".$bewID.", 8, ".$data->kamera.")";
+    $insert_query_darsteller = "INSERT INTO sBew_ent_cat(`fk_sbew`, `fk_cat`, `bewertungsgrad`) VALUES (".$bewID.", 9, ".$data->darsteller.")";
+    $insert_query_story = "INSERT INTO sBew_ent_cat(`fk_sbew`, `fk_cat`, `bewertungsgrad`) VALUES (".$bewID.", 6, ".$data->story.")";
+    $insert_query_effekte = "INSERT INTO sBew_ent_cat(`fk_sbew`, `fk_cat`, `bewertungsgrad`) VALUES (".$bewID.", 10, ".$data->effekte.")";
+    $insert_query_audio = "INSERT INTO sBew_ent_cat(`fk_sbew`, `fk_cat`, `bewertungsgrad`) VALUES (".$bewID.", 3, ".$data->audio.")";
+    $insert_query_genre = "INSERT INTO sBew_ent_cat(`fk_sbew`, `fk_cat`, `bewertungsgrad`) VALUES (".$bewID.", 11, ".$data->genre.")";
+
+    //echo $data->schnitt . " " . $data->kamera . " " . $data->darsteller . " " . $data->story . " " . $data->effekte . " " . $data->audio . " " . $data->genre;
+
+    echo $bewID;
     mysqli_query($mysqli, $insert_query_schnitt);
     mysqli_query($mysqli, $insert_query_kamera);
     mysqli_query($mysqli, $insert_query_darsteller);
@@ -51,6 +57,8 @@ if (count($data) > 0) {
     mysqli_query($mysqli, $insert_query_effekte);
     mysqli_query($mysqli, $insert_query_audio);
     mysqli_query($mysqli, $insert_query_genre);
+
+
 
     /*
      * (1,'grafik','games')

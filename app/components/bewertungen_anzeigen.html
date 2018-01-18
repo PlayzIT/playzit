@@ -1,19 +1,14 @@
-<br><br>
-<section layout="column" flex>
-    <div layout="row" ng-repeat="d in $ctrl.result">
-        <div flex="10">
-        {{d[0]['nickname']}}
-        </div>
-        <div layout="column">
-        <div flex="20" ng-repeat="x in d" layout="row">
-            <div flex="80">
-            {{x['cat_name']}}
-            </div>
-            <div flex="20">
-            {{x['bewertungsgrad']}}/10
+<section layout="column" flex="100" style="font-size: calc(10px + 1vw)">
+    <md-card layout="row" ng-repeat="d in $ctrl.result" layout-align="center center" style="padding:2%; min-width: 300px;">
+        <div layout="column" flex="100">
+            <div flex="100" ng-repeat="x in d" layout="row">
+                <div flex="80" layout-align="end">
+                {{x['cat_name'].charAt(0).toUpperCase()+x['cat_name'].substring(1)}}
+                </div>
+                <div flex="20">
+                {{x['durchschnittsbew']}}/10
+                </div>
             </div>
         </div>
-            <br/>
-        </div>
-    </div>
+    </md-card>
 </section>

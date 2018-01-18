@@ -3,7 +3,7 @@
 // We must read the input.
 // $_POST or $_GET will not work!
 
-	require_once "database_connection.php";
+	include_once "database_connection.php";
 
 	$data = json_decode(file_get_contents("php://input"));
 
@@ -13,21 +13,22 @@
 		$id = mysqli_real_escape_string($mysqli, $data->id);
 		$typ = mysqli_real_escape_string($mysqli, $data->typ);
 		$query = "";
+
 		if ($typ === "game") {
 			$query =
-			"select user.nickname, gamebew.fk_game, gBew_ent_cat.bewertungsgrad, categories.cat_name from gamebew
-            	join gBew_ent_cat on (gBew_ent_cat.fk_gbew = gamebew.GB_ID)
-                join categories on (categories.cat_ID = gBew_ent_cat.fk_cat)
-                join user on (gamebew.fk_user = user.user_id)
-                where gamebew.fk_game = '$id'";
+			"select cat_name, ROUND(avg(gBew_ent_cat.bewertungsgrad),1) as durchschnittsbew from gamebew
+                         	join gBew_ent_cat on (gBew_ent_cat.fk_gbew = gamebew.GB_ID)
+                             join categories on (categories.cat_ID = gBew_ent_cat.fk_cat)
+                             where gamebew.fk_game = '$id'
+                             group by categories.cat_ID";
 		} else {
-			$query ="select user.nickname, seriesbew.fk_series, sBew_ent_cat.bewertungsgrad, categories.cat_name from seriesbew
-            	join sBew_ent_cat on (sBew_ent_cat.fk_sbew = seriesbew.SB_ID)
-                join categories on (categories.cat_ID = sBew_ent_cat.fk_cat)
-                join user on (seriesbew.fk_user = user.user_id)
-                where seriesbew.fk_series = '$id'";
+			$query =
+			"select cat_name, ROUND(avg(sBew_ent_cat.bewertungsgrad),1) as durchschnittsbew from seriesbew
+             	join sBew_ent_cat on (sBew_ent_cat.fk_sbew = seriesbew.SB_ID)
+                 join categories on (categories.cat_ID = sBew_ent_cat.fk_cat)
+                 where seriesbew.fk_series = '$id'
+                 group by categories.cat_ID";
 		}
-
 
 		$output = array();
 

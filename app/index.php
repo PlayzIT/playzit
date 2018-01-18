@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>playzit</title>
+    <title>PlayzIT</title>
 
 
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    <link rel="icon" href="favicon.ico"/>
+    <link rel="icon" href="Logo_voll_fertig.ico"/>
 
     <link rel="stylesheet" href="vendor/material-icons-2.2.0/material-icons.css"/>
     <link rel="stylesheet" href="vendor/roboto/roboto.css"/>
@@ -44,24 +44,25 @@
                 md-whiteframe="4"
                 flex="100">
             <md-toolbar layout="row" layout-align="start center" class="sideNavToolBar">
-                <img src="../ressources/logo.png">
+                <a href="start.html"><img src="../ressources/logo.png"></a>
 
             </md-toolbar>
             <md-content layout-padding style="height: calc(100vh - 64px)" layout="column" class="sideNavContent" >
-                <md-button>Test</md-button>
-                <md-button>Test</md-button>
-                <h3>Abteilung</h3>
-                <md-button>Test</md-button>
-                <md-button>Test</md-button>
-                <md-button>Test</md-button>
-                <md-button>Test</md-button>
-                <md-button>Test</md-button>
-                <h3>Abteilung</h3>
-                <md-button>Test</md-button>
-                <md-button>Test</md-button>
+                <md-button href="start.html">
+                    Startseite
+                </md-button>
+                <h3>Spiele</h3>
+                <ul>
+                    <li><md-button href="liste_erstellen_spiele.html">Liste erstellen</md-button></li>
+                    <li><md-button href="spiel-listen.php">Listen ansehen</md-button></li>
+                </ul>
+                <h3>Serien/Filme</h3>
+                <ul>
+                    <li><md-button href="liste_erstellen_serien.html">Liste erstellen</md-button></li>
+                    <li><md-button href="serie-listen.php">Listen ansehen</md-button></li>
+                </ul>
 
-
-                <md-button id="sideNavButton">Impressum</md-button>
+                <md-button id="sideNavButton" href="impressum.html">Impressum</md-button>
             </md-content>
         </md-sidenav>
     </div>

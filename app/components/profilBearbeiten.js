@@ -39,11 +39,13 @@ app.controller("ProfilBearbeitenController", function ($http) {
 	};
 
 	$ctrl.updateNickname = function () {
-		if($ctrl.eingabe !== $ctrl.names.nickname && $ctrl.eingabe !== $ctrl.names.email) {
+		console.log($ctrl.eingabe + " " + $ctrl.toUpdate);
+
 			$http.post("bearbeiten.php", {
 				"eingabe": $ctrl.eingabe,
 				"whatToUpdate": $ctrl.toUpdate
 			}).then(function (data) {
+				console.log(data);
 				$ctrl.displayData();
 				if (data.data == 1) {
 					$ctrl.eingabe = "";
@@ -53,7 +55,7 @@ app.controller("ProfilBearbeitenController", function ($http) {
 					$ctrl.dataAlreadyInUse = true;
 				}
 			});
-		}
+
 	};
 
 	$ctrl.displayData = function () {

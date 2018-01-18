@@ -46,6 +46,7 @@ app.controller("BewertenSerien", function ($http) {
                 'serie' : this.serienId
 
             }).then(function (data){
+                console.log(data);
                 window.location = "master_serien.html";
             });
         }else{

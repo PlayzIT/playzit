@@ -43,6 +43,9 @@ app.controller("suchecardController", function ($http) {
                         $ctrl.games = data.data;
                     }else {
                         $ctrl.series = data.data;
+                        for(let i = 0; i < $ctrl.series.length; i++){
+                            $ctrl.series[i]['S_Images'] = $ctrl.series[i]['S_Images'].replace("original" , "w500");
+                        }
                     }
                 }
             });

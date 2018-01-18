@@ -18,9 +18,7 @@ if (count($data) > 0) {
     $result = mysqli_query($mysqli, $query);
 
 
-    if (mysqli_num_rows($result) > 0) {
-        //echo $result;
-        //echo "success: true";
+
 
         $output = array();
         if (mysqli_num_rows($result) > 0) {
@@ -29,9 +27,8 @@ if (count($data) > 0) {
             }
 
             echo json_encode($output);
+        }else{
+            echo "{success: false}";
         }
 
-    } else {
-        echo "{success: false}";
-    }
 }

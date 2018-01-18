@@ -31,7 +31,7 @@ app.controller("kommentarlisteSerienController", function ($http) {
 
         this.loggedIn();
         $http.post("database_select.php", {
-                'query': "SELECT scommentID, nickname, content, fk_serie, datum FROM seriescomment join user on (user_id=fk_user) where fk_serie="+$ctrl.seriesId+" order by datum desc;",
+                'query': "SELECT scommentID, nickname, content, fk_serie, datum FROM seriescomment join user on (user_id=fk_user) where fk_serie="+$ctrl.seriesId+" order by datum desc;"
             },
             console.log("data request")
         ).then(function (data) {

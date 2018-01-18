@@ -17,6 +17,6 @@
     <md-button style="width:80%;" type="submit" ng-click="$ctrl.starteAnmeldung()" class="md-raised md-primary">anmelden</md-button>
   </div>
 </form>
-<div ng-show="$ctrl.loggedIn" layout-align="center center">
-  <md-button ng-click="$ctrl.abmelden()" class="md-raised md-primary">Abmelden</md-button>
+<div ng-show="$ctrl.loggedIn" layout="column" layout-align="center center">
+  <md-button style="width:80%;" ng-click="$ctrl.abmelden()" class="md-raised md-primary">Abmelden</md-button>
 </div>

@@ -9,7 +9,7 @@ app.component("listeSerien", {
 
 app.controller("listeSpieleController", function ($http) {
     var $ctrl = this;
-    this.listClicked;
+    this.listClicked = -1;
     this.lists=[];
     $ctrl.userId;
     this.serien=[];
@@ -30,64 +30,89 @@ app.controller("listeSpieleController", function ($http) {
         $http.post("database_get_lists_serien.php", {
 
             },
-            console.log("data request")
+            //console.log("data request")
         ).then(function (data) {
-            $ctrl.lists = data.data;
-            $ctrl.loading=false;
+            console.log(data);
+            if(data.data != "") {
+                $ctrl.lists = data.data;
+                $ctrl.loading = false;
+            }else{
+                $ctrl.lists = [];
+            }
         });
     };
 
     this.output = function () {
-        console.log(this.listClicked);
+        //console.log(this.listClicked);
     };
 
 
     this.getSerien = function(){
         $http.post("database_select.php", {
-                'query':"select * from series join sPartOfSL on(Series_ID=S_ID) " +
-                "where SList_ID = "+$ctrl.listClicked+";"
+                'query': "select * from series join sPartOfSL on(Series_ID=S_ID) " +
+                "where SList_ID = " + $ctrl.listClicked + ";"
             },
-            console.log("data request")
+            //console.log("data request")
         ).then(function (data) {
-            if(data.data=="{success: false}"){
-                $ctrl.serien.splice(0,$ctrl.serien.length);
-                $ctrl.hideRight = true;
-            }else{
-                $ctrl.serien.splice(0,$ctrl.serien.length);
+            //console.log(data);
+            if (data.data == "{success: false}") {
+                $ctrl.serien.splice(0, $ctrl.serien.length);
+                $ctrl.hideRight = false;
+            } else {
+                $ctrl.serien.splice(0, $ctrl.serien.length);
                 $ctrl.serien = data.data;
+                //console.log(data.data);
                 $ctrl.hideRight = false;
             }
-            $ctrl.loading=false;
+            $ctrl.loading = false;
         });
+
     };
+
+    /*this.insertSerien = function (id) {
+        $http.post("database_insert_series_into_existing_list.php", {
+            "listenID": $ctrl.listClicked,
+            "serieID": id
+        }).then(function (data) {
+            console.log("insertSerien: " + data.data);
+            $ctrl.loading=true;
+            $ctrl.getSerien();
+        });
+    };*/
 
     this.removeSerien = function(serienId){
         $http.post("database_remove_list_serien.php", {
-            'state':"game",
-            'gameId':serienId,
+            'state':"series",
+            'seriesId':serienId,
             'listId':$ctrl.listClicked
         }).then(function (data) {
+            //console.log(data);
             $ctrl.loading=true;
             $ctrl.getSerien();
         });
     };
 
 
-    this.removeList = function(listId){
-
-
-        $http.post("database_remove_list_serien.php", {
-            'state':"list",
-            'listId':listId
-        }).then(function (data) {
-            $ctrl.loading=true;
-            $ctrl.getLists();
-        });
+    this.removeList = function(listId) {
+        if (confirm("Wollen Sie wirklich die Liste löschen? Alle Titel in der Liste werden aus Ihrer Liste entfernt und Ihre Liste wird gelöscht")) {
+            $http.post("database_remove_list_serien.php", {
+                'state': "list",
+                'listId': listId
+            }).then(function (data) {
+                if (data.data == "1") {
+                    $ctrl.loading = true;
+                    $ctrl.getLists();
+                    $ctrl.getSerien();
+                } else if (data.data == "istFavorit") {
+                    window.alert('Eine Favoritenliste kann nicht gelöscht werden!');
+                }
+            });
+        }
     };
 
-    this.goTo = function(id){
-        location.href="serie-ansehen.php?id="+id;
-    }
+        this.goTo = function (id) {
+            location.href = "serie-bewerten.php?id=" + id;
+        }
 
 });
 

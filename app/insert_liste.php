@@ -18,9 +18,11 @@ if(isset($_SESSION['benutzername']) && isset($_SESSION['userID'])) {
         $SL_or_GL_ID = 0;
 
         $query = $data->typ == "game" ?
+
             "INSERT INTO gamelist (`GListName`, `privat`, `descr`, `fk_user`, `favourite`) VALUES ('$name', $privat, '$description', $userID, $favourite)"
             :
             "INSERT INTO serieslist (`SListName`, `privat`, `descr`, `fk_user`, `favourite`) VALUES ('$name', $privat, '$description', $userID, $favourite)";
+
 
         if ($result = $mysqli->query($query)){
             $SL_or_GL_ID = $mysqli->insert_id;

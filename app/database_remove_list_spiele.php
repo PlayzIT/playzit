@@ -25,25 +25,56 @@ if (count($data) > 0) {
     $now = getdate();
     $dateTimeString = date("Y-m-d H:i:s");
 
+    $query = "select favourite from gamelist where GL_ID = " . $data->listId . ";";
 
-    $statement['list']="DELETE FROM gamelist where GL_ID=".$data->listId.";";
-    if ($data->state=="game"){
-        $statement['game']="DELETE FROM gPartOfGL where (GList_ID=".$data->listId.") AND (Game_ID=".$data->gameId.");";
+    if($data->state !== "game") {
+        if ($result = mysqli_query($mysqli, $query)) {
+            if (mysqli_num_rows($result) > 0) {
+                $output = mysqli_fetch_array($result);
+
+                if (!$output[0]) {
+                    $statement['list'] = "DELETE FROM gamelist where GL_ID=" . $data->listId . ";";
+
+                    $query = $statement[$data->state];
+
+                    //echo $query;
+
+                    if ($stmt = $mysqli->prepare($query)) {
+                        $stmt->execute();
+                        $stmt->fetch();
+                        $stmt->close();
+                        echo true;
+                    } else {
+                        echo false;
+                    }
+                } else {
+                    echo 'istFavorit';
+                }
+            } else {
+                echo "{success: false}";
+            }
+        }
+
+    }else if ($data->state == "game") {
+        $statement['game'] = "DELETE FROM gPartOfGL where (GList_ID=" . $data->listId . ") AND (Game_ID=" . $data->gameId . ");";
+
+        $query = $statement[$data->state];
+
+        //echo $query;
+
+        if ($stmt = $mysqli->prepare($query)) {
+            $stmt->execute();
+            $stmt->fetch();
+            $stmt->close();
+            echo true;
+        } else {
+            echo false;
+        }
     }
 
 
-    $query=$statement[$data->state];
-
-
-
-    if($stmt = $mysqli->prepare($query)){
-        $stmt->execute();
-        $stmt->fetch();
-        $stmt->close();
-    }
-
-
-
+}else{
+    echo false;
 }
 
 

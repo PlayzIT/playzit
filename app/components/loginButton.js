@@ -17,6 +17,7 @@ app.controller("loginButtonController", function ($http) {
         $http.post("getUserName.php", function(){
 
         }).then(function (data) {
+            console.log("LoginButton: " + data.data);
             $ctrl.username = data.data;
         });
     };
@@ -25,7 +26,7 @@ app.controller("loginButtonController", function ($http) {
         $.post("ausloggen.php", {
 
         }).then(function (data) {
-            console.log("logged out");
+            //console.log("logged out");
             location.href ="start.html";
         });
 

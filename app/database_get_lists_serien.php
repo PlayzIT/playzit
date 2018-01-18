@@ -6,10 +6,13 @@
  * Time: 14:43
  */
 
+session_start();
+
 require_once "database_connection.php";
 
-session_start();
-$query = "select * from serieslist where fk_user=".$_SESSION['userID'].";";
+
+$query = "select * from serieslist where fk_user=".$_SESSION['userID'];
+
 $result = mysqli_query($mysqli, $query);
 
 
@@ -27,5 +30,5 @@ if (mysqli_num_rows($result) > 0) {
     }
 
 } else {
-    echo "{success: false}";
+    echo false;
 }

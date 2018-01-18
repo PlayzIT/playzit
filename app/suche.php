@@ -14,9 +14,9 @@
 		$typ = mysqli_real_escape_string($mysqli, $data->typ);
 		
 		if ($typ === "game") {
-			$query = "SELECT * FROM game WHERE G_Name like '$suche'";
+			$query = "SELECT * FROM game WHERE G_Name like '$suche' group by G_Name";
 		} else {
-			$query = "SELECT * FROM series WHERE S_Name LIKE '$suche'";
+			$query = "SELECT * FROM series WHERE S_Name LIKE '$suche' group by S_Name";
 		}
 		
 		

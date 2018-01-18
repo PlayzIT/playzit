@@ -6,40 +6,36 @@ app.component("anmelden", {
 });
 
 app.controller("anmeldenController", ['$http', function ($http) {
-    this.error=true;
-    this.loggedIn = false;
     var $ctrl = this;
+    $ctrl.error=true;
+    $ctrl.loggedIn = false;
 
-    this.$onInit = function(){
-        $.post("isLoggedIn.php", {
+    $ctrl.$onInit = function(){
+        $http.post("isLoggedIn.php", {
         }).then(function (data) {
-            if(data== "1"){
-                var url = window.location.pathname;
-                var filename = url.substring(url.lastIndexOf('/')+1);
-                if(filename!=="start.html"){
-                    //window.location = "start.html";
-                }
-
+            //console.log("isLoggedIn: " + data.data);
+            if(data.data == "1"){
                 $ctrl.loggedIn = true;
             }else{
                 $ctrl.loggedIn = false;
             }
-        })
+        });
     };
 
 
-    this.starteAnmeldung = function () {
+    $ctrl.starteAnmeldung = function () {
         $http.post("anmelden.php", {
-            'username': this.benutzername,
-            'passwort': this.passwort
+            'username': $ctrl.benutzername,
+            'passwort': $ctrl.passwort
         }).then(function (data) {
-            console.log(data);
+            //console.log(data);
 
             if(data.data == "1"){
                 console.log("logged in");
                 $ctrl.loggedIn = true;
                 $ctrl.error = true;
                 window.location = "start.html";
+                //window.location = "start.html";
             }else{
                 //location.reload();
                 $ctrl.loggedIn = false;
@@ -49,15 +45,17 @@ app.controller("anmeldenController", ['$http', function ($http) {
     };
 
 
-    this.abmelden = function(){
-        $.post("ausloggen.php", {
+    $ctrl.abmelden = function(){
+        $http.post("ausloggen.php", {
 
         }).then(function (data) {
-            console.log("logged out");
+            //console.log("logged out");
+            $ctrl.loggedIn = false;
+            window.location = "start.html";
         });
-        this.loggedIn = false;
 
-    }
+        //console.log("abmelden: " +$ctrl.loggedIn);
+    };
 
 
 }]);

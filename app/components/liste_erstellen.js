@@ -38,10 +38,6 @@ app.controller("ListeController", function($http, $scope) {
         //dong some background ajax calling for persistence...
     };
 
-    $ctrl.changePrivateState = function () {
-        $ctrl.privat = !$ctrl.privat;
-    };
-
     $ctrl.aktuelleListe = [];
     $ctrl.listenname = "Meine Liste";
 
@@ -81,7 +77,7 @@ app.controller("ListeController", function($http, $scope) {
                 console.log(data);
                 if(data.data == "1"){
                     console.log("yes perfekt");
-                    window.location = "serie-listen.php";
+                    window.location = $ctrl.typ == 'game'? "spiel-listen.php":"serie-listen.php";
                 }else{
                     console.log("fehler");
                 }
@@ -90,9 +86,9 @@ app.controller("ListeController", function($http, $scope) {
 
     };
 
-    $scope.scrollToTop = function() {
-        $('html, body').animate({scrollTop: 0}, 'fast');
-    };
+
+
+
 
     /**
      $http.post("insert_liste.php", {

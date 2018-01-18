@@ -3,10 +3,11 @@
 	<md-input-container>
 		<label>Benutzername</label>
 		<md-icon md-svg-src="images/icons/ic_person_blue_24px.svg" class="email"></md-icon>
-		<input type="text" ng-model="$ctrl.benutzername" required pattern="[A-Za-z]{1}[A-Za-z0-9]{5,}" title="Der Benutzername muss mit einem Buchstaben beginnen. Die restlichen Zeichen müssen Buchstaben oder Zahlen sein. Der Benutzername muss mindestens 6 Zeichen lang sein." name="benutzername">
+		<input type="text" ng-model="$ctrl.benutzername" required pattern="[A-Za-z]{1}[A-Za-z0-9]{5,}" maxlength="30" title="Der Benutzername muss mit einem Buchstaben beginnen. Die restlichen Zeichen müssen Buchstaben oder Zahlen sein. Der Benutzername muss mindestens 6 Zeichen lang sein." name="benutzername">
 		<div ng-messages="$ctrl.formular.benutzername.$error">
 			<div ng-message="required">Bitte geben Sie einen Benutzernamen ein!</div>
 			<div ng-message="pattern">Der Benutzername muss mit einem Buchstaben beginnen. <br> Die restlichen Zeichen müssen Buchstaben oder Zahlen sein.<br> Der Benutzername muss mindestens 6 Zeichen lang sein.</div>
+
 		</div>
 	</md-input-container>
 
@@ -14,7 +15,7 @@
 	<md-input-container>
 		<label>Email</label>
 		<md-icon md-svg-src="images/icons/ic_email_green_24px.svg" class="email"></md-icon>
-		<input type="email" ng-model="$ctrl.email" required name="email">
+		<input type="email" ng-model="$ctrl.email" maxlength="80" required name="email">
 		<div ng-messages="$ctrl.formular.email.$error">
 			<div ng-message="required">Bitte geben Sie eine Email ein.</div>
 			<div ng-message="email">Bitte geben Sie eine gültige Email ein.<br>Ein Beispiel: example@mail.com</div>
@@ -24,7 +25,7 @@
 	<md-input-container>
 		<label>Passwort</label>
 		<md-icon md-svg-src="images/icons/ic_lock_black_24px.svg"></md-icon>
-		<input type="password" ng-model="$ctrl.passwort1" pattern="[^ \s\r]{6,}" title="Das Passwort muss mindestens 6 Zeichen lang sein und darf keine Leerzeichen besitzen." required name="passwort">
+		<input type="password" ng-model="$ctrl.passwort1" pattern="[^ \s\r]{6,}" maxlength="100" title="Das Passwort muss mindestens 6 Zeichen lang sein und darf keine Leerzeichen besitzen." required name="passwort">
 		<div ng-messages="$ctrl.formular.passwort.$error">
 			<div ng-message="required">Bitte geben Sie ein Passwort ein.</div>
 			<div ng-message="pattern">Ihr Passwort muss mindestens 6 Zeichen lang sein.<br>Ihr Passwort darf keine Leerzeichen enthalten.</div>
@@ -34,7 +35,7 @@
 	<md-input-container>
 		<label>Passwort bestätigen</label>
 		<md-icon md-svg-src="images/icons/ic_lock_black_24px.svg"></md-icon>
-		<input type="password" ng-model="$ctrl.passwort2" pattern="[^ \s\r]{6,}" title="Das Passwort muss mindestens 6 Zeichen lang sein und darf nicht Leerzeichen besitzen." required name="passwort2">
+		<input type="password" ng-model="$ctrl.passwort2" pattern="[^ \s\r]{6,}" maxlength="100" title="Das Passwort muss mindestens 6 Zeichen lang sein und darf nicht Leerzeichen besitzen." required name="passwort2">
 		<div ng-messages="$ctrl.formular.passwort2.$error">
 			<div ng-message="required">Bitte geben Sie Ihr Passwort erneut ein.</div>
 		</div>

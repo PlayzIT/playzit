@@ -29,12 +29,11 @@
 				$_SESSION[ 'userID' ] = $userID;
 				$_SESSION[ 'benutzername' ] = $nickname;
 
-
-				$favListQueryG = "INSERT into gamelist(`GListName`, `privat`, `descr`, `fk_user`, `favourite`) values(?, true, ?, ?, true);";
-				if($result3=$mysqli->prepare($favListQueryG)){
-				    $listname=$nickname."s Favoriten";
-				    $descr = "automatisch erstellte Liste";
-				    $result3->bind_param('ssi', $listname, $descr, $userID);
+                $favListQueryG = "INSERT into gamelist(`GListName`, `privat`, `descr`, `fk_user`, `favourite`) values(?, true, ?, ?, true);";
+                if($result3=$mysqli->prepare($favListQueryG)){
+                    $listname=$nickname."s Favoriten";
+                    $descr = "automatisch erstellte Liste";
+                    $result3->bind_param('ssi', $listname, $descr, $userID);
                     $result3->execute();
                     $result3->fetch();
                     $result3->close();
@@ -49,42 +48,6 @@
                     $result4->fetch();
                     $result4->close();
                 }
-
-
-
-
-/*
- *
- * CREATE TABLE IF NOT EXISTS serieslist(
-  SL_ID INT NOT NULL AUTO_INCREMENT,
-  SListName VARCHAR(20),
-  privat BOOL,
-  descr VARCHAR(100),
-  fk_user INT NOT NULL,
-  favourite BOOL,
-  PRIMARY KEY(SL_ID),
-  CONSTRAINT FK_userConsSList FOREIGN KEY (fk_user)
-    REFERENCES user(user_id)
-);
-CREATE TABLE IF NOT EXISTS gamelist(
-  GL_ID INT NOT NULL AUTO_INCREMENT,
-  GListName VARCHAR(20),
-  privat BOOL,
-  descr VARCHAR(100),
-  fk_user INT NOT NULL,
-  favourite BOOL,
-  PRIMARY KEY(GL_ID),
-    CONSTRAINT FK_userConsGList FOREIGN KEY (fk_user)
-    REFERENCES user(user_id) ON DELETE NO ACTION
-);
-
- */
-
-
-
-
-
-
 
 				echo true;
 			}else{

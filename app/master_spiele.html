@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>playzit</title>
+    <title>PlayzIT</title>
 
 
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    <link rel="icon" href="favicon.ico"/>
+    <link rel="icon" href="Logo_blau_fertig.ico"/>
 
     <link rel="stylesheet" href="vendor/material-icons-2.2.0/material-icons.css"/>
     <link rel="stylesheet" href="vendor/roboto/roboto.css"/>
@@ -32,11 +32,11 @@
     <script src="app.js"></script>
     <script src="components/gameCard.js"></script>
     <script src="components/gameCardList.js"></script>
-
+    <script src="components/suchleiste.js"></script>
     <script src="components/loginButton.js"></script>
 </head>
 
-<body layout="column" style="height:100%">
+<body layout="column" style="height:100%" ng-controller="masterSpieleSeiteController">
 <md-content layout="row" style="">
 
     <div flex="15" flex layout="column">
@@ -46,24 +46,24 @@
                 md-is-locked-open="true"
                 md-whiteframe="4"
                 flex="100">
-            <md-toolbar layout="row" layout-align="start center" class="sideNavToolBar"
-                        style="background-color: #173E62">
-                <img src="../ressources/Logo_blau_fertig.png">
+            <md-toolbar layout="row" layout-align="start center" class="sideNavToolBar" style="background-color: #173E62">
+                <a href="start.html"><img src="../ressources/Logo_blau_fertig.png"></a>
 
             </md-toolbar>
-            <md-content layout-padding style="height: calc(100vh - 64px)" layout="column" class="sideNavContent">
-                <md-button>Test</md-button>
-                <md-button>Test</md-button>
-                <h3>Abteilung</h3>
-                <md-button>Test</md-button>
-                <md-button>Test</md-button>
-                <md-button>Test</md-button>
-                <md-button>Test</md-button>
-                <md-button>Test</md-button>
-                <h3>Abteilung</h3>
-                <md-button>Test</md-button>
-                <md-button>Test</md-button>
-
+            <md-content layout-padding style="height: calc(100vh - 64px)" layout="column" class="sideNavContent" >
+                <md-button href="start.html">
+                    Startseite
+                </md-button>
+                <h3>Spiele</h3>
+                <ul>
+                    <li><md-button href="liste_erstellen_spiele.html">Liste erstellen</md-button></li>
+                    <li><md-button href="spiel-listen.php">Listen ansehen</md-button></li>
+                </ul>
+                <h3>Serien/Filme</h3>
+                <ul>
+                    <li><md-button href="liste_erstellen_serien.html">Liste erstellen</md-button></li>
+                    <li><md-button href="serie-listen.php">Listen ansehen</md-button></li>
+                </ul>
 
                 <md-button id="sideNavButton" href="impressum.html">Impressum</md-button>
             </md-content>
@@ -77,12 +77,14 @@
                 <h2 class="md-toolbar-tools">PlayzIT</h2>
                 <md-menu-bar id="topNavBar" layout-align="start center" flex layout="row">
 
-                    <md-button href="master_spiele.html">
+                    <md-button ng-click="deleteSearch()">
                         Spiele
                     </md-button>
                     <md-button href="master_serien.html">
                         Serien
                     </md-button>
+
+                    <suchleiste typ="game" gib-aus="getSerienFromSearch(spiele)"></suchleiste>
 
 
                 </md-menu-bar>
@@ -147,10 +149,12 @@
 
 -->
                     <div flex layout-align="center start" class="masterCardGameCard">
-
-                        <game-card-list></game-card-list>
-
-
+                        <game-card-list ng-hide="spiele"></game-card-list>
+                        <div ng-show="spiele">
+                            <div flex layout-align="center start" class="masterCardGameCard">
+                                <game-card ng-repeat="spiel in spiele" id="spiel.G_ID" name="spiel.G_Name" image="http://cdn.edgecast.steamstatic.com/steam/apps/{{spiel.G_ID}}/header.jpg"></game-card>
+                            </div>
+                        </div>
                     </div>
 
 

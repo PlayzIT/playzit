@@ -28,11 +28,11 @@ if ($game = $mysqli->prepare($query)) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>playzit</title>
+    <title>PlayzIT</title>
 
 
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    <link rel="icon" href="favicon.ico"/>
+    <link rel="icon" href="Logo_rot_fertig.ico"/>
 
     <link rel="stylesheet" href="vendor/material-icons-2.2.0/material-icons.css"/>
     <link rel="stylesheet" href="vendor/roboto/roboto.css"/>
@@ -59,6 +59,7 @@ if ($game = $mysqli->prepare($query)) {
     <script src="components/loginButton.js"></script>
     <script src="components/bewertenSerien.js"></script>
     <script src="components/bewertenFeld.js"></script>
+    <script src="components/bewertungen_anzeigen.js"></script>
 </head>
 
 <body layout="column" >
@@ -72,25 +73,23 @@ if ($game = $mysqli->prepare($query)) {
             md-whiteframe="4"
             flex="100">
             <md-toolbar layout="row" layout-align="start center" class="sideNavToolBar" style="background-color:#480C0E ">
-                <img src="../ressources/Logo_rot_fertig.png">
+                <a href="start.html"><img src="../ressources/Logo_rot_fertig.png"></a>
 
             </md-toolbar>
             <md-content layout-padding style="height: calc(100vh - 64px)" layout="column" class="sideNavContent" >
-                <md-button href="master_spiele.html">
-                    Spiele
-                </md-button>
-                <md-button href="master_serien.html">
-                    Serien
+                <md-button href="start.html">
+                    Startseite
                 </md-button>
                 <h3>Spiele</h3>
-                <md-button>Liste erstellen</md-button>
-                <md-button>Listen ansehen</md-button>
-                <md-button>Test</md-button>
-                <md-button>Test</md-button>
-                <md-button>Test</md-button>
+                <ul>
+                    <li><md-button href="liste_erstellen_spiele.html">Liste erstellen</md-button></li>
+                    <li><md-button href="spiel-listen.php">Listen ansehen</md-button></li>
+                </ul>
                 <h3>Serien/Filme</h3>
-                <md-button>Test</md-button>
-                <md-button>Test</md-button>
+                <ul>
+                    <li><md-button href="liste_erstellen_serien.html">Liste erstellen</md-button></li>
+                    <li><md-button href="serie-listen.php">Listen ansehen</md-button></li>
+                </ul>
 
                 <md-button id="sideNavButton" href="impressum.html">Impressum</md-button>
             </md-content>
@@ -161,8 +160,8 @@ if ($game = $mysqli->prepare($query)) {
 
                 <img src="<?php echo $serienBild?>" class="md-card-image">
 
-                <div class="masterCard" >
-
+                <div class="masterCard" layout="column">
+                    <bewertung typ="serie" id="<?php echo $id;?>"></bewertung>
                     <bewerten-serien serien-id="<?php echo $id;?>"></bewerten-serien>
 
 

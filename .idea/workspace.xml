@@ -2,20 +2,334 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b71b0210-c5f9-4ab5-8302-55052be8a117" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/suchleiste_card.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/suchleiste_card.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/insert_liste.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/liste_erstellen_serien.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/liste_erstellen_spiele.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Logo_blau_fertig.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Logo_rot_fertig.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Logo_voll_fertig.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bewertungen.php" afterPath="$PROJECT_DIR$/app/bewertungen.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/anmelden.html" afterPath="$PROJECT_DIR$/app/components/anmelden.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/anmelden.js" afterPath="$PROJECT_DIR$/app/components/anmelden.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/bewertenFeld.html" afterPath="$PROJECT_DIR$/app/components/bewertenFeld.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/bewertenFeld.js" afterPath="$PROJECT_DIR$/app/components/bewertenFeld.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/bewertenSerien.html" afterPath="$PROJECT_DIR$/app/components/bewertenSerien.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/bewertenSerien.js" afterPath="$PROJECT_DIR$/app/components/bewertenSerien.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/bewertenSpiele.html" afterPath="$PROJECT_DIR$/app/components/bewertenSpiele.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/bewertenSpiele.js" afterPath="$PROJECT_DIR$/app/components/bewertenSpiele.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/bewertungen_anzeigen.html" afterPath="$PROJECT_DIR$/app/components/bewertungen_anzeigen.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/bewertungen_anzeigen.js" afterPath="$PROJECT_DIR$/app/components/bewertungen_anzeigen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/game-card-list.html" afterPath="$PROJECT_DIR$/app/components/game-card-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/game-card.html" afterPath="$PROJECT_DIR$/app/components/game-card.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/gameCard.js" afterPath="$PROJECT_DIR$/app/components/gameCard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/gameCardList.js" afterPath="$PROJECT_DIR$/app/components/gameCardList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/impressum.html" afterPath="$PROJECT_DIR$/app/components/impressum.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/kommentareSerien.js" afterPath="$PROJECT_DIR$/app/components/kommentareSerien.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/kommentarliste-serien.html" afterPath="$PROJECT_DIR$/app/components/kommentarliste-serien.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/kommentarliste-spiele.html" afterPath="$PROJECT_DIR$/app/components/kommentarliste-spiele.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/kommentarlisteSpiele.js" afterPath="$PROJECT_DIR$/app/components/kommentarlisteSpiele.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/liste-serien.html" afterPath="$PROJECT_DIR$/app/components/liste-serien.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/liste-spiele.html" afterPath="$PROJECT_DIR$/app/components/liste-spiele.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/listeSerien.js" afterPath="$PROJECT_DIR$/app/components/listeSerien.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/listeSpiele.js" afterPath="$PROJECT_DIR$/app/components/listeSpiele.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/liste_erstellen.html" afterPath="$PROJECT_DIR$/app/components/liste_erstellen.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/liste_erstellen.js" afterPath="$PROJECT_DIR$/app/components/liste_erstellen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/login-button.html" afterPath="$PROJECT_DIR$/app/components/login-button.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/loginButton.js" afterPath="$PROJECT_DIR$/app/components/loginButton.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/profilBearbeiten.html" afterPath="$PROJECT_DIR$/app/components/profilBearbeiten.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/profilBearbeiten.js" afterPath="$PROJECT_DIR$/app/components/profilBearbeiten.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/registrieren.html" afterPath="$PROJECT_DIR$/app/components/registrieren.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/registrieren.js" afterPath="$PROJECT_DIR$/app/components/registrieren.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/serien-card-list.html" afterPath="$PROJECT_DIR$/app/components/serien-card-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/serien-card.html" afterPath="$PROJECT_DIR$/app/components/serien-card.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/serienCard.js" afterPath="$PROJECT_DIR$/app/components/serienCard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/serienCardList.js" afterPath="$PROJECT_DIR$/app/components/serienCardList.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/suchleiste.html" afterPath="$PROJECT_DIR$/app/components/suchleiste.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/suchleiste.js" afterPath="$PROJECT_DIR$/app/components/suchleiste.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/images/icons/ic_delete_user_black_24px.svg" afterPath="$PROJECT_DIR$/app/images/icons/ic_delete_user_black_24px.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/suchleiste_card.html" afterPath="$PROJECT_DIR$/app/components/suchleiste_card.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/suchleiste_card.js" afterPath="$PROJECT_DIR$/app/components/suchleiste_card.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database_connection.php" afterPath="$PROJECT_DIR$/app/database_connection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database_get_lists_serien.php" afterPath="$PROJECT_DIR$/app/database_get_lists_serien.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database_get_lists_spiele.php" afterPath="$PROJECT_DIR$/app/database_get_lists_spiele.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database_insert.php" afterPath="$PROJECT_DIR$/app/database_insert.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database_remove_list_serien.php" afterPath="$PROJECT_DIR$/app/database_remove_list_serien.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database_remove_list_spiele.php" afterPath="$PROJECT_DIR$/app/database_remove_list_spiele.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database_select.php" afterPath="$PROJECT_DIR$/app/database_select.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database_send_bewertung_serien.php" afterPath="$PROJECT_DIR$/app/database_send_bewertung_serien.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database_send_bewertung_spiele.php" afterPath="$PROJECT_DIR$/app/database_send_bewertung_spiele.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database_send_kommentar_serien.php" afterPath="$PROJECT_DIR$/app/database_send_kommentar_serien.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database_send_kommentar_spiele.php" afterPath="$PROJECT_DIR$/app/database_send_kommentar_spiele.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/getUserId.php" afterPath="$PROJECT_DIR$/app/getUserId.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/getUserName.php" afterPath="$PROJECT_DIR$/app/getUserName.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/impressum.html" afterPath="$PROJECT_DIR$/app/impressum.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.php" afterPath="$PROJECT_DIR$/app/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/insert_liste.php" afterPath="$PROJECT_DIR$/app/insert_liste.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/isLoggedIn.php" afterPath="$PROJECT_DIR$/app/isLoggedIn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/liste_erstellen_serien.html" afterPath="$PROJECT_DIR$/app/liste_erstellen_serien.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/liste_erstellen_spiele.html" afterPath="$PROJECT_DIR$/app/liste_erstellen_spiele.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/login.html" afterPath="$PROJECT_DIR$/app/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/master_serien.html" afterPath="$PROJECT_DIR$/app/master_serien.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/master_spiele.html" afterPath="$PROJECT_DIR$/app/master_spiele.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/profilb.html" afterPath="$PROJECT_DIR$/app/profilb.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/registrieren-page.html" afterPath="$PROJECT_DIR$/app/registrieren-page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/registrieren.php" afterPath="$PROJECT_DIR$/app/registrieren.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/serie-ansehen.php" afterPath="$PROJECT_DIR$/app/serie-ansehen.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/serie-bewerten.php" afterPath="$PROJECT_DIR$/app/serie-bewerten.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/serie-kommentar.php" afterPath="$PROJECT_DIR$/app/serie-kommentar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/serie-listen.php" afterPath="$PROJECT_DIR$/app/serie-listen.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spiel-ansehen.php" afterPath="$PROJECT_DIR$/app/spiel-ansehen.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spiel-bewerten.php" afterPath="$PROJECT_DIR$/app/spiel-bewerten.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spiel-kommentar.php" afterPath="$PROJECT_DIR$/app/spiel-kommentar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spiel-listen.php" afterPath="$PROJECT_DIR$/app/spiel-listen.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/start.html" afterPath="$PROJECT_DIR$/app/start.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/stylesheet.css" afterPath="$PROJECT_DIR$/app/stylesheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/suche.php" afterPath="$PROJECT_DIR$/app/suche.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/angular-material-1.1.5/angular-material.min.css" afterPath="$PROJECT_DIR$/app/vendor/angular-material-1.1.5/angular-material.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/node/README.md" afterPath="$PROJECT_DIR$/node_modules/@types/node/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/q/README.md" afterPath="$PROJECT_DIR$/node_modules/@types/q/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/q/index.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/q/index.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/README.md" afterPath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/chrome.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/chrome.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/edge.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/edge.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/executors.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/executors.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/firefox.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/firefox.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/http.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/http.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/ie.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/ie.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/index.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/index.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/opera.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/opera.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/remote.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/remote.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/safari.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/safari.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/testing.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/selenium-webdriver/testing.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/node_modules/adm-zip/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/MIT-LICENSE.txt" afterPath="$PROJECT_DIR$/node_modules/adm-zip/MIT-LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/README.md" afterPath="$PROJECT_DIR$/node_modules/adm-zip/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/adm-zip.js" afterPath="$PROJECT_DIR$/node_modules/adm-zip/adm-zip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/headers/entryHeader.js" afterPath="$PROJECT_DIR$/node_modules/adm-zip/headers/entryHeader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/headers/index.js" afterPath="$PROJECT_DIR$/node_modules/adm-zip/headers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/headers/mainHeader.js" afterPath="$PROJECT_DIR$/node_modules/adm-zip/headers/mainHeader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/methods/deflater.js" afterPath="$PROJECT_DIR$/node_modules/adm-zip/methods/deflater.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/methods/index.js" afterPath="$PROJECT_DIR$/node_modules/adm-zip/methods/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/methods/inflater.js" afterPath="$PROJECT_DIR$/node_modules/adm-zip/methods/inflater.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/test/assets/attributes_test/New folder/hidden.txt" afterPath="$PROJECT_DIR$/node_modules/adm-zip/test/assets/attributes_test/New folder/hidden.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/test/assets/attributes_test/New folder/hidden_readonly.txt" afterPath="$PROJECT_DIR$/node_modules/adm-zip/test/assets/attributes_test/New folder/hidden_readonly.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/test/assets/attributes_test/New folder/readonly.txt" afterPath="$PROJECT_DIR$/node_modules/adm-zip/test/assets/attributes_test/New folder/readonly.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/test/assets/attributes_test/New folder/somefile.txt" afterPath="$PROJECT_DIR$/node_modules/adm-zip/test/assets/attributes_test/New folder/somefile.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/test/index.js" afterPath="$PROJECT_DIR$/node_modules/adm-zip/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/util/constants.js" afterPath="$PROJECT_DIR$/node_modules/adm-zip/util/constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/util/errors.js" afterPath="$PROJECT_DIR$/node_modules/adm-zip/util/errors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/util/fattr.js" afterPath="$PROJECT_DIR$/node_modules/adm-zip/util/fattr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/util/index.js" afterPath="$PROJECT_DIR$/node_modules/adm-zip/util/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/util/utils.js" afterPath="$PROJECT_DIR$/node_modules/adm-zip/util/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/zipEntry.js" afterPath="$PROJECT_DIR$/node_modules/adm-zip/zipEntry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/adm-zip/zipFile.js" afterPath="$PROJECT_DIR$/node_modules/adm-zip/zipFile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/color-name/.npmignore" afterPath="$PROJECT_DIR$/node_modules/color-name/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/color-name/LICENSE" afterPath="$PROJECT_DIR$/node_modules/color-name/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/color-name/README.md" afterPath="$PROJECT_DIR$/node_modules/color-name/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/color-name/index.js" afterPath="$PROJECT_DIR$/node_modules/color-name/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/color-name/test.js" afterPath="$PROJECT_DIR$/node_modules/color-name/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/cryptiles/.npmignore" afterPath="$PROJECT_DIR$/node_modules/cryptiles/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/engine.io-client/engine.io.js" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/engine.io.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/component-emitter/History.md" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/component-emitter/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/component-emitter/LICENSE" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/component-emitter/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/component-emitter/Readme.md" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/component-emitter/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/component-emitter/index.js" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/component-emitter/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/expand-braces/node_modules/repeat-string/.gitattributes" afterPath="$PROJECT_DIR$/node_modules/expand-braces/node_modules/repeat-string/.gitattributes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/expand-braces/node_modules/repeat-string/.jshintrc" afterPath="$PROJECT_DIR$/node_modules/expand-braces/node_modules/repeat-string/.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/expand-braces/node_modules/repeat-string/.npmignore" afterPath="$PROJECT_DIR$/node_modules/expand-braces/node_modules/repeat-string/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/hawk/.npmignore" afterPath="$PROJECT_DIR$/node_modules/hawk/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/README.md" afterPath="$PROJECT_DIR$/node_modules/json-schema/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-00/hyper-schema" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-00/hyper-schema" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-00/json-ref" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-00/json-ref" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-00/links" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-00/links" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-00/schema" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-00/schema" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-01/hyper-schema" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-01/hyper-schema" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-01/json-ref" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-01/json-ref" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-01/links" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-01/links" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-01/schema" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-01/schema" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-02/hyper-schema" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-02/hyper-schema" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-02/json-ref" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-02/json-ref" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-02/links" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-02/links" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-02/schema" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-02/schema" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-03/examples/address" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-03/examples/address" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-03/examples/calendar" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-03/examples/calendar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-03/examples/card" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-03/examples/card" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-03/examples/geo" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-03/examples/geo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-03/examples/interfaces" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-03/examples/interfaces" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-03/hyper-schema" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-03/hyper-schema" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-03/json-ref" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-03/json-ref" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-03/links" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-03/links" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-03/schema" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-03/schema" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-04/hyper-schema" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-04/hyper-schema" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-04/links" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-04/links" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-04/schema" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-04/schema" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-zyp-json-schema-03.xml" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-zyp-json-schema-03.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/draft-zyp-json-schema-04.xml" afterPath="$PROJECT_DIR$/node_modules/json-schema/draft-zyp-json-schema-04.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/lib/links.js" afterPath="$PROJECT_DIR$/node_modules/json-schema/lib/links.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/lib/validate.js" afterPath="$PROJECT_DIR$/node_modules/json-schema/lib/validate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/json-schema/test/tests.js" afterPath="$PROJECT_DIR$/node_modules/json-schema/test/tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/dist/jszip.js" afterPath="$PROJECT_DIR$/node_modules/jszip/dist/jszip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/client/core.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/client/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/client/library.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/client/library.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/client/shim.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/client/shim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/fn/symbol/has-instance.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/fn/symbol/has-instance.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/fn/symbol/has-instance.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/fn/symbol/has-instance.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_a-number-value.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_a-number-value.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_array-reduce.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_array-reduce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_array-species-constructor.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_array-species-constructor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_create-property.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_create-property.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_date-to-primitive.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_date-to-primitive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_enum-bug-keys.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_enum-bug-keys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_ie8-dom-define.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_ie8-dom-define.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_inherit-if-required.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_inherit-if-required.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-create.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-create.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-dps.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-dps.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-forced-pam.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-forced-pam.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-gopd.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-gopd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-gopn.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-gopn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-gpo.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-gpo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-keys-internal.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-keys-internal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-keys.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_object-keys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_shared-key.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_shared-key.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_strict-method.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_strict-method.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_string-ws.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_string-ws.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_wks-define.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/_wks-define.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.every.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.every.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.for-each.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.for-each.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.index-of.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.index-of.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.is-array.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.is-array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.join.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.join.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.last-index-of.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.last-index-of.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.map.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.reduce-right.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.reduce-right.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.reduce.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.reduce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.slice.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.slice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.some.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.some.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.sort.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.array.sort.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.date.now.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.date.now.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.date.to-iso-string.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.date.to-iso-string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.function.bind.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.function.bind.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.number.to-fixed.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.number.to-fixed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.number.to-precision.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.number.to-precision.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.object.create.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.object.create.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.object.define-properties.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.object.define-properties.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.object.define-property.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.object.define-property.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.parse-float.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.parse-float.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.parse-int.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es6.parse-int.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es7.asap.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es7.asap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es7.object.define-getter.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es7.object.define-getter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es7.object.define-setter.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es7.object.define-setter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es7.object.lookup-getter.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es7.object.lookup-getter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es7.object.lookup-setter.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es7.object.lookup-setter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es7.string.match-all.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/modules/es7.string.match-all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/stage/pre.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/library/stage/pre.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_a-number-value.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_a-number-value.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_array-reduce.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_array-reduce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_array-species-constructor.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_array-species-constructor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_create-property.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_create-property.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_date-to-primitive.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_date-to-primitive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_enum-bug-keys.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_enum-bug-keys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_ie8-dom-define.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_ie8-dom-define.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_inherit-if-required.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_inherit-if-required.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-create.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-create.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-dps.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-dps.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-forced-pam.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-forced-pam.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-gopd.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-gopd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-gopn.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-gopn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-gpo.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-gpo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-keys-internal.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-keys-internal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-keys.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_object-keys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_shared-key.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_shared-key.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_strict-method.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_strict-method.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_string-ws.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_string-ws.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_wks-define.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/_wks-define.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.every.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.every.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.for-each.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.for-each.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.index-of.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.index-of.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.is-array.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.is-array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.join.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.join.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.last-index-of.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.last-index-of.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.map.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.reduce-right.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.reduce-right.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.reduce.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.reduce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.slice.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.slice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.some.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.some.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.sort.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.array.sort.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.date.now.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.date.now.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.date.to-iso-string.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.date.to-iso-string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.date.to-primitive.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.date.to-primitive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.function.bind.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.function.bind.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.number.to-fixed.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.number.to-fixed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.number.to-precision.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.number.to-precision.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.object.create.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.object.create.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.object.define-properties.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.object.define-properties.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.object.define-property.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.object.define-property.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.parse-float.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.parse-float.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.parse-int.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.parse-int.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.regexp.to-string.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es6.regexp.to-string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es7.asap.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es7.asap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es7.object.define-getter.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es7.object.define-getter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es7.object.define-setter.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es7.object.define-setter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es7.object.lookup-getter.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es7.object.lookup-getter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es7.object.lookup-setter.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es7.object.lookup-setter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es7.string.match-all.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/modules/es7.string.match-all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/stage/pre.js" afterPath="$PROJECT_DIR$/node_modules/jszip/node_modules/core-js/stage/pre.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma-mocha-reporter/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/karma-mocha-reporter/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma-mocha-reporter/LICENSE" afterPath="$PROJECT_DIR$/node_modules/karma-mocha-reporter/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma-mocha-reporter/README.md" afterPath="$PROJECT_DIR$/node_modules/karma-mocha-reporter/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma-mocha-reporter/index.js" afterPath="$PROJECT_DIR$/node_modules/karma-mocha-reporter/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma-mocha-reporter/jsconfig.json" afterPath="$PROJECT_DIR$/node_modules/karma-mocha-reporter/jsconfig.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma-mocha-reporter/typings.json" afterPath="$PROJECT_DIR$/node_modules/karma-mocha-reporter/typings.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma-spec-reporter/LICENSE" afterPath="$PROJECT_DIR$/node_modules/karma-spec-reporter/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma-spec-reporter/License.md" afterPath="$PROJECT_DIR$/node_modules/karma-spec-reporter/License.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma-spec-reporter/README.md" afterPath="$PROJECT_DIR$/node_modules/karma-spec-reporter/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma-spec-reporter/index.js" afterPath="$PROJECT_DIR$/node_modules/karma-spec-reporter/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parsejson/.npmignore" afterPath="$PROJECT_DIR$/node_modules/parsejson/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parsejson/LICENSE" afterPath="$PROJECT_DIR$/node_modules/parsejson/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parsejson/Makefile" afterPath="$PROJECT_DIR$/node_modules/parsejson/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parsejson/README.md" afterPath="$PROJECT_DIR$/node_modules/parsejson/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parsejson/index.js" afterPath="$PROJECT_DIR$/node_modules/parsejson/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parsejson/test.js" afterPath="$PROJECT_DIR$/node_modules/parsejson/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parseqs/.npmignore" afterPath="$PROJECT_DIR$/node_modules/parseqs/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parseqs/LICENSE" afterPath="$PROJECT_DIR$/node_modules/parseqs/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parseqs/Makefile" afterPath="$PROJECT_DIR$/node_modules/parseqs/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parseqs/README.md" afterPath="$PROJECT_DIR$/node_modules/parseqs/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parseqs/index.js" afterPath="$PROJECT_DIR$/node_modules/parseqs/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parseqs/test.js" afterPath="$PROJECT_DIR$/node_modules/parseqs/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parseuri/.npmignore" afterPath="$PROJECT_DIR$/node_modules/parseuri/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parseuri/History.md" afterPath="$PROJECT_DIR$/node_modules/parseuri/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parseuri/LICENSE" afterPath="$PROJECT_DIR$/node_modules/parseuri/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parseuri/Makefile" afterPath="$PROJECT_DIR$/node_modules/parseuri/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parseuri/README.md" afterPath="$PROJECT_DIR$/node_modules/parseuri/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parseuri/index.js" afterPath="$PROJECT_DIR$/node_modules/parseuri/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/parseuri/test.js" afterPath="$PROJECT_DIR$/node_modules/parseuri/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/README.md" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/adm-zip.js" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/adm-zip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/headers/entryHeader.js" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/headers/entryHeader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/headers/index.js" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/headers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/headers/mainHeader.js" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/headers/mainHeader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/methods/deflater.js" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/methods/deflater.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/methods/index.js" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/methods/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/methods/inflater.js" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/methods/inflater.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/util/constants.js" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/util/constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/util/errors.js" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/util/errors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/util/fattr.js" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/util/fattr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/util/index.js" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/util/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/util/utils.js" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/util/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/zipEntry.js" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/zipEntry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/zipFile.js" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/zipFile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sntp/.npmignore" afterPath="$PROJECT_DIR$/node_modules/sntp/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.js" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.js" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/component-emitter/History.md" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/component-emitter/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/component-emitter/LICENSE" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/component-emitter/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/component-emitter/Readme.md" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/component-emitter/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/component-emitter/index.js" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/component-emitter/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/void-elements/.gitattributes" afterPath="$PROJECT_DIR$/node_modules/void-elements/.gitattributes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/void-elements/.npmignore" afterPath="$PROJECT_DIR$/node_modules/void-elements/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/void-elements/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/void-elements/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/void-elements/LICENSE" afterPath="$PROJECT_DIR$/node_modules/void-elements/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/void-elements/README.md" afterPath="$PROJECT_DIR$/node_modules/void-elements/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/void-elements/pre-publish.js" afterPath="$PROJECT_DIR$/node_modules/void-elements/pre-publish.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/void-elements/test/index.js" afterPath="$PROJECT_DIR$/node_modules/void-elements/test/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,62 +340,156 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="registrieren-page.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/registrieren-page.html">
+      <file leaf-file-name="listeSerien.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/listeSerien.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1280">
-              <caret line="103" column="94" lean-forward="false" selection-start-line="103" selection-start-column="75" selection-end-line="103" selection-end-column="94" />
+            <state relative-caret-position="441">
+              <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="liste_erstellen_serien.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/liste_erstellen_serien.html">
+      <file leaf-file-name="database_remove_list_serien.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database_remove_list_serien.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="112" column="99" lean-forward="false" selection-start-line="112" selection-start-column="99" selection-end-line="112" selection-end-column="99" />
+            <state relative-caret-position="861">
+              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="liste-spiele.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="database_remove_list_spiele.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database_remove_list_spiele.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1491">
+              <caret line="76" column="15" lean-forward="false" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="15" />
+              <folding>
+                <marker date="1516225044000" expanded="true" signature="289:1814" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="liste-spiele.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/liste-spiele.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            <state relative-caret-position="336">
+              <caret line="16" column="88" lean-forward="false" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listeSpiele.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/listeSpiele.js">
+      <file leaf-file-name="registrieren.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/registrieren.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+            <state relative-caret-position="651">
+              <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+              <folding>
+                <marker date="1516262466000" expanded="true" signature="178:1247" ph="[...]" />
+                <marker date="1516262466000" expanded="true" signature="205:1246" ph="{...}" />
+                <marker date="1516262466000" expanded="true" signature="445:1241" ph="{...}" />
+                <marker date="1516262466000" expanded="true" signature="627:1237" ph="{...}" />
+                <marker date="1516262466000" expanded="true" signature="864:1230" ph="{...}" />
+                <marker date="1516262466000" expanded="true" signature="997:1129" ph="{...}" />
+                <marker date="1516262466000" expanded="true" signature="1091:1121" ph="/*...*/" />
+                <marker date="1516262466000" expanded="true" signature="1135:1224" ph="{...}" />
+                <marker date="1516262466000" expanded="true" signature="1186:1216" ph="/*...*/" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stylesheet.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/stylesheet.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2793">
+              <caret line="134" column="16" lean-forward="false" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
+              <folding>
+                <marker date="1516206252000" expanded="true" signature="1904:1906" ph="{...}" />
+                <marker date="1516206252000" expanded="true" signature="1941:2009" ph="{...}" />
+                <marker date="1516206252000" expanded="true" signature="2032:2082" ph="{...}" />
+                <marker date="1516206252000" expanded="true" signature="2104:2145" ph="{...}" />
+                <marker date="1516206252000" expanded="true" signature="2181:2249" ph="{...}" />
+                <marker date="1516206252000" expanded="true" signature="2459:2517" ph="{...}" />
+                <marker date="1516206252000" expanded="true" signature="2585:2643" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profilBearbeiten.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/profilBearbeiten.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="51" column="34" lean-forward="false" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+              <folding>
+                <marker date="1516227550000" expanded="true" signature="1284:1697" ph="{...}" />
+                <marker date="1516227550000" expanded="true" signature="1733:2002" ph="{...}" />
+                <marker date="1516227550000" expanded="true" signature="1792:1997" ph="{...}" />
+                <marker date="1516227550000" expanded="true" signature="1817:1919" ph="{...}" />
+                <marker date="1516227550000" expanded="true" signature="1923:1993" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bearbeiten.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/bearbeiten.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="liste_erstellen_spiele.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/liste_erstellen_spiele.html">
+      <file leaf-file-name="spiel-ansehen.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/spiel-ansehen.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="113" column="99" lean-forward="false" selection-start-line="113" selection-start-column="75" selection-end-line="113" selection-end-column="99" />
-              <folding />
+            <state relative-caret-position="483">
+              <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+              <folding>
+                <marker date="1516260382000" expanded="true" signature="185:220" ph="SELECT G_Nam... Game" />
+                <marker date="1516260382000" expanded="true" signature="392:516" ph="SELECT gcomm... gamecomment" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="impressum.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/impressum.html">
+      <file leaf-file-name="serie-ansehen.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/serie-ansehen.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="105" column="92" lean-forward="false" selection-start-line="105" selection-start-column="92" selection-end-line="105" selection-end-column="92" />
-              <folding />
+            <state relative-caret-position="3276">
+              <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+              <folding>
+                <marker date="1516142086000" expanded="true" signature="3516:3633" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="3516:3655" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="3516:3666" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="3516:6216" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="3703:6202" ph="..." />
+                <marker date="1516142086000" expanded="false" signature="3791:3816" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="3817:4499" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="3884:4332" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="4033:4311" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="4092:4156" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="4214:4278" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="4410:4476" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="4606:6190" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="4672:6171" ph="..." />
+                <marker date="1516142086000" expanded="false" signature="4748:4773" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="4774:5021" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="4825:4991" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="4854:4964" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="4909:4926" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="5045:5272" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="5296:5914" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="5951:5968" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="6035:6142" ph="..." />
+                <marker date="1516142086000" expanded="true" signature="6092:6102" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,7 +512,20 @@
       <find>88px</find>
       <find>back</find>
       <find>background</find>
+      <find>listClicked</find>
+      <find>md-card</find>
+      <find>background-color</find>
+      <find>content</find>
       <find>master</find>
+      <find>md-toolbar</find>
+      <find>sidenav</find>
+      <find>suchleiste</find>
+      <find>contentdiv</find>
+      <find>scrollT</find>
+      <find>liste</find>
+      <find>console</find>
+      <find>getGames</find>
+      <find>names</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,57 +539,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/components/serien-card-list.html" />
-        <option value="$PROJECT_DIR$/app/components/serienCard.js" />
-        <option value="$PROJECT_DIR$/app/database_get_lists_spiele.php" />
-        <option value="$PROJECT_DIR$/app/components/liste.html" />
-        <option value="$PROJECT_DIR$/app/components/liste.js" />
-        <option value="$PROJECT_DIR$/app/database_get_games.php" />
-        <option value="$PROJECT_DIR$/app/database_select.php" />
-        <option value="$PROJECT_DIR$/app/vendor/angular-material-1.1.5/angular-material.min.css" />
-        <option value="$PROJECT_DIR$/app/database_remove_list_serien.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/database_remove_list_spiele.php" />
-        <option value="$PROJECT_DIR$/app/components/loginButton.js" />
-        <option value="$PROJECT_DIR$/app/components/anmelden.js" />
-        <option value="$PROJECT_DIR$/app/database_send_kommentar_spiele.php" />
-        <option value="$PROJECT_DIR$/app/database_get_lists_serien.php" />
-        <option value="$PROJECT_DIR$/app/components/liste-serien.html" />
-        <option value="$PROJECT_DIR$/app/components/listeSerien.js" />
-        <option value="$PROJECT_DIR$/app/components/serienCardList.js" />
-        <option value="$PROJECT_DIR$/app/stylesheet.css" />
-        <option value="$PROJECT_DIR$/app/spiel-bewerten.php" />
-        <option value="$PROJECT_DIR$/app/spiel-listen.php" />
-        <option value="$PROJECT_DIR$/app/spiel-kommentar.php" />
-        <option value="$PROJECT_DIR$/app/serie-listen.php" />
-        <option value="$PROJECT_DIR$/app/serie-kommentar.php" />
-        <option value="$PROJECT_DIR$/app/master_spiele.html" />
-        <option value="$PROJECT_DIR$/app/registrieren-page.html" />
-        <option value="$PROJECT_DIR$/app/master_serien.html" />
-        <option value="$PROJECT_DIR$/app/spiel-ansehen.php" />
-        <option value="$PROJECT_DIR$/app/serie-bewerten.php" />
-        <option value="$PROJECT_DIR$/app/serie-ansehen.php" />
-        <option value="$PROJECT_DIR$/app/registrieren.php" />
-        <option value="$PROJECT_DIR$/app/components/bewertungen_anzeigen.js" />
-        <option value="$PROJECT_DIR$/app/database_send_bewertung_serien.php" />
-        <option value="$PROJECT_DIR$/app/components/bewertenSerien.js" />
+        <option value="$PROJECT_DIR$/app/components/bewertenSerien.html" />
+        <option value="$PROJECT_DIR$/app/liste_erstellen.html" />
         <option value="$PROJECT_DIR$/app/bewertungen.php" />
-        <option value="$PROJECT_DIR$/app/database_send_bewertung_spiele.php" />
-        <option value="$PROJECT_DIR$/app/components/bewertenSpiele.js" />
-        <option value="$PROJECT_DIR$/app/components/serien-card.html" />
         <option value="$PROJECT_DIR$/app/components/kommentarliste-serien.html" />
-        <option value="$PROJECT_DIR$/app/components/kommentarlisteSpiele.js" />
         <option value="$PROJECT_DIR$/app/components/kommentarliste-spiele.html" />
+        <option value="$PROJECT_DIR$/app/components/kommentarlisteSpiele.js" />
         <option value="$PROJECT_DIR$/app/components/kommentareSerien.js" />
         <option value="$PROJECT_DIR$/app/components/login-button.html" />
+        <option value="$PROJECT_DIR$/app/database_send_bewertung_serien.php" />
+        <option value="$PROJECT_DIR$/app/database_send_bewertung_spiele.php" />
+        <option value="$PROJECT_DIR$/app/registrieren.php" />
+        <option value="$PROJECT_DIR$/app/components/suchleiste_card.js" />
+        <option value="$PROJECT_DIR$/app/components/registrieren.html" />
+        <option value="$PROJECT_DIR$/app/components/suchleiste_card.html" />
         <option value="$PROJECT_DIR$/app/profilb.html" />
         <option value="$PROJECT_DIR$/app/login.html" />
-        <option value="$PROJECT_DIR$/app/components/impressum.html" />
+        <option value="$PROJECT_DIR$/app/registrieren-page.html" />
         <option value="$PROJECT_DIR$/app/impressum.html" />
-        <option value="$PROJECT_DIR$/app/liste_erstellen_spiele.html" />
+        <option value="$PROJECT_DIR$/app/serie-kommentar.php" />
+        <option value="$PROJECT_DIR$/app/serie-listen.php" />
+        <option value="$PROJECT_DIR$/app/spiel-listen.php" />
+        <option value="$PROJECT_DIR$/app/components/impressum.html" />
+        <option value="$PROJECT_DIR$/app/start.html" />
         <option value="$PROJECT_DIR$/app/liste_erstellen_serien.html" />
-        <option value="$PROJECT_DIR$/app/components/listeSpiele.js" />
+        <option value="$PROJECT_DIR$/app/components/liste_erstellen.html" />
+        <option value="$PROJECT_DIR$/app/liste_erstellen_spiele.html" />
+        <option value="$PROJECT_DIR$/app/components/liste_erstellen.js" />
+        <option value="$PROJECT_DIR$/app/components/serien-card-list.html" />
+        <option value="$PROJECT_DIR$/app/components/serienCardList.js" />
+        <option value="$PROJECT_DIR$/app/stylesheet.css" />
+        <option value="$PROJECT_DIR$/app/insert_liste.php" />
+        <option value="$PROJECT_DIR$/app/components/liste-serien.html" />
+        <option value="$PROJECT_DIR$/app/components/suchleiste.js" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/app/components/suchleiste.html" />
+        <option value="$PROJECT_DIR$/app/database_insert_series_into_existing_list.php" />
+        <option value="$PROJECT_DIR$/app/master_serien.html" />
+        <option value="$PROJECT_DIR$/app/master_spiele.html" />
+        <option value="$PROJECT_DIR$/app/database_insert_game_into_existing_list.php" />
+        <option value="$PROJECT_DIR$/app/components/game-card.html" />
+        <option value="$PROJECT_DIR$/app/components/serienCard.js" />
+        <option value="$PROJECT_DIR$/app/components/serien-card.html" />
+        <option value="$PROJECT_DIR$/app/components/gameCard.js" />
         <option value="$PROJECT_DIR$/app/components/liste-spiele.html" />
+        <option value="$PROJECT_DIR$/app/components/listeSpiele.js" />
+        <option value="$PROJECT_DIR$/app/database_remove_list_spiele.php" />
+        <option value="$PROJECT_DIR$/app/database_remove_list_serien.php" />
+        <option value="$PROJECT_DIR$/app/components/listeSerien.js" />
+        <option value="$PROJECT_DIR$/app/components/profilBearbeiten.js" />
+        <option value="$PROJECT_DIR$/app/bearbeiten.php" />
+        <option value="$PROJECT_DIR$/app/spiel-ansehen.php" />
       </list>
     </option>
   </component>
@@ -177,7 +598,6 @@
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
-    <annotation-enable>false</annotation-enable>
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
@@ -193,10 +613,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="944" />
-    <option name="y" value="172" />
-    <option name="width" value="762" />
-    <option name="height" value="678" />
+    <option name="x" value="879" />
+    <option name="y" value="-23" />
+    <option name="width" value="960" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -214,23 +634,21 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="playzit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playzit" type="462c0819:PsiDirectoryNode" />
+              <item name="ganz aktuelles Endprodukt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ganz aktuelles Endprodukt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="playzit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playzit" type="462c0819:PsiDirectoryNode" />
+              <item name="ganz aktuelles Endprodukt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ganz aktuelles Endprodukt" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="playzit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playzit" type="462c0819:PsiDirectoryNode" />
+              <item name="ganz aktuelles Endprodukt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ganz aktuelles Endprodukt" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -238,26 +656,32 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
-    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../MEDT/Webtechnologie/webtechnik_project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\hofma\Documents\Schule\HTL\4\ITP\PlayzIT\playzit\playzit\app" />
+      <recent name="C:\xampp\htdocs\Endprodukt\app" />
+      <recent name="C:\xampp\htdocs\Endprodukt\app\images\icons" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hofma\Documents\Schule\HTL\4\ITP\PlayzIT\playzit\playzit\app" />
+      <recent name="C:\xampp\htdocs\Endprodukt\app\components" />
+      <recent name="C:\xampp\htdocs\Endprodukt\app" />
+      <recent name="C:\xampp\htdocs\Endprodukt\app\vendor" />
+      <recent name="C:\xampp\htdocs\Endprodukt\app\images\icons" />
+      <recent name="C:\xampp\htdocs\Endprodukt\app\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -272,7 +696,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.master_spiele.html">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -410,8 +834,17 @@
       <workItem from="1515661385232" duration="1794000" />
       <workItem from="1515669201457" duration="1073000" />
       <workItem from="1515670336224" duration="104000" />
-      <workItem from="1515677073244" duration="4635000" />
-      <workItem from="1515918611358" duration="5862000" />
+      <workItem from="1515677073244" duration="4238000" />
+      <workItem from="1515842902292" duration="20053000" />
+      <workItem from="1515921768810" duration="16840000" />
+      <workItem from="1515967541123" duration="1391000" />
+      <workItem from="1516000385440" duration="11683000" />
+      <workItem from="1516133948969" duration="4390000" />
+      <workItem from="1516196383144" duration="1504000" />
+      <workItem from="1516203532921" duration="3553000" />
+      <workItem from="1516214432811" duration="11450000" />
+      <workItem from="1516227095054" duration="1182000" />
+      <workItem from="1516281995522" duration="26000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1510843634847</created>
@@ -539,32 +972,11 @@
       <option name="project" value="LOCAL" />
       <updated>1515671549064</updated>
     </task>
-    <task id="LOCAL-00019" summary="Buttons links bissl gemacht">
-      <created>1515688185333</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1515688185333</updated>
-    </task>
-    <task id="LOCAL-00020" summary="login-button komponente überarbeitet&#10;favoriten-liste automatische erstellung">
-      <created>1515923140747</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1515923140747</updated>
-    </task>
-    <task id="LOCAL-00021" summary="impressum bissi gemacht">
-      <created>1515923384572</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1515923384572</updated>
-    </task>
-    <option name="localTasksCounter" value="22" />
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178309000" />
+    <option name="totallyTimeSpent" value="258162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -582,7 +994,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2567132" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12513426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -596,9 +1008,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900944" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,14 +1069,11 @@
     <MESSAGE value="Wichtige Verbesserungen" />
     <MESSAGE value="Listen-Komponente weitergearbeitet" />
     <MESSAGE value="Listen-erstellen-Komponente eingefügt" />
-    <MESSAGE value="Buttons links bissl gemacht" />
-    <MESSAGE value="login-button komponente überarbeitet&#10;favoriten-liste automatische erstellung" />
-    <MESSAGE value="impressum bissi gemacht" />
-    <option name="LAST_COMMIT_MESSAGE" value="impressum bissi gemacht" />
+    <option name="LAST_COMMIT_MESSAGE" value="Listen-erstellen-Komponente eingefügt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -672,471 +1082,400 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/database_get_lists_spiele.php">
+    <entry file="file://$PROJECT_DIR$/app/profilb.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database_get_lists_serien.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding>
-            <marker date="1515671422326" expanded="true" signature="162:201" ph="select * fro... serieslist" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/liste-serien.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="38" column="74" lean-forward="false" selection-start-line="38" selection-start-column="74" selection-end-line="38" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database_remove_list_serien.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="40" column="44" lean-forward="false" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
-          <folding>
-            <marker date="1515574625138" expanded="true" signature="384:419" ph="DELETE FROM " />
-            <marker date="1515574625138" expanded="true" signature="466:558" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/listeSerien.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bearbeiten.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1515574625074" expanded="true" signature="867:919" ph="SELECT * fro... User" />
-            <marker date="1515574625074" expanded="true" signature="1077:1137" ph="UPDATE User " />
-            <marker date="1515574625074" expanded="true" signature="1423:1478" ph="UPDATE User " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/liste_erstellen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/game-card-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/serien-card-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/game-card.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/serienCardList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/impressum.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/stylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="143" column="21" lean-forward="false" selection-start-line="143" selection-start-column="21" selection-end-line="143" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/start.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="70" column="36" lean-forward="false" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spiel-listen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spiel-kommentar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding>
-            <marker date="1515688170824" expanded="true" signature="185:220" ph="SELECT G_Nam... Game" />
-            <marker date="1515688170824" expanded="true" signature="392:516" ph="SELECT gcomm... gamecomment" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/serie-listen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/serie-kommentar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <marker date="1515688170780" expanded="true" signature="183:229" ph="SELECT S_Nam... series" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/master_spiele.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#md-toolbar#0;n#div#1;n#md-content#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/master_serien.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="66" column="43" lean-forward="false" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/serie-bewerten.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1827">
-          <caret line="92" column="43" lean-forward="false" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
-          <folding>
-            <marker date="1515688170795" expanded="true" signature="183:229" ph="SELECT S_Nam... series" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spiel-bewerten.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1869">
-          <caret line="94" column="43" lean-forward="false" selection-start-line="80" selection-start-column="16" selection-end-line="94" selection-end-column="43" />
-          <folding>
-            <marker date="1515688170805" expanded="true" signature="183:218" ph="SELECT G_Nam... Game" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/registrieren.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="46" column="72" lean-forward="false" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
-          <folding>
-            <marker date="1515919438035" expanded="true" signature="437:500" ph="SELECT * FRO... user" />
-            <marker date="1515919438035" expanded="true" signature="602:729" ph="INSERT INTO user... " />
-            <marker date="1515919438035" expanded="true" signature="815:868" ph="select user_... user" />
-            <marker date="1515919438035" expanded="true" signature="1150:1254" ph="INSERT into gamelist... " />
-            <marker date="1515919438035" expanded="true" signature="1637:1743" ph="INSERT into serieslist... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spiel-ansehen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="108" column="43" lean-forward="false" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
-          <folding>
-            <marker date="1515688170863" expanded="true" signature="185:220" ph="SELECT G_Nam... Game" />
-            <marker date="1515688170863" expanded="true" signature="392:516" ph="SELECT gcomm... gamecomment" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/serie-ansehen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1134">
-          <caret line="91" column="43" lean-forward="false" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
-          <folding>
-            <marker date="1515688170899" expanded="true" signature="180:226" ph="SELECT S_Nam... series" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database_send_bewertung_serien.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <marker date="1515921214710" expanded="true" signature="316:454" ph="INSERT INTO seriesbew... " />
-            <marker date="1515921214710" expanded="true" signature="631:759" ph="SELECT GB_ID... gamebew" />
-            <marker date="1515921214710" expanded="true" signature="961:1067" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1515921214710" expanded="true" signature="1098:1203" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1515921214710" expanded="true" signature="1238:1347" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1515921214710" expanded="true" signature="1377:1481" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1515921214710" expanded="true" signature="1513:1620" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1515921214710" expanded="true" signature="1650:1754" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1515921214710" expanded="true" signature="1784:1889" ph="INSERT INTO gBew_ent_cat... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bewertungen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-          <folding>
-            <marker date="1515921357683" expanded="true" signature="443:801" ph="select user.... gamebew" />
-            <marker date="1515921357683" expanded="true" signature="827:1199" ph="select user.... seriesbew" />
-            <marker date="1515921357683" expanded="true" signature="1419:1687" ph="/* CREATE TA... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/bewertungen_anzeigen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/bewertungen_anzeigen.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/bewertenSerien.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="48" column="16" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/bewertenSpiele.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/bewertenSerien.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database_send_bewertung_spiele.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <marker date="1515922099783" expanded="true" signature="315:448" ph="INSERT INTO gamebew... " />
-            <marker date="1515922099783" expanded="true" signature="625:748" ph="SELECT GB_ID... gamebew" />
-            <marker date="1515922099783" expanded="true" signature="949:1054" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1515922099783" expanded="true" signature="1087:1194" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1515922099783" expanded="true" signature="1224:1328" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1515922099783" expanded="true" signature="1362:1470" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1515922099783" expanded="true" signature="1505:1614" ph="INSERT INTO gBew_ent_cat... " />
-            <marker date="1515922099783" expanded="true" signature="1644:1748" ph="INSERT INTO gBew_ent_cat... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/serien-card.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/kommentarlisteSpiele.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="36" column="78" lean-forward="false" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/kommentarliste-serien.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="34" column="52" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/kommentareSerien.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="33" column="79" lean-forward="false" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/login-button.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/anmelden.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1515574625067" expanded="true" signature="462:523" ph="SELECT passw... User" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/anmelden.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/anmelden.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="1113">
+          <caret line="53" column="12" lean-forward="false" selection-start-line="53" selection-start-column="12" selection-end-line="69" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="105" column="94" lean-forward="false" selection-start-line="105" selection-start-column="94" selection-end-line="105" selection-end-column="94" />
-          <folding />
+        <state relative-caret-position="263">
+          <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="70" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/registrieren-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
-          <caret line="103" column="94" lean-forward="false" selection-start-line="103" selection-start-column="75" selection-end-line="103" selection-end-column="94" />
-          <folding />
+        <state relative-caret-position="158">
+          <caret line="57" column="24" lean-forward="true" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serie-kommentar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="85" column="46" lean-forward="true" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serie-listen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="78" column="46" lean-forward="false" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/spiel-listen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="67" column="46" lean-forward="false" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/impressum.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
-          <caret line="96" column="137" lean-forward="false" selection-start-line="96" selection-start-column="137" selection-end-line="96" selection-end-column="137" />
-          <folding>
-            <element signature="n#style#0;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-card#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-card#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/kommentarliste-spiele.html">
+    <entry file="file://$PROJECT_DIR$/app/start.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
-          <folding />
+        <state relative-caret-position="459">
+          <caret line="112" column="58" lean-forward="false" selection-start-line="112" selection-start-column="58" selection-end-line="112" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/profilb.html">
+    <entry file="file://$PROJECT_DIR$/ressources/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/liste_erstellen_serien.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="104" column="94" lean-forward="false" selection-start-line="104" selection-start-column="94" selection-end-line="104" selection-end-column="94" />
-          <folding />
+        <state relative-caret-position="347">
+          <caret line="77" column="25" lean-forward="false" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/impressum.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="105" column="92" lean-forward="false" selection-start-line="105" selection-start-column="92" selection-end-line="105" selection-end-column="92" />
-          <folding />
+        <state relative-caret-position="651">
+          <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database_select.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/liste-serien.html" />
+    <entry file="file://$PROJECT_DIR$/app/database_get_lists_spiele.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/insert_liste.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/liste-serien.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/serien-card-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/liste_erstellen_spiele.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="113" column="99" lean-forward="false" selection-start-line="113" selection-start-column="75" selection-end-line="113" selection-end-column="99" />
+        <state relative-caret-position="502">
+          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/liste_erstellen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="79" column="77" lean-forward="false" selection-start-line="79" selection-start-column="77" selection-end-line="79" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/liste_erstellen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/suchleiste.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="33" column="45" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/suchleiste_card.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/serienCardList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/database_get_lists_serien.php" />
+    <entry file="file://$PROJECT_DIR$/app/database_insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database_send_bewertung_serien.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="52" column="49" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database_insert_series_into_existing_list.php" />
+    <entry file="file://$PROJECT_DIR$/app/bewertungen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/game-card.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/master_serien.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/gameCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/liste_erstellen_serien.html">
+    <entry file="file://$PROJECT_DIR$/app/database_insert_game_into_existing_list.php" />
+    <entry file="file://$PROJECT_DIR$/app/master_spiele.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="112" column="99" lean-forward="false" selection-start-line="112" selection-start-column="99" selection-end-line="112" selection-end-column="99" />
+        <state relative-caret-position="286">
+          <caret line="144" column="0" lean-forward="true" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/serien-card.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/serienCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/getUserId.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/listeSpiele.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        <state relative-caret-position="1512">
+          <caret line="72" column="33" lean-forward="false" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database_remove_list_spiele.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1491">
+          <caret line="76" column="15" lean-forward="false" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="15" />
+          <folding>
+            <marker date="1516225044000" expanded="true" signature="289:1814" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database_remove_list_serien.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database_get_lists_serien.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/listeSerien.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/suchleiste.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/liste-spiele.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        <state relative-caret-position="336">
+          <caret line="16" column="88" lean-forward="false" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/registrieren.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding>
+            <marker date="1516262466000" expanded="true" signature="178:1247" ph="[...]" />
+            <marker date="1516262466000" expanded="true" signature="205:1246" ph="{...}" />
+            <marker date="1516262466000" expanded="true" signature="445:1241" ph="{...}" />
+            <marker date="1516262466000" expanded="true" signature="627:1237" ph="{...}" />
+            <marker date="1516262466000" expanded="true" signature="864:1230" ph="{...}" />
+            <marker date="1516262466000" expanded="true" signature="997:1129" ph="{...}" />
+            <marker date="1516262466000" expanded="true" signature="1091:1121" ph="/*...*/" />
+            <marker date="1516262466000" expanded="true" signature="1135:1224" ph="{...}" />
+            <marker date="1516262466000" expanded="true" signature="1186:1216" ph="/*...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2793">
+          <caret line="134" column="16" lean-forward="false" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
+          <folding>
+            <marker date="1516206252000" expanded="true" signature="1904:1906" ph="{...}" />
+            <marker date="1516206252000" expanded="true" signature="1941:2009" ph="{...}" />
+            <marker date="1516206252000" expanded="true" signature="2032:2082" ph="{...}" />
+            <marker date="1516206252000" expanded="true" signature="2104:2145" ph="{...}" />
+            <marker date="1516206252000" expanded="true" signature="2181:2249" ph="{...}" />
+            <marker date="1516206252000" expanded="true" signature="2459:2517" ph="{...}" />
+            <marker date="1516206252000" expanded="true" signature="2585:2643" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/profilBearbeiten.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="51" column="34" lean-forward="false" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+          <folding>
+            <marker date="1516227550000" expanded="true" signature="1284:1697" ph="{...}" />
+            <marker date="1516227550000" expanded="true" signature="1733:2002" ph="{...}" />
+            <marker date="1516227550000" expanded="true" signature="1792:1997" ph="{...}" />
+            <marker date="1516227550000" expanded="true" signature="1817:1919" ph="{...}" />
+            <marker date="1516227550000" expanded="true" signature="1923:1993" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serie-ansehen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3276">
+          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding>
+            <marker date="1516142086000" expanded="true" signature="3516:3633" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="3516:3655" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="3516:3666" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="3516:6216" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="3703:6202" ph="..." />
+            <marker date="1516142086000" expanded="false" signature="3791:3816" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="3817:4499" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="3884:4332" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="4033:4311" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="4092:4156" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="4214:4278" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="4410:4476" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="4606:6190" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="4672:6171" ph="..." />
+            <marker date="1516142086000" expanded="false" signature="4748:4773" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="4774:5021" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="4825:4991" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="4854:4964" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="4909:4926" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="5045:5272" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="5296:5914" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="5951:5968" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="6035:6142" ph="..." />
+            <marker date="1516142086000" expanded="true" signature="6092:6102" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bearbeiten.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/spiel-ansehen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding>
+            <marker date="1516260382000" expanded="true" signature="185:220" ph="SELECT G_Nam... Game" />
+            <marker date="1516260382000" expanded="true" signature="392:516" ph="SELECT gcomm... gamecomment" />
+          </folding>
         </state>
       </provider>
     </entry>

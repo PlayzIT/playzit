@@ -8,6 +8,8 @@
 	<bewerten-feld slider="md-primary"  ausgang="$ctrl.Kategorien.effekte=wert;" 	 img="images/bewertung/effekte.jpg" 	text="Effekte"></bewerten-feld>
 	<bewerten-feld slider="md-primary"  ausgang="$ctrl.Kategorien.audio=wert;" 	 img="images/bewertung/audio.jpg" 		text="Ton"></bewerten-feld>
 	<bewerten-feld slider="md-primary"  ausgang="$ctrl.Kategorien.genre=wert;" 	 img="images/bewertung/genre.jpg" 		text="Passendes Genre"></bewerten-feld>
-	<span ng-show="$ctrl.error" style="color:red;">Sie sind nicht eingeloggt!</span>
+	<section class="errorSection" ng-show="$ctrl.error" style="background-color: rgba(195, 47, 45, .15); color: #c32f2d; padding: 15px; margin-top: 10px; margin-bottom: 10px">
+		<span class="errorMsg">Sie sind nicht eingeloggt!</span>
+	</section>
 	<md-button class="md-warn md-raised" ng-click="$ctrl.bewertungSenden()">Bewertung erstellen</md-button>
 </div>

@@ -9,7 +9,7 @@ app.component("listeSpiele", {
 
 app.controller("listeSpieleController", function ($http) {
     var $ctrl = this;
-    this.listClicked;
+    this.listClicked = -1;
     this.lists=[];
     $ctrl.userId;
     this.games=[];
@@ -21,7 +21,7 @@ app.controller("listeSpieleController", function ($http) {
             $ctrl.userId=data;
         });
 
-      this.getLists();
+        this.getLists();
     };
 
 
@@ -30,29 +30,31 @@ app.controller("listeSpieleController", function ($http) {
         $http.post("database_get_lists_spiele.php", {
 
             },
-            console.log("data request")
+            //console.log("data request")
         ).then(function (data) {
-            console.log(data);
-            $ctrl.lists = data.data;
-            $ctrl.loading=false;
+            if (data.data !== ""){
+                $ctrl.lists = data.data;
+                $ctrl.loading = false;
+            }else {
+                $ctrl.lists = [];
+            }
         });
     };
 
     this.output = function () {
-        console.log(this.listClicked);
+        //console.log(this.listClicked);
     };
 
 
-    this.getGames = function(){
+    this.getGames = function(x){
         $http.post("database_select.php", {
                 'query':"select * from game join gPartOfGL on(Game_ID=G_ID) " +
                 "where GList_ID = "+$ctrl.listClicked+";"
             },
-            console.log("data request")
         ).then(function (data) {
             if(data.data=="{success: false}"){
                 $ctrl.games.splice(0,$ctrl.games.length);
-                $ctrl.hideRight = true;
+                $ctrl.hideRight = false;
             }else{
                 $ctrl.games.splice(0,$ctrl.games.length);
                 $ctrl.games = data.data;
@@ -63,6 +65,7 @@ app.controller("listeSpieleController", function ($http) {
     };
 
     this.removeGame = function(gameId){
+        console.log($ctrl.listClicked);
         $http.post("database_remove_list_spiele.php", {
             'state':"game",
             'gameId':gameId,
@@ -73,22 +76,31 @@ app.controller("listeSpieleController", function ($http) {
         });
     };
 
+    this.removeList = function(listId) {
 
-    this.removeList = function(listId){
+        if (confirm("Wollen Sie wirklich die Liste löschen? Alle Titel in der Liste werden aus Ihrer Liste entfernt und Ihre Liste wird gelöscht")) {
+            $http.post("database_remove_list_spiele.php", {
+                'state': "list",
+                'listId': listId
+            }).then(function (data) {
+                if (data.data == "1") {
+                    $ctrl.loading = true;
+                    $ctrl.getLists();
+                    $ctrl.getGames();
+                }else if(data.data == "istFavorit"){
+                    window.alert('Eine Favoritenliste kann nicht gelöscht werden!');
+                }
 
 
-        $http.post("database_remove_list_spiele.php", {
-            'state':"list",
-            'listId':listId
-        }).then(function (data) {
-            $ctrl.loading=true;
-            $ctrl.getLists();
-        });
+
+            });
+        }
     };
 
-    this.goTo = function(id){
-        location.href="spiel-ansehen.php?id="+id;
+    this.goTo = function (id) {
+        location.href = "spiel-bewerten.php?id=" + id;
     }
+
 
 });
 

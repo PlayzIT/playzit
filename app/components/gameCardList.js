@@ -14,7 +14,7 @@ app.controller("gameCardListController", function ($http) {
     this.$onInit = function () {
 
         $http.post("database_select.php", {
-                'query': "SELECT * FROM Game limit 15;",
+                'query': "SELECT * FROM Game ORDER BY RAND() limit 15;",
             },
             console.log("data request")
         ).then(function (data) {
